@@ -1,0 +1,7 @@
+D:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  server_top  -multisrs  E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synwork\Server_CPLD_V11_PRJ_impl1_comp.srs  -osyn  E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synwork\Server_CPLD_V11_PRJ_impl1_mult.srs  -log  E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synlog\Server_CPLD_V11_PRJ_impl1_multi_srs_gen.srr 
+relcom:D:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top server_top -multisrs ..\synwork\Server_CPLD_V11_PRJ_impl1_comp.srs -osyn ..\synwork\Server_CPLD_V11_PRJ_impl1_mult.srs -log ..\synlog\Server_CPLD_V11_PRJ_impl1_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\Server_CPLD_V11_PRJ_impl1_comp.srs|io:i|time:1689149235|size:71808|exec:0|csum:CEB210C70709E1B07D59D3971B9F8036
+file:..\synwork\Server_CPLD_V11_PRJ_impl1_mult.srs|io:o|time:1689149236|size:15683|exec:0|csum:
+file:..\synlog\Server_CPLD_V11_PRJ_impl1_multi_srs_gen.srr|io:o|time:1689149236|size:1041|exec:0|csum:
+file:D:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1628558558|size:8899584|exec:1|csum:163057E8B8449A642661642A20A2247D

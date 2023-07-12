@@ -1,0 +1,97 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys HDL compiler and linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
+
+Modified Files: 20
+FID:  path (prevtimestamp, timestamp)
+0        D:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v (N/A, 2021-08-10 09:11:08)
+1        D:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (N/A, 2021-08-10 09:11:08)
+2        D:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (N/A, 2021-08-10 09:07:02)
+3        D:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v (N/A, 2021-08-10 09:07:02)
+4        D:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh (N/A, 2021-08-10 09:07:02)
+5        D:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (N/A, 2021-08-10 09:07:02)
+6        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v (N/A, 2023-07-03 21:46:43)
+7        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v (N/A, 2023-07-10 11:53:26)
+8        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v (N/A, 2023-02-24 15:47:16)
+9        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\eeprom_i2c.v (N/A, 2019-09-25 12:50:32)
+10       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v (N/A, 2023-06-08 12:09:01)
+11       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v (N/A, 2023-06-08 12:09:14)
+12       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_on_reset.v (N/A, 2023-06-09 13:12:23)
+13       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v (N/A, 2023-07-10 11:09:24)
+14       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v (N/A, 2023-07-10 20:29:51)
+15       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v (N/A, 2023-07-03 21:46:43)
+16       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\timer.v (N/A, 2023-06-14 22:59:08)
+17       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51)
+18       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\uart_sol.v (N/A, 2023-06-09 13:05:18)
+19       E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v (N/A, 2023-07-10 21:00:25)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 14
+MID:  lib.cell.view
+0        work.bmc_reset_ctrl.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v (N/A, 2023-07-03 21:46:43) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+1        work.cpu_power_control.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v (N/A, 2023-07-10 11:53:26) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v (N/A, 2023-07-10 20:29:51) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+2        work.debounce_button_FSM.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v (N/A, 2023-02-24 15:47:16) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v (N/A, 2023-07-10 11:09:24) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v (N/A, 2023-07-10 20:29:51) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+3        work.eeprom_i2c.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\eeprom_i2c.v (N/A, 2019-09-25 12:50:32) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+4        work.i2c_master.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\eeprom_i2c.v (N/A, 2019-09-25 12:50:32) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v (N/A, 2023-06-08 12:09:01) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+5        work.i2c_slave_reg.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v (N/A, 2023-06-08 12:09:14) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+6        work.power_on_reset.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_on_reset.v (N/A, 2023-06-09 13:12:23) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+7        work.power_signal_detect.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v (N/A, 2023-07-10 11:09:24) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v (N/A, 2023-07-10 20:29:51) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+8        work.server_power_control.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v (N/A, 2023-07-10 20:29:51) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+9        work.server_top.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (module definition)
+10       work.switch_reset_control.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v (N/A, 2023-07-10 20:29:51) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v (N/A, 2023-07-03 21:46:43) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+11       work.timer.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\timer.v (N/A, 2023-06-14 22:59:08) <-- (module definition)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+12       work.uart_sol.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\uart_sol.v (N/A, 2023-06-09 13:05:18) <-- (module definition)
+13       work.usb_reset_ctrl.verilog may have changed because the following files changed:
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v (N/A, 2023-07-10 18:18:51) <-- (may instantiate this module)
+                        E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v (N/A, 2023-07-10 21:00:25) <-- (module definition)
+
+*******************************************************************
+Unmodified files: 0
+FID:  path (timestamp)
+
+*******************************************************************
+Unchanged modules: 0
+MID:  lib.cell.view

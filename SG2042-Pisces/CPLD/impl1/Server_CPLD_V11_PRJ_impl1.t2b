@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "E:/01_Project/07_SG2042_Server/99_CPLD/Project/03_Server_CPLD_V11/Pre_Final/Server_CPLD_V11_PRJ"  

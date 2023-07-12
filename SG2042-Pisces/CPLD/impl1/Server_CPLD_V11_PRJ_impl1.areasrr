@@ -1,0 +1,264 @@
+----------------------------------------------------------------------
+Report for cell server_top.verilog
+
+Register bits: 540 of 16896 (3%)
+Latch bits:      18
+PIC Latch:       0
+I/O cells:       147
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        3       100.0
+                              CCU2D      142       100.0
+                            FD1P3BX       35       100.0
+                            FD1P3DX      379       100.0
+                            FD1S1AY       18       100.0
+                            FD1S3AX        6       100.0
+                            FD1S3BX       35       100.0
+                            FD1S3DX       68       100.0
+                            FD1S3IX        7       100.0
+                                GSR        1       100.0
+                                 IB       75       100.0
+                           IFS1P3BX        3       100.0
+                           IFS1P3IX        2       100.0
+                                INV        7       100.0
+                            L6MUX21       13       100.0
+                                 OB       64       100.0
+                                OBZ        5       100.0
+                           OFS1P3BX        3       100.0
+                           OFS1P3DX        2       100.0
+                           ORCALUT4      792       100.0
+                              PFUMX       48       100.0
+                                PUR        1       100.0
+                                VHI       14       100.0
+                                VLO       14       100.0
+SUB MODULES 
+                     bmc_reset_ctrl        1       100.0
+                  cpu_power_control        1       100.0
+                debounce_button_FSM        1       100.0
+                         eeprom_i2c        1       100.0
+                      i2c_master_Z2        1       100.0
+                   i2c_slave_reg_Z1        1       100.0
+                     power_on_reset        1       100.0
+                power_signal_detect        1       100.0
+               server_power_control        1       100.0
+               switch_reset_control        1       100.0
+                              timer        1       100.0
+                           uart_sol        1       100.0
+                     usb_reset_ctrl        1       100.0
+                            
+                         TOTAL          1750           
+----------------------------------------------------------------------
+Report for cell eeprom_i2c.netlist
+     Instance path:  eeprom_i2c_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9         6.3
+                            FD1P3BX        5        14.3
+                            FD1P3DX       47        12.4
+                            FD1S3BX       16        45.7
+                            FD1S3DX       17        25.0
+                                INV        2        28.6
+                            L6MUX21        1         7.7
+                           ORCALUT4      161        20.3
+                              PFUMX        4         8.3
+                                VHI        2        14.3
+                                VLO        2        14.3
+SUB MODULES 
+                      i2c_master_Z2        1       100.0
+                            
+                         TOTAL           267           
+----------------------------------------------------------------------
+Report for cell i2c_master_Z2.netlist
+     Instance path:  eeprom_i2c_inst.e2prom_i2c
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9         6.3
+                            FD1P3BX        4        11.4
+                            FD1P3DX       38        10.0
+                            FD1S3BX       16        45.7
+                            FD1S3DX       15        22.1
+                                INV        2        28.6
+                            L6MUX21        1         7.7
+                           ORCALUT4      159        20.1
+                              PFUMX        4         8.3
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL           250           
+----------------------------------------------------------------------
+Report for cell bmc_reset_ctrl.netlist
+     Instance path:  bmc_reset_ctrl_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       14         9.9
+                            FD1P3DX       16         4.2
+                            FD1S1AY        2        11.1
+                            FD1S3DX        9        13.2
+                            FD1S3IX        3        42.9
+                           ORCALUT4       21         2.7
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL            67           
+----------------------------------------------------------------------
+Report for cell usb_reset_ctrl.netlist
+     Instance path:  usb_reset_ctrl_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9         6.3
+                            FD1P3BX        2         5.7
+                            FD1P3DX       16         4.2
+                            FD1S1AY        3        16.7
+                            FD1S3IX        3        42.9
+                           ORCALUT4       89        11.2
+                              PFUMX        2         4.2
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL           126           
+----------------------------------------------------------------------
+Report for cell server_power_control.netlist
+     Instance path:  server_power_control
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       77        54.2
+                            FD1P3BX        4        11.4
+                            FD1P3DX      154        40.6
+                            FD1S1AY       13        72.2
+                            FD1S3BX        4        11.4
+                            FD1S3DX       23        33.8
+                            FD1S3IX        1        14.3
+                                INV        3        42.9
+                            L6MUX21        8        61.5
+                           ORCALUT4      334        42.2
+                              PFUMX       32        66.7
+                                VHI        5        35.7
+                                VLO        5        35.7
+SUB MODULES 
+                  cpu_power_control        1       100.0
+                debounce_button_FSM        1       100.0
+                power_signal_detect        1       100.0
+               switch_reset_control        1       100.0
+                            
+                         TOTAL           667           
+----------------------------------------------------------------------
+Report for cell switch_reset_control.netlist
+     Instance path:  server_power_control.switch_reset_control
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       10         7.0
+                            FD1P3DX       18         4.7
+                            FD1S1AY        3        16.7
+                            FD1S3DX        3         4.4
+                                INV        1        14.3
+                           ORCALUT4       16         2.0
+                              PFUMX        1         2.1
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL            54           
+----------------------------------------------------------------------
+Report for cell cpu_power_control.netlist
+     Instance path:  server_power_control.cpu_pwr_control
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        6         4.2
+                            FD1P3DX       23         6.1
+                            FD1S1AY        3        16.7
+                            FD1S3DX        3         4.4
+                            L6MUX21        8        61.5
+                           ORCALUT4      109        13.8
+                              PFUMX       19        39.6
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL           173           
+----------------------------------------------------------------------
+Report for cell power_signal_detect.netlist
+     Instance path:  server_power_control.power_signal_detect_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       28        19.7
+                            FD1P3BX        3         8.6
+                            FD1P3DX       56        14.8
+                            FD1S1AY        3        16.7
+                            FD1S3BX        4        11.4
+                            FD1S3DX        5         7.4
+                            FD1S3IX        1        14.3
+                                INV        1        14.3
+                           ORCALUT4       91        11.5
+                              PFUMX        3         6.3
+                                VHI        2        14.3
+                                VLO        2        14.3
+SUB MODULES 
+                debounce_button_FSM        1       100.0
+                            
+                         TOTAL           200           
+----------------------------------------------------------------------
+Report for cell debounce_button_FSM.netlist
+     Instance path:  server_power_control.power_signal_detect_inst.rst_btn_dbn
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       10         7.0
+                            FD1P3BX        1         2.9
+                            FD1P3DX       16         4.2
+                            FD1S3BX        4        11.4
+                            FD1S3DX        2         2.9
+                                INV        1        14.3
+                           ORCALUT4       12         1.5
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL            48           
+----------------------------------------------------------------------
+Report for cell i2c_slave_reg_Z1.netlist
+     Instance path:  i2c0_slave_inst0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       13         9.2
+                            FD1P3BX        3         8.6
+                            FD1P3DX       53        14.0
+                            FD1S3BX       15        42.9
+                            FD1S3DX       12        17.6
+                                INV        2        28.6
+                           ORCALUT4      130        16.4
+                              PFUMX        2         4.2
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL           232           
+----------------------------------------------------------------------
+Report for cell uart_sol.netlist
+     Instance path:  uart_sol_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4        6         0.8
+                              PFUMX        1         2.1
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL             9           
+----------------------------------------------------------------------
+Report for cell timer.netlist
+     Instance path:  timer_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       20        14.1
+                            FD1P3DX       37         9.8
+                            FD1S3DX        4         5.9
+                           ORCALUT4       29         3.7
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL            92           
+----------------------------------------------------------------------
+Report for cell power_on_reset.netlist
+     Instance path:  por
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX        6       100.0
+                           ORCALUT4        3         0.4
+                                VHI        1         7.1
+                                VLO        1         7.1
+                            
+                         TOTAL            11           

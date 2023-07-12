@@ -1,0 +1,27 @@
+PAR: Place And Route Diamond (64-bit) 3.12.1.454.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jul 12 16:07:32 2023
+
+D:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f Server_CPLD_V11_PRJ_impl1.p2t
+Server_CPLD_V11_PRJ_impl1_map.ncd Server_CPLD_V11_PRJ_impl1.dir
+Server_CPLD_V11_PRJ_impl1.prf -gui
+
+
+Preference file: Server_CPLD_V11_PRJ_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            26.639       0            -0.400       400          32           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 32 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

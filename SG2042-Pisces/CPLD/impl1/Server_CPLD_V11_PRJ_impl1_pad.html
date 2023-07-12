@@ -1,0 +1,644 @@
+<HTML>
+<HEAD><TITLE>PAD Specification File</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Pad"></A>PAD Specification File
+***************************
+
+PART TYPE:        LCMXO3LF-2100C
+Performance Grade:      5
+PACKAGE:          CABGA256
+Package Status:                     Final          Version 1.18
+
+Wed Jul 12 16:07:38 2023
+
+Pinout by Port Name:
++----------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
+| Port Name            | Pin/Bank | Buffer Type   | Site  | PG Enable | BC Enable | Properties                                               |
++----------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
+| a_gpio2              | T3/2     | LVCMOS18_OUT  | PB6C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| a_gpio3              | R4/2     | LVCMOS18_IN   | PB6D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| a_gpio5              | P8/2     | LVCMOS18_IN   | PB12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| bmc_extrst           | J1/4     | LVCMOS33_OUT  | PL7C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| bmc_gpio24           | G2/5     | LVCMOS33_IN   | PL5A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| bmc_gpio25           | G3/5     | LVCMOS33_IN   | PL5B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| bmc_gpio48           | G6/5     | LVCMOS33_IN   | PL3D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| bmc_gpio49           | G5/5     | LVCMOS33_IN   | PL4C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| bmc_gpio51           | F3/5     | LVCMOS33_OUT  | PL4A  |           |           | DRIVE:16mA PULL:UP SLEW:SLOW                             |
+| bmc_gpio53           | F1/5     | LVCMOS33_OUT  | PL4B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| bmc_gpio54           | C2/5     | LVCMOS33_OUT  | PL1D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| bmc_pcie_rst         | L12/1    | LVCMOS33_OUT  | PR10D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| bmc_pwrgd            | D10/0    | LVCMOS33_OUT  | PT20A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| bmc_scl              | A9/0     | LVCMOS33_OUT  | PT18C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| bmc_sda              | C9/0     | LVCMOS33_BIDI | PT18D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
+| bmc_srst             | N1/3     | LVCMOS25_OUT  | PL13B |           |           | DRIVE:16mA OPENDRAIN:ON SLEW:SLOW                        |
+| bmc_ssprst           | L1/3     | LVCMOS33_OUT  | PL11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| bp_ncp_d_oc          | K2/4     | LVCMOS33_IN   | PL10B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| bp_ncp_gok           | K3/4     | LVCMOS33_IN   | PL10A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| clock                | C8/0     | LVCMOS33_IN   | PT17A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| cpld_extrst          | M1/3     | LVCMOS33_IN   | PL12B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| cpld_heart           | P2/3     | LVCMOS33_OUT  | PL14D |           |           | DRIVE:8mA SLEW:SLOW                                      |
+| cpld_led_test        | P15/1    | LVCMOS33_OUT  | PR14C |           |           | DRIVE:4mA SLEW:SLOW                                      |
+| cpua_sys_reset       | P5/2     | LVCMOS18_OUT  | PB5B  |           |           | DRIVE:4mA PULL:DOWN SLEW:SLOW                            |
+| cpub_sys_reset       | N7/2     | LVCMOS18_OUT  | PB9D  |           |           | DRIVE:4mA PULL:DOWN SLEW:SLOW                            |
+| ddr0_event_a         | D2/5     | LVCMOS18_IN   | PL2D  |           |           | PULL:DOWN CLAMP:ON                                       |
+| ddr0_event_b         | P6/2     | LVCMOS18_IN   | PB8A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ddr1_event_a         | T4/2     | LVCMOS18_IN   | PB3B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ddr1_event_b         | T6/2     | LVCMOS18_IN   | PB8B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ddr2_event_a         | T2/2     | LVCMOS18_IN   | PB3C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ddr2_event_b         | R7/2     | LVCMOS18_IN   | PB9A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ddr3_event_a         | R3/2     | LVCMOS18_IN   | PB3D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ddr3_event_b         | P7/2     | LVCMOS18_IN   | PB9B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| e2prom_scl           | F9/0     | LVCMOS33_BIDI | PT19C |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
+| e2prom_sda           | E11/0    | LVCMOS33_BIDI | PT19D |           |           | DRIVE:8mA PULL:DOWN CLAMP:ON HYSTERESIS:SMALL SLEW:SLOW  |
+| en_12v_bp            | J11/1    | LVCMOS33_OUT  | PR10C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_3v3_riser         | K11/1    | LVCMOS33_OUT  | PR12C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_bp_5v             | B11/0    | LVCMOS33_OUT  | PT22A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_ddr_phy_a         | C4/0     | LVCMOS33_OUT  | PT9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_ddr_phy_b         | C16/1    | LVCMOS33_OUT  | PR2C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_pcie_h_a          | H4/4     | LVCMOS33_OUT  | PL6C  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_pcie_h_b          | J6/4     | LVCMOS33_OUT  | PL6D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_pcie_phy_a        | B12/0    | LVCMOS33_OUT  | PT23B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_pcie_phy_b        | K14/1    | LVCMOS33_OUT  | PR10A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_pcie_sw_0v8_a     | A4/0     | LVCMOS33_OUT  | PT10A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_pcie_sw_0v8_b     | N15/1    | LVCMOS33_OUT  | PR13C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vdd_12v           | E16/1    | LVCMOS33_OUT  | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vdd_1v8           | A11/0    | LVCMOS33_OUT  | PT21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vdd_3v3           | B13/0    | LVCMOS33_OUT  | PT22C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vdd_5v            | F10/0    | LVCMOS33_OUT  | PT21C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vddc_a            | A15/0    | LVCMOS33_OUT  | PT24B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vddc_b            | B5/0     | LVCMOS33_OUT  | PT9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vddq_a0           | E7/0     | LVCMOS33_OUT  | PT12B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vddq_a1           | E6/0     | LVCMOS33_OUT  | PT13C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vddq_b0           | E9/0     | LVCMOS33_OUT  | PT17D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vddq_b1           | B6/0     | LVCMOS33_OUT  | PT11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vpp_a0            | D7/0     | LVCMOS33_OUT  | PT13D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vpp_a1            | F7/0     | LVCMOS33_OUT  | PT16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vpp_b0            | D9/0     | LVCMOS33_OUT  | PT18B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vpp_b1            | D15/1    | LVCMOS33_OUT  | PR2D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vqps18_a          | C5/0     | LVCMOS33_OUT  | PT10B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vqps18_b          | R16/1    | LVCMOS33_OUT  | PR14D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vtt_a0            | E15/1    | LVCMOS33_OUT  | PR1B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vtt_a1            | D14/1    | LVCMOS33_OUT  | PR1A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vtt_b0            | E14/1    | LVCMOS33_OUT  | PR2B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| en_vtt_b1            | D16/1    | LVCMOS33_OUT  | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| fm_pwr_btn           | K16/1    | LVCMOS33_IN   | PR9B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ncp0_d_oc            | K6/4     | LVCMOS33_IN   | PL10D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| ncp0_gok             | J5/4     | LVCMOS33_IN   | PL10C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pcie_nvme0_rst       | H15/1    | LVCMOS33_OUT  | PR6B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_nvme1_rst       | G1/4     | LVCMOS33_OUT  | PL6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_sata_rst        | G16/1    | LVCMOS33_OUT  | PR6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_swa_prst        | R13/2    | LVCMOS18_OUT  | PB22C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_swa_sys_rst     | R11/2    | LVCMOS18_OUT  | PB22A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_swb_prst        | T14/2    | LVCMOS18_OUT  | PB22D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_swb_sys_rst     | T12/2    | LVCMOS18_OUT  | PB22B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_usb0_rst        | G14/1    | LVCMOS33_OUT  | PR5B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pcie_usb1_rst        | L2/3     | LVCMOS33_OUT  | PL12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pg_3v3_riser         | L13/1    | LVCMOS33_IN   | PR12D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_5v_aux            | L3/3     | LVCMOS33_IN   | PL11B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_bp_5v             | A12/0    | LVCMOS33_IN   | PT22B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_ddr_phy_a         | H11/1    | LVCMOS33_IN   | PR9C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_ddr_phy_b         | B16/1    | LVCMOS33_IN   | PR1D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_pcie_h_a          | M8/2     | LVCMOS18_IN   | PB16C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_pcie_h_b          | N9/2     | LVCMOS18_IN   | PB16D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_pcie_phy_a        | C12/0    | LVCMOS33_IN   | PT23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_pcie_phy_b        | C15/1    | LVCMOS33_IN   | PR1C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_pcie_sw_0v8_a     | E10/0    | LVCMOS33_IN   | PT20B |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                        |
+| pg_pcie_sw_0v8_b     | P16/1    | LVCMOS33_IN   | PR13D |           |           | PULL:UP CLAMP:ON HYSTERESIS:SMALL                        |
+| pg_vdd_1v8           | C11/0    | LVCMOS33_IN   | PT21B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vdd_3v3           | A14/0    | LVCMOS33_IN   | PT22D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vdd_5v            | D11/0    | LVCMOS33_IN   | PT21D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vddc_a            | B14/0    | LVCMOS33_IN   | PT24A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vddc_b            | A10/0    | LVCMOS33_IN   | PT19B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vddq_a0           | F8/0     | LVCMOS33_IN   | PT18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vddq_a1           | F13/1    | LVCMOS33_IN   | PR3C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vddq_b0           | B3/0     | LVCMOS33_IN   | PT9C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vddq_b1           | D8/0     | LVCMOS33_IN   | PT17C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vpp_a0            | B4/0     | LVCMOS33_IN   | PT11D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vpp_a1            | D6/0     | LVCMOS33_IN   | PT12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vpp_b0            | A3/0     | LVCMOS33_IN   | PT11C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vpp_b1            | B9/0     | LVCMOS33_IN   | PT19A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vtt_a0            | C7/0     | LVCMOS33_IN   | PT13B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vtt_a1            | A5/0     | LVCMOS33_IN   | PT11A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vtt_b0            | E8/0     | LVCMOS33_IN   | PT16B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| pg_vtt_b1            | A8/0     | LVCMOS33_IN   | PT17B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| psu0_alert           | H12/1    | LVCMOS33_IN   | PR5D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| psu0_prsnt           | J12/1    | LVCMOS33_IN   | PR6D  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| psu0_pwrok           | G12/1    | LVCMOS33_IN   | PR3D  |           |           | CLAMP:ON HYSTERESIS:SMALL                                |
+| psu1_alert           | H13/1    | LVCMOS33_IN   | PR6C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| psu1_prsnt           | J16/1    | LVCMOS33_IN   | PR7C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| psu1_pwrok           | F12/1    | LVCMOS33_IN   | PR4C  |           |           | CLAMP:ON HYSTERESIS:SMALL                                |
+| psu_ps_on_cpld       | G13/1    | LVCMOS33_OUT  | PR4D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| pwr_button_a         | R5/2     | LVCMOS18_OUT  | PB5A  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                              |
+| pwr_button_b         | M7/2     | LVCMOS18_OUT  | PB9C  |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                              |
+| riser0_reset         | F14/1    | LVCMOS33_OUT  | PR4A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| riser0_slot16a_prsnt | H14/1    | LVCMOS33_IN   | PR7A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser0_slot16b_prsnt | H16/1    | LVCMOS33_IN   | PR7B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser0_slot_id0      | K13/1    | LVCMOS33_IN   | PR11C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser0_slot_id1      | K12/1    | LVCMOS33_IN   | PR11D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser0_slot_id2      | L15/1    | LVCMOS33_IN   | PR12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser1_reset         | F16/1    | LVCMOS33_OUT  | PR4B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| riser1_slot16a_prsnt | N16/1    | LVCMOS33_IN   | PR14A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser1_slot16b_prsnt | N14/1    | LVCMOS33_IN   | PR14B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser1_slot_id0      | M16/1    | LVCMOS33_IN   | PR12B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser1_slot_id1      | M14/1    | LVCMOS33_IN   | PR13A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser1_slot_id2      | M15/1    | LVCMOS33_IN   | PR13B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser2_reset         | G15/1    | LVCMOS33_OUT  | PR5A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| riser2_slot16b_prsnt | L4/3     | LVCMOS33_IN   | PL12D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser2_slot_id0      | K4/3     | LVCMOS33_IN   | PL11C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| riser2_slot_id1      | L5/3     | LVCMOS33_IN   | PL11D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| sg0_pcie1_l0_reset   | P10/2    | LVCMOS18_IN   | PB19A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| sg1_pcie0_l0_reset   | P11/2    | LVCMOS18_IN   | PB21B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| sys_uart_rxd3        | P1/3     | LVCMOS33_OUT  | PL13D |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                              |
+| sys_uart_txd3        | K5/3     | LVCMOS33_IN   | PL12C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL                      |
+| uart0_rx_a           | T9/2     | LVCMOS18_OUT  | PB16A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                              |
+| uart0_rx_b           | P12/2    | LVCMOS18_OUT  | PB24A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                              |
+| uart0_tx_a           | P9/2     | LVCMOS33_IN   | PB16B |           |           |                                                          |
+| uart0_tx_b           | T13/2    | LVCMOS33_IN   | PB24B |           |           |                                                          |
+| uart1_rx_a           | R9/2     | LVCMOS18_OUT  | PB18A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                              |
+| uart1_rx_b           | R12/2    | LVCMOS18_OUT  | PB25A |           |           | DRIVE:8mA PULL:UP SLEW:SLOW                              |
+| uart1_tx_a           | T10/2    | LVCMOS33_IN   | PB18B |           |           |                                                          |
+| uart1_tx_b           | P13/2    | LVCMOS33_IN   | PB25B |           |           |                                                          |
+| usb1_ponrst          | N2/3     | LVCMOS33_OUT  | PL13C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| usb2_ponrst          | J3/4     | LVCMOS33_OUT  | PL7D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| vga_6505_in1         | M2/3     | LVCMOS33_OUT  | PL14A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
+| vga_6505_in2         | N3/3     | LVCMOS33_OUT  | PL14B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW                            |
++----------------------+----------+---------------+-------+-----------+-----------+----------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 1.8V  |
+| 3    | 3.3V  |
+| 4    | 3.3V  |
+| 5    | 3.3V  |
++------+-------+
+
+
+<A name="pad_vref"></A><B><U><big>Vref by Bank:</big></U></B>
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+<A name="pad_pin"></A><B><U><big>Pinout by Pin Number:</big></U></B>
++----------+-----------------------+------------+---------------+-------+---------------+-----------+-----------+
+| Pin/Bank | Pin Info              | Preference | Buffer Type   | Site  | Dual Function | PG Enable | BC Enable |
++----------+-----------------------+------------+---------------+-------+---------------+-----------+-----------+
+| A3/0     | pg_vpp_b0             | LOCATED    | LVCMOS33_IN   | PT11C |               |           |           |
+| A4/0     | en_pcie_sw_0v8_a      | LOCATED    | LVCMOS33_OUT  | PT10A |               |           |           |
+| A5/0     | pg_vtt_a1             | LOCATED    | LVCMOS33_IN   | PT11A |               |           |           |
+| A6/0     | Reserved: sysCONFIG   |            |               | PT12D | TDI           |           |           |
+| A7/0     | Reserved: sysCONFIG   |            |               | PT16C | TCK           |           |           |
+| A8/0     | pg_vtt_b1             | LOCATED    | LVCMOS33_IN   | PT17B | PCLKC0_1      |           |           |
+| A9/0     | bmc_scl               | LOCATED    | LVCMOS33_OUT  | PT18C | SCL/PCLKT0_0  |           |           |
+| A10/0    | pg_vddc_b             | LOCATED    | LVCMOS33_IN   | PT19B |               |           |           |
+| A11/0    | en_vdd_1v8            | LOCATED    | LVCMOS33_OUT  | PT21A |               |           |           |
+| A12/0    | pg_bp_5v              | LOCATED    | LVCMOS33_IN   | PT22B |               |           |           |
+| A13/0    |     unused, PULL:DOWN |            |               | PT24C | INITN         |           |           |
+| A14/0    | pg_vdd_3v3            | LOCATED    | LVCMOS33_IN   | PT22D |               |           |           |
+| A15/0    | en_vddc_a             | LOCATED    | LVCMOS33_OUT  | PT24B |               |           |           |
+| B1/5     |     unused, PULL:DOWN |            |               | PL1C  |               |           |           |
+| B3/0     | pg_vddq_b0            | LOCATED    | LVCMOS33_IN   | PT9C  |               |           |           |
+| B4/0     | pg_vpp_a0             | LOCATED    | LVCMOS33_IN   | PT11D |               |           |           |
+| B5/0     | en_vddc_b             | LOCATED    | LVCMOS33_OUT  | PT9B  |               |           |           |
+| B6/0     | en_vddq_b1            | LOCATED    | LVCMOS33_OUT  | PT11B |               |           |           |
+| B7/0     |     unused, PULL:DOWN |            |               | PT13A |               |           |           |
+| B8/0     | Reserved: sysCONFIG   |            |               | PT16D | TMS           |           |           |
+| B9/0     | pg_vpp_b1             | LOCATED    | LVCMOS33_IN   | PT19A |               |           |           |
+| B10/0    |     unused, PULL:DOWN |            |               | PT20D | PROGRAMN      |           |           |
+| B11/0    | en_bp_5v              | LOCATED    | LVCMOS33_OUT  | PT22A |               |           |           |
+| B12/0    | en_pcie_phy_a         | LOCATED    | LVCMOS33_OUT  | PT23B |               |           |           |
+| B13/0    | en_vdd_3v3            | LOCATED    | LVCMOS33_OUT  | PT22C |               |           |           |
+| B14/0    | pg_vddc_a             | LOCATED    | LVCMOS33_IN   | PT24A |               |           |           |
+| B16/1    | pg_ddr_phy_b          | LOCATED    | LVCMOS33_IN   | PR1D  |               |           |           |
+| C1/5     |     unused, PULL:DOWN |            |               | PL2C  |               |           |           |
+| C2/5     | bmc_gpio54            | LOCATED    | LVCMOS33_OUT  | PL1D  |               |           |           |
+| C4/0     | en_ddr_phy_a          | LOCATED    | LVCMOS33_OUT  | PT9A  |               |           |           |
+| C5/0     | en_vqps18_a           | LOCATED    | LVCMOS33_OUT  | PT10B |               |           |           |
+| C6/0     | Reserved: sysCONFIG   |            |               | PT12C | TDO           |           |           |
+| C7/0     | pg_vtt_a0             | LOCATED    | LVCMOS33_IN   | PT13B |               |           |           |
+| C8/0     | clock                 | LOCATED    | LVCMOS33_IN   | PT17A | PCLKT0_1      |           |           |
+| C9/0     | bmc_sda               | LOCATED    | LVCMOS33_BIDI | PT18D | SDA/PCLKC0_0  |           |           |
+| C10/0    |     unused, PULL:DOWN |            |               | PT20C | JTAGENB       |           |           |
+| C11/0    | pg_vdd_1v8            | LOCATED    | LVCMOS33_IN   | PT21B |               |           |           |
+| C12/0    | pg_pcie_phy_a         | LOCATED    | LVCMOS33_IN   | PT23A |               |           |           |
+| C13/0    |     unused, PULL:DOWN |            |               | PT24D | DONE          |           |           |
+| C15/1    | pg_pcie_phy_b         | LOCATED    | LVCMOS33_IN   | PR1C  |               |           |           |
+| C16/1    | en_ddr_phy_b          | LOCATED    | LVCMOS33_OUT  | PR2C  |               |           |           |
+| D1/5     |     unused, PULL:DOWN |            |               | PL1B  | L_GPLLC_FB    |           |           |
+| D2/5     | ddr0_event_a          | LOCATED    | LVCMOS18_IN   | PL2D  |               |           |           |
+| D3/5     |     unused, PULL:DOWN |            |               | PL1A  | L_GPLLT_FB    |           |           |
+| D6/0     | pg_vpp_a1             | LOCATED    | LVCMOS33_IN   | PT12A |               |           |           |
+| D7/0     | en_vpp_a0             | LOCATED    | LVCMOS33_OUT  | PT13D |               |           |           |
+| D8/0     | pg_vddq_b1            | LOCATED    | LVCMOS33_IN   | PT17C |               |           |           |
+| D9/0     | en_vpp_b0             | LOCATED    | LVCMOS33_OUT  | PT18B |               |           |           |
+| D10/0    | bmc_pwrgd             | LOCATED    | LVCMOS33_OUT  | PT20A |               |           |           |
+| D11/0    | pg_vdd_5v             | LOCATED    | LVCMOS33_IN   | PT21D |               |           |           |
+| D14/1    | en_vtt_a1             | LOCATED    | LVCMOS33_OUT  | PR1A  | DQ0           |           |           |
+| D15/1    | en_vpp_b1             | LOCATED    | LVCMOS33_OUT  | PR2D  |               |           |           |
+| D16/1    | en_vtt_b1             | LOCATED    | LVCMOS33_OUT  | PR2A  | DQ0           |           |           |
+| E1/5     |     unused, PULL:DOWN |            |               | PL3A  | PCLKT5_0      |           |           |
+| E2/5     |     unused, PULL:DOWN |            |               | PL2A  | L_GPLLT_IN    |           |           |
+| E3/5     |     unused, PULL:DOWN |            |               | PL2B  | L_GPLLC_IN    |           |           |
+| E6/0     | en_vddq_a1            | LOCATED    | LVCMOS33_OUT  | PT13C |               |           |           |
+| E7/0     | en_vddq_a0            | LOCATED    | LVCMOS33_OUT  | PT12B |               |           |           |
+| E8/0     | pg_vtt_b0             | LOCATED    | LVCMOS33_IN   | PT16B |               |           |           |
+| E9/0     | en_vddq_b0            | LOCATED    | LVCMOS33_OUT  | PT17D |               |           |           |
+| E10/0    | pg_pcie_sw_0v8_a      | LOCATED    | LVCMOS33_IN   | PT20B |               |           |           |
+| E11/0    | e2prom_sda            | LOCATED    | LVCMOS33_BIDI | PT19D |               |           |           |
+| E14/1    | en_vtt_b0             | LOCATED    | LVCMOS33_OUT  | PR2B  | DQ0           |           |           |
+| E15/1    | en_vtt_a0             | LOCATED    | LVCMOS33_OUT  | PR1B  | DQ0           |           |           |
+| E16/1    | en_vdd_12v            | LOCATED    | LVCMOS33_OUT  | PR3A  | DQ0           |           |           |
+| F1/5     | bmc_gpio53            | LOCATED    | LVCMOS33_OUT  | PL4B  |               |           |           |
+| F2/5     |     unused, PULL:DOWN |            |               | PL3B  | PCLKC5_0      |           |           |
+| F3/5     | bmc_gpio51            | LOCATED    | LVCMOS33_OUT  | PL4A  |               |           |           |
+| F4/5     |     unused, PULL:DOWN |            |               | PL3C  |               |           |           |
+| F5/5     |     unused, PULL:DOWN |            |               | PL5C  |               |           |           |
+| F7/0     | en_vpp_a1             | LOCATED    | LVCMOS33_OUT  | PT16A |               |           |           |
+| F8/0     | pg_vddq_a0            | LOCATED    | LVCMOS33_IN   | PT18A |               |           |           |
+| F9/0     | e2prom_scl            | LOCATED    | LVCMOS33_BIDI | PT19C |               |           |           |
+| F10/0    | en_vdd_5v             | LOCATED    | LVCMOS33_OUT  | PT21C |               |           |           |
+| F12/1    | psu1_pwrok            | LOCATED    | LVCMOS33_IN   | PR4C  |               |           |           |
+| F13/1    | pg_vddq_a1            | LOCATED    | LVCMOS33_IN   | PR3C  |               |           |           |
+| F14/1    | riser0_reset          | LOCATED    | LVCMOS33_OUT  | PR4A  | DQ0           |           |           |
+| F15/1    |     unused, PULL:DOWN |            |               | PR3B  | DQ0           |           |           |
+| F16/1    | riser1_reset          | LOCATED    | LVCMOS33_OUT  | PR4B  | DQ0           |           |           |
+| G1/4     | pcie_nvme1_rst        | LOCATED    | LVCMOS33_OUT  | PL6A  |               |           |           |
+| G2/5     | bmc_gpio24            | LOCATED    | LVCMOS33_IN   | PL5A  |               |           |           |
+| G3/5     | bmc_gpio25            | LOCATED    | LVCMOS33_IN   | PL5B  |               |           |           |
+| G4/5     |     unused, PULL:DOWN |            |               | PL4D  |               |           |           |
+| G5/5     | bmc_gpio49            | LOCATED    | LVCMOS33_IN   | PL4C  |               |           |           |
+| G6/5     | bmc_gpio48            | LOCATED    | LVCMOS33_IN   | PL3D  |               |           |           |
+| G11/1    |     unused, PULL:DOWN |            |               | PR5C  |               |           |           |
+| G12/1    | psu0_pwrok            | LOCATED    | LVCMOS33_IN   | PR3D  |               |           |           |
+| G13/1    | psu_ps_on_cpld        | LOCATED    | LVCMOS33_OUT  | PR4D  |               |           |           |
+| G14/1    | pcie_usb0_rst         | LOCATED    | LVCMOS33_OUT  | PR5B  | DQ0           |           |           |
+| G15/1    | riser2_reset          | LOCATED    | LVCMOS33_OUT  | PR5A  | DQ0           |           |           |
+| G16/1    | pcie_sata_rst         | LOCATED    | LVCMOS33_OUT  | PR6A  | DQS0          |           |           |
+| H1/4     |     unused, PULL:DOWN |            |               | PL7B  |               |           |           |
+| H2/4     |     unused, PULL:DOWN |            |               | PL6B  |               |           |           |
+| H3/4     |     unused, PULL:DOWN |            |               | PL7A  |               |           |           |
+| H4/4     | en_pcie_h_a           | LOCATED    | LVCMOS33_OUT  | PL6C  |               |           |           |
+| H5/4     |     unused, PULL:DOWN |            |               | PL9C  |               |           |           |
+| H6/5     |     unused, PULL:DOWN |            |               | PL5D  |               |           |           |
+| H11/1    | pg_ddr_phy_a          | LOCATED    | LVCMOS33_IN   | PR9C  |               |           |           |
+| H12/1    | psu0_alert            | LOCATED    | LVCMOS33_IN   | PR5D  |               |           |           |
+| H13/1    | psu1_alert            | LOCATED    | LVCMOS33_IN   | PR6C  |               |           |           |
+| H14/1    | riser0_slot16a_prsnt  | LOCATED    | LVCMOS33_IN   | PR7A  | PCLKT1_0/DQ0  |           |           |
+| H15/1    | pcie_nvme0_rst        | LOCATED    | LVCMOS33_OUT  | PR6B  | DQS0N         |           |           |
+| H16/1    | riser0_slot16b_prsnt  | LOCATED    | LVCMOS33_IN   | PR7B  | PCLKC1_0/DQ0  |           |           |
+| J1/4     | bmc_extrst            | LOCATED    | LVCMOS33_OUT  | PL7C  | PCLKT4_0      |           |           |
+| J2/4     |     unused, PULL:DOWN |            |               | PL9A  |               |           |           |
+| J3/4     | usb2_ponrst           | LOCATED    | LVCMOS33_OUT  | PL7D  | PCLKC4_0      |           |           |
+| J4/4     |     unused, PULL:DOWN |            |               | PL9D  |               |           |           |
+| J5/4     | ncp0_gok              | LOCATED    | LVCMOS33_IN   | PL10C |               |           |           |
+| J6/4     | en_pcie_h_b           | LOCATED    | LVCMOS33_OUT  | PL6D  |               |           |           |
+| J11/1    | en_12v_bp             | LOCATED    | LVCMOS33_OUT  | PR10C |               |           |           |
+| J12/1    | psu0_prsnt            | LOCATED    | LVCMOS33_IN   | PR6D  |               |           |           |
+| J13/1    |     unused, PULL:DOWN |            |               | PR9D  |               |           |           |
+| J14/1    |     unused, PULL:DOWN |            |               | PR7D  |               |           |           |
+| J15/1    |     unused, PULL:DOWN |            |               | PR9A  | DQS1          |           |           |
+| J16/1    | psu1_prsnt            | LOCATED    | LVCMOS33_IN   | PR7C  |               |           |           |
+| K1/4     |     unused, PULL:DOWN |            |               | PL9B  |               |           |           |
+| K2/4     | bp_ncp_d_oc           | LOCATED    | LVCMOS33_IN   | PL10B |               |           |           |
+| K3/4     | bp_ncp_gok            | LOCATED    | LVCMOS33_IN   | PL10A |               |           |           |
+| K4/3     | riser2_slot_id0       | LOCATED    | LVCMOS33_IN   | PL11C |               |           |           |
+| K5/3     | sys_uart_txd3         | LOCATED    | LVCMOS33_IN   | PL12C |               |           |           |
+| K6/4     | ncp0_d_oc             | LOCATED    | LVCMOS33_IN   | PL10D |               |           |           |
+| K11/1    | en_3v3_riser          | LOCATED    | LVCMOS33_OUT  | PR12C |               |           |           |
+| K12/1    | riser0_slot_id1       | LOCATED    | LVCMOS33_IN   | PR11D | DQ1           |           |           |
+| K13/1    | riser0_slot_id0       | LOCATED    | LVCMOS33_IN   | PR11C | DQ1           |           |           |
+| K14/1    | en_pcie_phy_b         | LOCATED    | LVCMOS33_OUT  | PR10A | DQ1           |           |           |
+| K15/1    |     unused, PULL:DOWN |            |               | PR10B | DQ1           |           |           |
+| K16/1    | fm_pwr_btn            | LOCATED    | LVCMOS33_IN   | PR9B  | DQS1N         |           |           |
+| L1/3     | bmc_ssprst            | LOCATED    | LVCMOS33_OUT  | PL11A |               |           |           |
+| L2/3     | pcie_usb1_rst         | LOCATED    | LVCMOS33_OUT  | PL12A | PCLKT3_0      |           |           |
+| L3/3     | pg_5v_aux             | LOCATED    | LVCMOS33_IN   | PL11B |               |           |           |
+| L4/3     | riser2_slot16b_prsnt  | LOCATED    | LVCMOS33_IN   | PL12D |               |           |           |
+| L5/3     | riser2_slot_id1       | LOCATED    | LVCMOS33_IN   | PL11D |               |           |           |
+| L7/2     |     unused, PULL:DOWN |            |               | PB8D  |               |           |           |
+| L8/2     |     unused, PULL:DOWN |            |               | PB11D |               |           |           |
+| L9/2     |     unused, PULL:DOWN |            |               | PB12D |               |           |           |
+| L10/2    |     unused, PULL:DOWN |            |               | PB18D |               |           |           |
+| L12/1    | bmc_pcie_rst          | LOCATED    | LVCMOS33_OUT  | PR10D |               |           |           |
+| L13/1    | pg_3v3_riser          | LOCATED    | LVCMOS33_IN   | PR12D |               |           |           |
+| L14/1    |     unused, PULL:DOWN |            |               | PR11B | DQ1           |           |           |
+| L15/1    | riser0_slot_id2       | LOCATED    | LVCMOS33_IN   | PR12A | DQ1           |           |           |
+| L16/1    |     unused, PULL:DOWN |            |               | PR11A | DQ1           |           |           |
+| M1/3     | cpld_extrst           | LOCATED    | LVCMOS33_IN   | PL12B | PCLKC3_0      |           |           |
+| M2/3     | vga_6505_in1          | LOCATED    | LVCMOS33_OUT  | PL14A |               |           |           |
+| M3/3     |     unused, PULL:DOWN |            |               | PL13A |               |           |           |
+| M6/2     |     unused, PULL:DOWN |            |               | PB11C |               |           |           |
+| M7/2     | pwr_button_b          | LOCATED    | LVCMOS18_OUT  | PB9C  |               |           |           |
+| M8/2     | pg_pcie_h_a           | LOCATED    | LVCMOS18_IN   | PB16C |               |           |           |
+| M9/2     |     unused, PULL:DOWN |            |               | PB18C |               |           |           |
+| M10/2    |     unused, PULL:DOWN |            |               | PB21C |               |           |           |
+| M11/2    |     unused, PULL:DOWN |            |               | PB19D |               |           |           |
+| M14/1    | riser1_slot_id1       | LOCATED    | LVCMOS33_IN   | PR13A | DQ1           |           |           |
+| M15/1    | riser1_slot_id2       | LOCATED    | LVCMOS33_IN   | PR13B | DQ1           |           |           |
+| M16/1    | riser1_slot_id0       | LOCATED    | LVCMOS33_IN   | PR12B | DQ1           |           |           |
+| N1/3     | bmc_srst              | LOCATED    | LVCMOS25_OUT  | PL13B |               |           |           |
+| N2/3     | usb1_ponrst           | LOCATED    | LVCMOS33_OUT  | PL13C |               |           |           |
+| N3/3     | vga_6505_in2          | LOCATED    | LVCMOS33_OUT  | PL14B |               |           |           |
+| N6/2     |     unused, PULL:DOWN |            |               | PB8C  |               |           |           |
+| N7/2     | cpub_sys_reset        | LOCATED    | LVCMOS18_OUT  | PB9D  |               |           |           |
+| N8/2     |     unused, PULL:DOWN |            |               | PB12C |               |           |           |
+| N9/2     | pg_pcie_h_b           | LOCATED    | LVCMOS18_IN   | PB16D |               |           |           |
+| N10/2    |     unused, PULL:DOWN |            |               | PB19C |               |           |           |
+| N11/2    |     unused, PULL:DOWN |            |               | PB21D |               |           |           |
+| N14/1    | riser1_slot16b_prsnt  | LOCATED    | LVCMOS33_IN   | PR14B | DQ1           |           |           |
+| N15/1    | en_pcie_sw_0v8_b      | LOCATED    | LVCMOS33_OUT  | PR13C |               |           |           |
+| N16/1    | riser1_slot16a_prsnt  | LOCATED    | LVCMOS33_IN   | PR14A | DQ1           |           |           |
+| P1/3     | sys_uart_rxd3         | LOCATED    | LVCMOS33_OUT  | PL13D |               |           |           |
+| P2/3     | cpld_heart            | LOCATED    | LVCMOS33_OUT  | PL14D |               |           |           |
+| P4/2     |     unused, PULL:DOWN |            |               | PB3A  |               |           |           |
+| P5/2     | cpua_sys_reset        | LOCATED    | LVCMOS18_OUT  | PB5B  |               |           |           |
+| P6/2     | ddr0_event_b          | LOCATED    | LVCMOS18_IN   | PB8A  | MCLK/CCLK     |           |           |
+| P7/2     | ddr3_event_b          | LOCATED    | LVCMOS18_IN   | PB9B  |               |           |           |
+| P8/2     | a_gpio5               | LOCATED    | LVCMOS18_IN   | PB12A |               |           |           |
+| P9/2     | uart0_tx_a            | LOCATED    | LVCMOS33_IN   | PB16B | PCLKC2_1      |           |           |
+| P10/2    | sg0_pcie1_l0_reset    | LOCATED    | LVCMOS18_IN   | PB19A |               |           |           |
+| P11/2    | sg1_pcie0_l0_reset    | LOCATED    | LVCMOS18_IN   | PB21B |               |           |           |
+| P12/2    | uart0_rx_b            | LOCATED    | LVCMOS18_OUT  | PB24A |               |           |           |
+| P13/2    | uart1_tx_b            | LOCATED    | LVCMOS33_IN   | PB25B | SI/SISPI      |           |           |
+| P15/1    | cpld_led_test         | LOCATED    | LVCMOS33_OUT  | PR14C |               |           |           |
+| P16/1    | pg_pcie_sw_0v8_b      | LOCATED    | LVCMOS33_IN   | PR13D |               |           |           |
+| PB5C/2   |     unused, PULL:DOWN |            |               | PB5C  |               |           |           |
+| PB5D/2   |     unused, PULL:DOWN |            |               | PB5D  |               |           |           |
+| PB24C/2  |     unused, PULL:DOWN |            |               | PB24C |               |           |           |
+| PB24D/2  |     unused, PULL:DOWN |            |               | PB24D |               |           |           |
+| PT9D/0   |     unused, PULL:DOWN |            |               | PT9D  |               |           |           |
+| PT10C/0  |     unused, PULL:DOWN |            |               | PT10C |               |           |           |
+| PT10D/0  |     unused, PULL:DOWN |            |               | PT10D |               |           |           |
+| PT23C/0  |     unused, PULL:DOWN |            |               | PT23C |               |           |           |
+| PT23D/0  |     unused, PULL:DOWN |            |               | PT23D |               |           |           |
+| R1/3     |     unused, PULL:DOWN |            |               | PL14C |               |           |           |
+| R3/2     | ddr3_event_a          | LOCATED    | LVCMOS18_IN   | PB3D  |               |           |           |
+| R4/2     | a_gpio3               | LOCATED    | LVCMOS18_IN   | PB6D  |               |           |           |
+| R5/2     | pwr_button_a          | LOCATED    | LVCMOS18_OUT  | PB5A  | CSSPIN        |           |           |
+| R6/2     |     unused, PULL:DOWN |            |               | PB6B  |               |           |           |
+| R7/2     | ddr2_event_b          | LOCATED    | LVCMOS18_IN   | PB9A  |               |           |           |
+| R8/2     |     unused, PULL:DOWN |            |               | PB11B | PCLKC2_0      |           |           |
+| R9/2     | uart1_rx_a            | LOCATED    | LVCMOS18_OUT  | PB18A |               |           |           |
+| R10/2    |     unused, PULL:DOWN |            |               | PB19B |               |           |           |
+| R11/2    | pcie_swa_sys_rst      | LOCATED    | LVCMOS18_OUT  | PB22A |               |           |           |
+| R12/2    | uart1_rx_b            | LOCATED    | LVCMOS18_OUT  | PB25A | SN            |           |           |
+| R13/2    | pcie_swa_prst         | LOCATED    | LVCMOS18_OUT  | PB22C |               |           |           |
+| R14/2    |     unused, PULL:DOWN |            |               | PB25D |               |           |           |
+| R16/1    | en_vqps18_b           | LOCATED    | LVCMOS33_OUT  | PR14D |               |           |           |
+| T2/2     | ddr2_event_a          | LOCATED    | LVCMOS18_IN   | PB3C  |               |           |           |
+| T3/2     | a_gpio2               | LOCATED    | LVCMOS18_OUT  | PB6C  |               |           |           |
+| T4/2     | ddr1_event_a          | LOCATED    | LVCMOS18_IN   | PB3B  |               |           |           |
+| T5/2     |     unused, PULL:DOWN |            |               | PB6A  |               |           |           |
+| T6/2     | ddr1_event_b          | LOCATED    | LVCMOS18_IN   | PB8B  | SO/SPISO      |           |           |
+| T7/2     |     unused, PULL:DOWN |            |               | PB11A | PCLKT2_0      |           |           |
+| T8/2     |     unused, PULL:DOWN |            |               | PB12B |               |           |           |
+| T9/2     | uart0_rx_a            | LOCATED    | LVCMOS18_OUT  | PB16A | PCLKT2_1      |           |           |
+| T10/2    | uart1_tx_a            | LOCATED    | LVCMOS33_IN   | PB18B |               |           |           |
+| T11/2    |     unused, PULL:DOWN |            |               | PB21A |               |           |           |
+| T12/2    | pcie_swb_sys_rst      | LOCATED    | LVCMOS18_OUT  | PB22B |               |           |           |
+| T13/2    | uart0_tx_b            | LOCATED    | LVCMOS33_IN   | PB24B |               |           |           |
+| T14/2    | pcie_swb_prst         | LOCATED    | LVCMOS18_OUT  | PB22D |               |           |           |
+| T15/2    |     unused, PULL:DOWN |            |               | PB25C |               |           |           |
++----------+-----------------------+------------+---------------+-------+---------------+-----------+-----------+
+
+sysCONFIG Pins:
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| Pad Name | sysCONFIG Pin Name | sysCONFIG Settings | Pin/Bank | Buffer Type | Config Pull Mode  |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| PT16D    | TMS                | JTAG_PORT=ENABLE   | B8/0     |             | PULLUP            |
+| PT16C    | TCK/TEST_CLK       | JTAG_PORT=ENABLE   | A7/0     |             | NO pull up/down   |
+| PT12D    | TDI/MD7            | JTAG_PORT=ENABLE   | A6/0     |             | PULLUP            |
+| PT12C    | TDO                | JTAG_PORT=ENABLE   | C6/0     |             | PULLUP            |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+
+Dedicated sysCONFIG Pins:
+
+
+List of All Pins' Locate Preferences Based on Final Placement After PAR 
+to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
+
+LOCATE  COMP  "a_gpio2"  SITE  "T3";
+LOCATE  COMP  "a_gpio3"  SITE  "R4";
+LOCATE  COMP  "a_gpio5"  SITE  "P8";
+LOCATE  COMP  "bmc_extrst"  SITE  "J1";
+LOCATE  COMP  "bmc_gpio24"  SITE  "G2";
+LOCATE  COMP  "bmc_gpio25"  SITE  "G3";
+LOCATE  COMP  "bmc_gpio48"  SITE  "G6";
+LOCATE  COMP  "bmc_gpio49"  SITE  "G5";
+LOCATE  COMP  "bmc_gpio51"  SITE  "F3";
+LOCATE  COMP  "bmc_gpio53"  SITE  "F1";
+LOCATE  COMP  "bmc_gpio54"  SITE  "C2";
+LOCATE  COMP  "bmc_pcie_rst"  SITE  "L12";
+LOCATE  COMP  "bmc_pwrgd"  SITE  "D10";
+LOCATE  COMP  "bmc_scl"  SITE  "A9";
+LOCATE  COMP  "bmc_sda"  SITE  "C9";
+LOCATE  COMP  "bmc_srst"  SITE  "N1";
+LOCATE  COMP  "bmc_ssprst"  SITE  "L1";
+LOCATE  COMP  "bp_ncp_d_oc"  SITE  "K2";
+LOCATE  COMP  "bp_ncp_gok"  SITE  "K3";
+LOCATE  COMP  "clock"  SITE  "C8";
+LOCATE  COMP  "cpld_extrst"  SITE  "M1";
+LOCATE  COMP  "cpld_heart"  SITE  "P2";
+LOCATE  COMP  "cpld_led_test"  SITE  "P15";
+LOCATE  COMP  "cpua_sys_reset"  SITE  "P5";
+LOCATE  COMP  "cpub_sys_reset"  SITE  "N7";
+LOCATE  COMP  "ddr0_event_a"  SITE  "D2";
+LOCATE  COMP  "ddr0_event_b"  SITE  "P6";
+LOCATE  COMP  "ddr1_event_a"  SITE  "T4";
+LOCATE  COMP  "ddr1_event_b"  SITE  "T6";
+LOCATE  COMP  "ddr2_event_a"  SITE  "T2";
+LOCATE  COMP  "ddr2_event_b"  SITE  "R7";
+LOCATE  COMP  "ddr3_event_a"  SITE  "R3";
+LOCATE  COMP  "ddr3_event_b"  SITE  "P7";
+LOCATE  COMP  "e2prom_scl"  SITE  "F9";
+LOCATE  COMP  "e2prom_sda"  SITE  "E11";
+LOCATE  COMP  "en_12v_bp"  SITE  "J11";
+LOCATE  COMP  "en_3v3_riser"  SITE  "K11";
+LOCATE  COMP  "en_bp_5v"  SITE  "B11";
+LOCATE  COMP  "en_ddr_phy_a"  SITE  "C4";
+LOCATE  COMP  "en_ddr_phy_b"  SITE  "C16";
+LOCATE  COMP  "en_pcie_h_a"  SITE  "H4";
+LOCATE  COMP  "en_pcie_h_b"  SITE  "J6";
+LOCATE  COMP  "en_pcie_phy_a"  SITE  "B12";
+LOCATE  COMP  "en_pcie_phy_b"  SITE  "K14";
+LOCATE  COMP  "en_pcie_sw_0v8_a"  SITE  "A4";
+LOCATE  COMP  "en_pcie_sw_0v8_b"  SITE  "N15";
+LOCATE  COMP  "en_vdd_12v"  SITE  "E16";
+LOCATE  COMP  "en_vdd_1v8"  SITE  "A11";
+LOCATE  COMP  "en_vdd_3v3"  SITE  "B13";
+LOCATE  COMP  "en_vdd_5v"  SITE  "F10";
+LOCATE  COMP  "en_vddc_a"  SITE  "A15";
+LOCATE  COMP  "en_vddc_b"  SITE  "B5";
+LOCATE  COMP  "en_vddq_a0"  SITE  "E7";
+LOCATE  COMP  "en_vddq_a1"  SITE  "E6";
+LOCATE  COMP  "en_vddq_b0"  SITE  "E9";
+LOCATE  COMP  "en_vddq_b1"  SITE  "B6";
+LOCATE  COMP  "en_vpp_a0"  SITE  "D7";
+LOCATE  COMP  "en_vpp_a1"  SITE  "F7";
+LOCATE  COMP  "en_vpp_b0"  SITE  "D9";
+LOCATE  COMP  "en_vpp_b1"  SITE  "D15";
+LOCATE  COMP  "en_vqps18_a"  SITE  "C5";
+LOCATE  COMP  "en_vqps18_b"  SITE  "R16";
+LOCATE  COMP  "en_vtt_a0"  SITE  "E15";
+LOCATE  COMP  "en_vtt_a1"  SITE  "D14";
+LOCATE  COMP  "en_vtt_b0"  SITE  "E14";
+LOCATE  COMP  "en_vtt_b1"  SITE  "D16";
+LOCATE  COMP  "fm_pwr_btn"  SITE  "K16";
+LOCATE  COMP  "ncp0_d_oc"  SITE  "K6";
+LOCATE  COMP  "ncp0_gok"  SITE  "J5";
+LOCATE  COMP  "pcie_nvme0_rst"  SITE  "H15";
+LOCATE  COMP  "pcie_nvme1_rst"  SITE  "G1";
+LOCATE  COMP  "pcie_sata_rst"  SITE  "G16";
+LOCATE  COMP  "pcie_swa_prst"  SITE  "R13";
+LOCATE  COMP  "pcie_swa_sys_rst"  SITE  "R11";
+LOCATE  COMP  "pcie_swb_prst"  SITE  "T14";
+LOCATE  COMP  "pcie_swb_sys_rst"  SITE  "T12";
+LOCATE  COMP  "pcie_usb0_rst"  SITE  "G14";
+LOCATE  COMP  "pcie_usb1_rst"  SITE  "L2";
+LOCATE  COMP  "pg_3v3_riser"  SITE  "L13";
+LOCATE  COMP  "pg_5v_aux"  SITE  "L3";
+LOCATE  COMP  "pg_bp_5v"  SITE  "A12";
+LOCATE  COMP  "pg_ddr_phy_a"  SITE  "H11";
+LOCATE  COMP  "pg_ddr_phy_b"  SITE  "B16";
+LOCATE  COMP  "pg_pcie_h_a"  SITE  "M8";
+LOCATE  COMP  "pg_pcie_h_b"  SITE  "N9";
+LOCATE  COMP  "pg_pcie_phy_a"  SITE  "C12";
+LOCATE  COMP  "pg_pcie_phy_b"  SITE  "C15";
+LOCATE  COMP  "pg_pcie_sw_0v8_a"  SITE  "E10";
+LOCATE  COMP  "pg_pcie_sw_0v8_b"  SITE  "P16";
+LOCATE  COMP  "pg_vdd_1v8"  SITE  "C11";
+LOCATE  COMP  "pg_vdd_3v3"  SITE  "A14";
+LOCATE  COMP  "pg_vdd_5v"  SITE  "D11";
+LOCATE  COMP  "pg_vddc_a"  SITE  "B14";
+LOCATE  COMP  "pg_vddc_b"  SITE  "A10";
+LOCATE  COMP  "pg_vddq_a0"  SITE  "F8";
+LOCATE  COMP  "pg_vddq_a1"  SITE  "F13";
+LOCATE  COMP  "pg_vddq_b0"  SITE  "B3";
+LOCATE  COMP  "pg_vddq_b1"  SITE  "D8";
+LOCATE  COMP  "pg_vpp_a0"  SITE  "B4";
+LOCATE  COMP  "pg_vpp_a1"  SITE  "D6";
+LOCATE  COMP  "pg_vpp_b0"  SITE  "A3";
+LOCATE  COMP  "pg_vpp_b1"  SITE  "B9";
+LOCATE  COMP  "pg_vtt_a0"  SITE  "C7";
+LOCATE  COMP  "pg_vtt_a1"  SITE  "A5";
+LOCATE  COMP  "pg_vtt_b0"  SITE  "E8";
+LOCATE  COMP  "pg_vtt_b1"  SITE  "A8";
+LOCATE  COMP  "psu0_alert"  SITE  "H12";
+LOCATE  COMP  "psu0_prsnt"  SITE  "J12";
+LOCATE  COMP  "psu0_pwrok"  SITE  "G12";
+LOCATE  COMP  "psu1_alert"  SITE  "H13";
+LOCATE  COMP  "psu1_prsnt"  SITE  "J16";
+LOCATE  COMP  "psu1_pwrok"  SITE  "F12";
+LOCATE  COMP  "psu_ps_on_cpld"  SITE  "G13";
+LOCATE  COMP  "pwr_button_a"  SITE  "R5";
+LOCATE  COMP  "pwr_button_b"  SITE  "M7";
+LOCATE  COMP  "riser0_reset"  SITE  "F14";
+LOCATE  COMP  "riser0_slot16a_prsnt"  SITE  "H14";
+LOCATE  COMP  "riser0_slot16b_prsnt"  SITE  "H16";
+LOCATE  COMP  "riser0_slot_id0"  SITE  "K13";
+LOCATE  COMP  "riser0_slot_id1"  SITE  "K12";
+LOCATE  COMP  "riser0_slot_id2"  SITE  "L15";
+LOCATE  COMP  "riser1_reset"  SITE  "F16";
+LOCATE  COMP  "riser1_slot16a_prsnt"  SITE  "N16";
+LOCATE  COMP  "riser1_slot16b_prsnt"  SITE  "N14";
+LOCATE  COMP  "riser1_slot_id0"  SITE  "M16";
+LOCATE  COMP  "riser1_slot_id1"  SITE  "M14";
+LOCATE  COMP  "riser1_slot_id2"  SITE  "M15";
+LOCATE  COMP  "riser2_reset"  SITE  "G15";
+LOCATE  COMP  "riser2_slot16b_prsnt"  SITE  "L4";
+LOCATE  COMP  "riser2_slot_id0"  SITE  "K4";
+LOCATE  COMP  "riser2_slot_id1"  SITE  "L5";
+LOCATE  COMP  "sg0_pcie1_l0_reset"  SITE  "P10";
+LOCATE  COMP  "sg1_pcie0_l0_reset"  SITE  "P11";
+LOCATE  COMP  "sys_uart_rxd3"  SITE  "P1";
+LOCATE  COMP  "sys_uart_txd3"  SITE  "K5";
+LOCATE  COMP  "uart0_rx_a"  SITE  "T9";
+LOCATE  COMP  "uart0_rx_b"  SITE  "P12";
+LOCATE  COMP  "uart0_tx_a"  SITE  "P9";
+LOCATE  COMP  "uart0_tx_b"  SITE  "T13";
+LOCATE  COMP  "uart1_rx_a"  SITE  "R9";
+LOCATE  COMP  "uart1_rx_b"  SITE  "R12";
+LOCATE  COMP  "uart1_tx_a"  SITE  "T10";
+LOCATE  COMP  "uart1_tx_b"  SITE  "P13";
+LOCATE  COMP  "usb1_ponrst"  SITE  "N2";
+LOCATE  COMP  "usb2_ponrst"  SITE  "J3";
+LOCATE  COMP  "vga_6505_in1"  SITE  "M2";
+LOCATE  COMP  "vga_6505_in2"  SITE  "N3";
+
+
+
+
+
+PAR: Place And Route Diamond (64-bit) 3.12.1.454.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jul 12 16:07:42 2023
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

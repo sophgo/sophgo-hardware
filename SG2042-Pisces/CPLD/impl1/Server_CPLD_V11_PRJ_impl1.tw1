@@ -1,0 +1,451 @@
+
+Loading design for application trce from file server_cpld_v11_prj_impl1_map.ncd.
+Design name: server_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-2100C
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'xo3c2100.nph' in environment: D:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.18.
+Performance Hardware Data Status:   Final          Version 37.5.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
+Wed Jul 12 16:07:29 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Server_CPLD_V11_PRJ_impl1.tw1 -gui Server_CPLD_V11_PRJ_impl1_map.ncd Server_CPLD_V11_PRJ_impl1.prf 
+Design file:     server_cpld_v11_prj_impl1_map.ncd
+Preference file: server_cpld_v11_prj_impl1.prf
+Device,speed:    LCMXO3LF-2100C,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    2.375 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   1.800 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+                   3.300 V (Bank 4, defined by PAR)
+                   3.300 V (Bank 5, defined by PAR)
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clock_c" 25.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 29.075ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]  (from clock_c +)
+   Destination:    FF         Data in        eeprom_i2c_inst/e2prom_i2c/bit_cnt[1]  (to clock_c +)
+
+   Delay:              10.776ns  (33.1% logic, 66.9% route), 8 logic levels.
+
+ Constraint Details:
+
+     10.776ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184 meets
+     40.000ns delay constraint less
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 29.075ns
+
+ Physical Path Details:
+
+      Data path eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408 *SLICE_184.CLK to */SLICE_184.Q0 eeprom_i2c_inst/e2prom_i2c/SLICE_184 (from clock_c)
+ROUTE        16   e 1.030 */SLICE_184.Q0 to */SLICE_440.A1 eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]
+CTOF_DEL    ---     0.451 */SLICE_440.A1 to */SLICE_440.F1 eeprom_i2c_inst/e2prom_i2c/SLICE_440
+ROUTE        10   e 1.030 */SLICE_440.F1 to */SLICE_595.C0 eeprom_i2c_inst/e2prom_i2c/next_state21
+CTOF_DEL    ---     0.451 */SLICE_595.C0 to */SLICE_595.F0 eeprom_i2c_inst/e2prom_i2c/SLICE_595
+ROUTE         1   e 1.030 */SLICE_595.F0 to */SLICE_445.C0 eeprom_i2c_inst/e2prom_i2c/N_248
+CTOF_DEL    ---     0.451 */SLICE_445.C0 to */SLICE_445.F0 eeprom_i2c_inst/e2prom_i2c/SLICE_445
+ROUTE         1   e 1.030 */SLICE_445.F0 to */SLICE_442.B0 eeprom_i2c_inst/e2prom_i2c/un31_2
+CTOF_DEL    ---     0.451 */SLICE_442.B0 to */SLICE_442.F0 eeprom_i2c_inst/e2prom_i2c/SLICE_442
+ROUTE         1   e 1.030 */SLICE_442.F0 to */SLICE_185.D1 eeprom_i2c_inst/e2prom_i2c/un31_NE_1
+CTOF_DEL    ---     0.451 */SLICE_185.D1 to */SLICE_185.F1 eeprom_i2c_inst/e2prom_i2c/SLICE_185
+ROUTE         5   e 1.030 */SLICE_185.F1 to   SLICE_412.D1 eeprom_i2c_inst/e2prom_i2c/un31_NE
+CTOF_DEL    ---     0.451   SLICE_412.D1 to   SLICE_412.F1 SLICE_412
+ROUTE         1   e 1.030   SLICE_412.F1 to */SLICE_184.B1 eeprom_i2c_inst/e2prom_i2c/N_476_i_1
+CTOF_DEL    ---     0.451 */SLICE_184.B1 to */SLICE_184.F1 eeprom_i2c_inst/e2prom_i2c/SLICE_184
+ROUTE         1   e 0.001 */SLICE_184.F1 to *SLICE_184.DI1 eeprom_i2c_inst/e2prom_i2c/N_476_i (to clock_c)
+                  --------
+                   10.776   (33.1% logic, 66.9% route), 8 logic levels.
+
+Report:   91.533MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY PORT "clock" 25.000000 MHz ;
+            425 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 29.704ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              server_power_control/power_signal_detect_inst/debounce_cnt[5]  (from clock_c +)
+   Destination:    FF         Data in        server_power_control/power_signal_detect_inst/next_state[0]  (to server_power_control/power_signal_detect_inst/un1_next_state69 +)
+
+   Delay:              10.147ns  (35.1% logic, 64.9% route), 8 logic levels.
+
+ Constraint Details:
+
+     10.147ns physical path delay server_power_control/power_signal_detect_inst/SLICE_72 to server_power_control/power_signal_detect_inst/SLICE_327 meets
+     40.000ns delay constraint less
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 29.704ns
+
+ Physical Path Details:
+
+      Data path server_power_control/power_signal_detect_inst/SLICE_72 to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408 */SLICE_72.CLK to *t/SLICE_72.Q0 server_power_control/power_signal_detect_inst/SLICE_72 (from clock_c)
+ROUTE         3   e 1.030 *t/SLICE_72.Q0 to */SLICE_644.A0 server_power_control/power_signal_detect_inst/debounce_cnt[5]
+CTOF_DEL    ---     0.451 */SLICE_644.A0 to */SLICE_644.F0 server_power_control/power_signal_detect_inst/SLICE_644
+ROUTE         1   e 1.030 */SLICE_644.F0 to */SLICE_516.C0 server_power_control/power_signal_detect_inst/un1_force_15slto7_i_a3_1
+CTOF_DEL    ---     0.451 */SLICE_516.C0 to */SLICE_516.F0 server_power_control/power_signal_detect_inst/SLICE_516
+ROUTE         2   e 1.030 */SLICE_516.F0 to */SLICE_506.C1 server_power_control/power_signal_detect_inst/un1_force_15slt12
+CTOF_DEL    ---     0.451 */SLICE_506.C1 to */SLICE_506.F1 server_power_control/power_signal_detect_inst/SLICE_506
+ROUTE         1   e 1.030 */SLICE_506.F1 to */SLICE_509.C0 server_power_control/power_signal_detect_inst/N_5
+CTOF_DEL    ---     0.451 */SLICE_509.C0 to */SLICE_509.F0 server_power_control/power_signal_detect_inst/SLICE_509
+ROUTE         1   e 1.030 */SLICE_509.F0 to */SLICE_409.B1 server_power_control/power_signal_detect_inst/N_6
+CTOF_DEL    ---     0.451 */SLICE_409.B1 to */SLICE_409.F1 server_power_control/power_signal_detect_inst/SLICE_409
+ROUTE         1   e 0.401 */SLICE_409.F1 to */SLICE_409.C0 server_power_control/power_signal_detect_inst/N_7
+CTOF_DEL    ---     0.451 */SLICE_409.C0 to */SLICE_409.F0 server_power_control/power_signal_detect_inst/SLICE_409
+ROUTE         1   e 1.030 */SLICE_409.F0 to */SLICE_327.C0 server_power_control/power_signal_detect_inst/N_9
+CTOF_DEL    ---     0.451 */SLICE_327.C0 to */SLICE_327.F0 server_power_control/power_signal_detect_inst/SLICE_327
+ROUTE         1   e 0.001 */SLICE_327.F0 to *SLICE_327.DI0 server_power_control/power_signal_detect_inst/next_state_1[0] (to server_power_control/power_signal_detect_inst/un1_next_state69)
+                  --------
+                   10.147   (35.1% logic, 64.9% route), 8 logic levels.
+
+Report:   97.125MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clock_c" 25.000000 MHz ; |   25.000 MHz|   91.533 MHz|   8  
+                                        |             |             |
+FREQUENCY PORT "clock" 25.000000 MHz ;  |   25.000 MHz|   97.125 MHz|   8  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 7 clocks:
+
+Clock Domain: usb_reset_ctrl_inst/current_state_RNI5EMP[0]   Source: usb_reset_ctrl_inst/SLICE_577.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 22
+
+Clock Domain: server_power_control/un1_next_state115_1_0   Source: server_power_control/SLICE_228.F1   Loads: 3
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 29
+
+Clock Domain: server_power_control/switch_reset_control/un1_next_state43_0   Source: server_power_control/switch_reset_control/SLICE_581.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 20
+
+Clock Domain: server_power_control/power_signal_detect_inst/un1_next_state69   Source: server_power_control/SLICE_338.F1   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 45
+
+Clock Domain: server_power_control/cpu_pwr_control/current_state_RNI16S31[1]   Source: SLICE_582.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 16
+
+Clock Domain: clock_c   Source: clock.PAD   Loads: 340
+   Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: usb_reset_ctrl_inst/current_state_RNI5EMP[0]   Source: usb_reset_ctrl_inst/SLICE_577.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: server_power_control/un1_next_state115_1_0   Source: server_power_control/SLICE_228.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 4
+
+   Clock Domain: server_power_control/switch_reset_control/un1_next_state43_0   Source: server_power_control/switch_reset_control/SLICE_581.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: server_power_control/power_signal_detect_inst/un1_next_state69   Source: server_power_control/SLICE_338.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: server_power_control/cpu_pwr_control/current_state_RNI16S31[1]   Source: SLICE_582.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: bmc_reset_ctrl_inst/un1_next_state24_0_0   Source: bmc_reset_ctrl_inst/SLICE_600.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 2
+
+Clock Domain: bmc_reset_ctrl_inst/un1_next_state24_0_0   Source: bmc_reset_ctrl_inst/SLICE_600.F1   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 4
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 24225 paths, 13 nets, and 4227 connections (90.98% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
+Wed Jul 12 16:07:30 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Server_CPLD_V11_PRJ_impl1.tw1 -gui Server_CPLD_V11_PRJ_impl1_map.ncd Server_CPLD_V11_PRJ_impl1.prf 
+Design file:     server_cpld_v11_prj_impl1_map.ncd
+Preference file: server_cpld_v11_prj_impl1.prf
+Device,speed:    LCMXO3LF-2100C,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    2.375 V
+
+VCCIO Voltage:
+                   3.300 V (Bank 0, defined by PAR)
+                   3.300 V (Bank 1, defined by PAR)
+                   1.800 V (Bank 2, defined by PAR)
+                   3.300 V (Bank 3, defined by PAR)
+                   3.300 V (Bank 4, defined by PAR)
+                   3.300 V (Bank 5, defined by PAR)
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clock_c" 25.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              timer_inst/rst_n_dly[0]  (from clock_c +)
+   Destination:    FF         Data in        timer_inst/rst_n_dly[1]  (to clock_c +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_358 to SLICE_358 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_358 to SLICE_358:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133  SLICE_358.CLK to   SLICE_358.Q0 SLICE_358 (from clock_c)
+ROUTE         1   e 0.199   SLICE_358.Q0 to   SLICE_358.M1 timer_inst/rst_n_dly[0] (to clock_c)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY PORT "clock" 25.000000 MHz ;
+            425 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.757ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              server_power_control/current_state[2]  (from clock_c +)
+   Destination:    FF         Data in        server_power_control/next_state[0]  (to server_power_control/un1_next_state115_1_0 +)
+
+   Delay:               0.744ns  (30.6% logic, 69.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.744ns physical path delay server_power_control/SLICE_537 to server_power_control/SLICE_320 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.757ns
+
+ Physical Path Details:
+
+      Data path server_power_control/SLICE_537 to server_power_control/SLICE_320:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_537.CLK to */SLICE_537.Q1 server_power_control/SLICE_537 (from clock_c)
+ROUTE        23   e 0.515 */SLICE_537.Q1 to */SLICE_320.M0 server_power_control/current_state[2]
+MTOOFX_DEL  ---     0.095 */SLICE_320.M0 to *LICE_320.OFX0 server_power_control/SLICE_320
+ROUTE         1   e 0.001 *LICE_320.OFX0 to *SLICE_320.DI0 server_power_control/next_state_1[0] (to server_power_control/un1_next_state115_1_0)
+                  --------
+                    0.744   (30.6% logic, 69.4% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clock_c" 25.000000 MHz ; |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+FREQUENCY PORT "clock" 25.000000 MHz ;  |            -|            -|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 7 clocks:
+
+Clock Domain: usb_reset_ctrl_inst/current_state_RNI5EMP[0]   Source: usb_reset_ctrl_inst/SLICE_577.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 22
+
+Clock Domain: server_power_control/un1_next_state115_1_0   Source: server_power_control/SLICE_228.F1   Loads: 3
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 29
+
+Clock Domain: server_power_control/switch_reset_control/un1_next_state43_0   Source: server_power_control/switch_reset_control/SLICE_581.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 20
+
+Clock Domain: server_power_control/power_signal_detect_inst/un1_next_state69   Source: server_power_control/SLICE_338.F1   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 45
+
+Clock Domain: server_power_control/cpu_pwr_control/current_state_RNI16S31[1]   Source: SLICE_582.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 16
+
+Clock Domain: clock_c   Source: clock.PAD   Loads: 340
+   Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: usb_reset_ctrl_inst/current_state_RNI5EMP[0]   Source: usb_reset_ctrl_inst/SLICE_577.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: server_power_control/un1_next_state115_1_0   Source: server_power_control/SLICE_228.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 4
+
+   Clock Domain: server_power_control/switch_reset_control/un1_next_state43_0   Source: server_power_control/switch_reset_control/SLICE_581.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: server_power_control/power_signal_detect_inst/un1_next_state69   Source: server_power_control/SLICE_338.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: server_power_control/cpu_pwr_control/current_state_RNI16S31[1]   Source: SLICE_582.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: bmc_reset_ctrl_inst/un1_next_state24_0_0   Source: bmc_reset_ctrl_inst/SLICE_600.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 2
+
+Clock Domain: bmc_reset_ctrl_inst/un1_next_state24_0_0   Source: bmc_reset_ctrl_inst/SLICE_600.F1   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: clock_c   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 4
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 24225 paths, 13 nets, and 4383 connections (94.34% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

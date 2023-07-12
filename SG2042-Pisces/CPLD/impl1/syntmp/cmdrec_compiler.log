@@ -1,0 +1,36 @@
+D:\lscc\diamond\3.12\synpbase\bin64\c_hdl.exe  -osyn  E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synwork\Server_CPLD_V11_PRJ_impl1_comp.srs  -top  server_top  -hdllog  E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synlog\Server_CPLD_V11_PRJ_impl1_compiler.srr  -encrypt  -mp  4  -verification_mode 0 -rtl_xmr_naming  -verilog  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver   -I E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ  -I E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\  -I D:\lscc\diamond\3.12\synpbase\lib   -v2001  -devicelib  D:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v  -devicelib  D:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v  -encrypt  -pro  -dmgen  E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -D_MULTIPLE_FILE_COMPILATION_UNIT_  -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\eeprom_i2c.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_on_reset.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\timer.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\uart_sol.v -lib work -fv2001 E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v  -jobname  "compiler" 
+relcom:D:\lscc\diamond\3.12\synpbase\bin64\c_hdl.exe -osyn ..\synwork\Server_CPLD_V11_PRJ_impl1_comp.srs -top server_top -hdllog ..\synlog\Server_CPLD_V11_PRJ_impl1_compiler.srr -encrypt -mp 4 -verification_mode 0 -rtl_xmr_naming -verilog -prodtype synplify_pro -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver -I ..\..\..\Server_CPLD_V11_PRJ -I ..\ -I D:\lscc\diamond\3.12\synpbase\lib -v2001 -devicelib D:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v -devicelib D:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v -encrypt -pro -dmgen ..\dm -ui -fid2 -ram -sharing on -ll 2000 -autosm -D_MULTIPLE_FILE_COMPILATION_UNIT_ -lib work -fv2001 ..\source\bmc_reset_ctrl.v -lib work -fv2001 ..\source\cpu_power_control.v -lib work -fv2001 ..\source\debounce_button_FSM_run.v -lib work -fv2001 ..\source\eeprom_i2c.v -lib work -fv2001 ..\source\i2c_master.v -lib work -fv2001 ..\source\i2c_slave_for_register.v -lib work -fv2001 ..\source\power_on_reset.v -lib work -fv2001 ..\source\power_signal_detect.v -lib work -fv2001 ..\source\server_power_control.v -lib work -fv2001 ..\source\switch_reset_control.v -lib work -fv2001 ..\source\timer.v -lib work -fv2001 ..\source\top.v -lib work -fv2001 ..\source\uart_sol.v -lib work -fv2001 ..\source\usb_reset_ctrl.v -jobname "compiler"
+rc:0 success:1 runtime:4
+file:..\synwork\Server_CPLD_V11_PRJ_impl1_comp.srs|io:o|time:1689149235|size:71808|exec:0|csum:
+file:..\synlog\Server_CPLD_V11_PRJ_impl1_compiler.srr|io:o|time:1689149235|size:30268|exec:0|csum:
+file:D:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v|io:i|time:1628557868|size:53334|exec:0|csum:BEFB982BE483587B26B156E884C15512
+file:D:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v|io:i|time:1628557868|size:40584|exec:0|csum:62845CEC2BB6FEBE1BA059B1E18015F4
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\bmc_reset_ctrl.v|io:i|time:1688392003|size:2633|exec:0|csum:9848A843AFAA7161C87E9FD703DE6984
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\cpu_power_control.v|io:i|time:1688961206|size:6175|exec:0|csum:69CE0438E80C576302B12DBCC7DECCEE
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\debounce_button_FSM_run.v|io:i|time:1677224836|size:4816|exec:0|csum:9B77EC8A0794E9274985621FF7F2C120
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\eeprom_i2c.v|io:i|time:1569387032|size:1674|exec:0|csum:4E5088141560CBB7A31F55C4736B0D64
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\i2c_master.v|io:i|time:1686197341|size:12034|exec:0|csum:B5A8FB9ABA8D3B87EC6D975ACFA19F97
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\i2c_slave_for_register.v|io:i|time:1686197354|size:14435|exec:0|csum:49138DE27BB346621BFDEBBF8A2AB706
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\power_on_reset.v|io:i|time:1686287543|size:468|exec:0|csum:5FFF5CEB3DA530ACE7A057A4B5B0DA79
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\power_signal_detect.v|io:i|time:1688958564|size:5525|exec:0|csum:5BC0762D7F91CB47A2DA417DD0D4C9D2
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\server_power_control.v|io:i|time:1688992191|size:14512|exec:0|csum:FC1694024B10A331B0C985590ED08C2B
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\switch_reset_control.v|io:i|time:1688392003|size:4085|exec:0|csum:4359391D5BAD483330FB0BE147147F0A
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\timer.v|io:i|time:1686754748|size:1089|exec:0|csum:7FD5D48E0771CDEE56453F8809087A81
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\top.v|io:i|time:1688984331|size:27188|exec:0|csum:942DEAC07C00444BFDDC0630D5BA4604
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\uart_sol.v|io:i|time:1686287118|size:1557|exec:0|csum:752F8C4C195BA4D71EA688598AD84AE8
+file:.\-fv2001|io:i|time:0|size:-1|exec:0|csum:
+file:..\source\usb_reset_ctrl.v|io:i|time:1688994025|size:3434|exec:0|csum:964CDEB372C43D785EB42F5D1D2518F0
+file:D:\lscc\diamond\3.12\synpbase\bin64\c_hdl.exe|io:i|time:1628558204|size:5754368|exec:1|csum:EF00E91BAA13FCD84C7D68B353143F73

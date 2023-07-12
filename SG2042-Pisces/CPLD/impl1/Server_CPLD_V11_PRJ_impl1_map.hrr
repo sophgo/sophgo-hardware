@@ -1,0 +1,147 @@
+---------------------------------------------------
+Report for cell server_top
+   Instance path: server_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     545.00        100.0
+                                 IOLGC	       7.00        100.0
+                                  LUT4	     800.00        100.0
+                                 IOREG	         10        100.0
+                                 IOBUF	        147        100.0
+                                PFUREG	        548        100.0
+                                RIPPLE	        142        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        usb_reset_ctrl	          1         9.7
+                              uart_sol	          1         0.6
+                                 timer	          1         6.4
+                  server_power_control	          1        42.8
+                      i2c_slave_reg_Z1	          1        14.6
+                            eeprom_i2c	          1        15.4
+                        power_on_reset	          1         0.6
+                        bmc_reset_ctrl	          1         4.5
+---------------------------------------------------
+Report for cell eeprom_i2c
+   Instance path: server_top/eeprom_i2c_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      83.83        15.4
+                                  LUT4	     162.00        20.3
+                                PFUREG	         85        15.5
+                                RIPPLE	          9         6.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         i2c_master_Z2	          1        14.7
+---------------------------------------------------
+Report for cell i2c_master_Z2
+   Instance path: server_top/eeprom_i2c_inst/e2prom_i2c
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      80.17        14.7
+                                  LUT4	     160.00        20.0
+                                PFUREG	         73        13.3
+                                RIPPLE	          9         6.3
+---------------------------------------------------
+Report for cell bmc_reset_ctrl
+   Instance path: server_top/bmc_reset_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.33         4.5
+                                  LUT4	      21.00         2.6
+                                PFUREG	         30         5.5
+                                RIPPLE	         14         9.9
+---------------------------------------------------
+Report for cell usb_reset_ctrl
+   Instance path: server_top/usb_reset_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      52.75         9.7
+                                  LUT4	      88.67        11.1
+                                PFUREG	         24         4.4
+                                RIPPLE	          9         6.3
+---------------------------------------------------
+Report for cell server_power_control
+   Instance path: server_top/server_power_control
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     233.25        42.8
+                                  LUT4	     336.67        42.1
+                                PFUREG	        199        36.3
+                                RIPPLE	         77        54.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                  switch_reset_control	          1         3.3
+                   power_signal_detect	          1        13.7
+                     cpu_power_control	          1         9.2
+---------------------------------------------------
+Report for cell switch_reset_control
+   Instance path: server_top/server_power_control/switch_reset_control
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.25         3.3
+                                  LUT4	      16.00         2.0
+                                PFUREG	         24         4.4
+                                RIPPLE	         10         7.0
+---------------------------------------------------
+Report for cell cpu_power_control
+   Instance path: server_top/server_power_control/cpu_pwr_control
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      50.23         9.2
+                                  LUT4	     109.67        13.7
+                                PFUREG	         29         5.3
+                                RIPPLE	          6         4.2
+---------------------------------------------------
+Report for cell power_signal_detect
+   Instance path: server_top/server_power_control/power_signal_detect_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      74.83        13.7
+                                  LUT4	      92.00        11.5
+                                PFUREG	         72        13.1
+                                RIPPLE	         28        19.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   debounce_button_FSM	          1         3.3
+---------------------------------------------------
+Report for cell debounce_button_FSM
+   Instance path: server_top/server_power_control/power_signal_detect_inst/rst_btn_dbn
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.92         3.3
+                                  LUT4	      13.00         1.6
+                                PFUREG	         23         4.2
+                                RIPPLE	         10         7.0
+---------------------------------------------------
+Report for cell i2c_slave_reg_Z1
+   Instance path: server_top/i2c0_slave_inst0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      79.67        14.6
+                                  LUT4	     131.00        16.4
+                                PFUREG	         83        15.1
+                                RIPPLE	         13         9.2
+---------------------------------------------------
+Report for cell uart_sol
+   Instance path: server_top/uart_sol_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.00         0.6
+                                  LUT4	       6.00         0.8
+---------------------------------------------------
+Report for cell timer
+   Instance path: server_top/timer_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      35.00         6.4
+                                  LUT4	      29.00         3.6
+                                PFUREG	         41         7.5
+                                RIPPLE	         20        14.1
+---------------------------------------------------
+Report for cell power_on_reset
+   Instance path: server_top/por
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.00         0.6
+                                  LUT4	       4.00         0.5
+                                PFUREG	          6         1.1

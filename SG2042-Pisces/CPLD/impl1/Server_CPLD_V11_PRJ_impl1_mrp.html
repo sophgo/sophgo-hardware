@@ -1,0 +1,883 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+          Lattice Mapping Report File for Design Module 'server_top'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO3LF -p LCMXO3LF-2100C -t CABGA256 -s 5 -oc
+     Commercial Server_CPLD_V11_PRJ_impl1.ngd -o
+     Server_CPLD_V11_PRJ_impl1_map.ncd -pr Server_CPLD_V11_PRJ_impl1.prf -mp
+     Server_CPLD_V11_PRJ_impl1.mrp -lpf E:/01_Project/07_SG2042_Server/99_CPLD/P
+     roject/03_Server_CPLD_V11/Pre_Final/Server_CPLD_V11_PRJ/impl1/Server_CPLD_V
+     11_PRJ_impl1_synplify.lpf -lpf E:/01_Project/07_SG2042_Server/99_CPLD/Proje
+     ct/03_Server_CPLD_V11/Pre_Final/Server_CPLD_V11_PRJ/SG2042_Server_V11.lpf
+     -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO3LF-2100CCABGA256
+Target Performance:   5
+Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.12.1.454
+Mapped on:  07/12/23  16:07:26
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    558 out of  2733 (20%)
+      PFU registers:          548 out of  2112 (26%)
+      PIO registers:           10 out of   621 (2%)
+   Number of SLICEs:       545 out of  1056 (52%)
+      SLICEs as Logic/ROM:    545 out of  1056 (52%)
+      SLICEs as RAM:            0 out of   792 (0%)
+      SLICEs as Carry:        142 out of  1056 (13%)
+   Number of LUT4s:        1084 out of  2112 (51%)
+      Number used as logic LUTs:        800
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      284
+      Number used as shift registers:     0
+   Number of PIO sites used: 147 + 4(JTAG) out of 207 (73%)
+   Number of block RAMs:  0 out of 8 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  7
+
+     Net clock_c: 340 loads, 340 rising, 0 falling (Driver: PIO clock )
+     Net bmc_reset_ctrl_inst/un1_next_state24_0_0: 1 loads, 1 rising, 0 falling
+     (Driver: bmc_reset_ctrl_inst/un1_next_state24_0_0 )
+     Net usb_reset_ctrl_inst/current_state_RNI5EMP[0]: 2 loads, 2 rising, 0
+     falling (Driver: usb_reset_ctrl_inst/current_state_RNI5EMP[0] )
+     Net server_power_control/un1_next_state115_1_0: 3 loads, 3 rising, 0
+     falling (Driver: server_power_control/un1_next_state115_1_1 )
+     Net server_power_control/switch_reset_control/un1_next_state43_0: 2 loads,
+     2 rising, 0 falling (Driver:
+     server_power_control/switch_reset_control/un1_next_state43_0 )
+     Net server_power_control/cpu_pwr_control/current_state_RNI16S31[1]: 2
+     loads, 2 rising, 0 falling (Driver:
+     server_power_control/cpu_pwr_control/current_state_RNI16S31[1] )
+     Net server_power_control/power_signal_detect_inst/un1_next_state69: 2
+     loads, 2 rising, 0 falling (Driver:
+     server_power_control/power_signal_detect_inst/un1_next_state69 )
+   Number of Clock Enables:  96
+     Net bmc_reset_ctrl_inst.un1_bmc_prst17_i_0: 1 loads, 0 LSLICEs
+     Net start_e2prom_2: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0.un1_is_slave_send32_i: 1 loads, 0 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_data_RNO[5]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_data_RNO[1]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/current_state[8]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_data_RNO[0]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_data_RNO[4]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/un1_timeout_cnt_en17_i_0: 1 loads, 1 LSLICEs
+     
+     Net eeprom_i2c_inst/e2prom_i2c/timeout_cnt_2_sqmuxa_i: 4 loads, 4 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/state_cnte: 6 loads, 6 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/N_36_i: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/un1_current_state_15: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/un1_sda_in_clean8_0: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/un1_scl_out_en20_4_i_0: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/un1_scl_in_clean7: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/un1_scl_out_en20_1_i_0: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/rd_data_vld: 4 loads, 4 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_datace[2]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_datace[3]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_datace[6]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rd_datace[7]: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/rcv_ack_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/N_222_i: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/det_delay_cnte: 2 loads, 2 LSLICEs
+     Net eeprom_i2c_inst/e2prom_i2c/un31_NE: 2 loads, 2 LSLICEs
+     Net eeprom_i2c_inst.e2prom_i2c.un1_scl_out_0_sqmuxa_i: 1 loads, 0 LSLICEs
+     Net un1_sda_out_0_sqmuxa_1: 1 loads, 0 LSLICEs
+     Net eeprom_i2c_inst/un1_i2c_start23_i_0: 1 loads, 1 LSLICEs
+     Net eeprom_i2c_inst/i2c_start_4: 1 loads, 1 LSLICEs
+     Net bmc_reset_ctrl_inst/prst_delaye: 9 loads, 9 LSLICEs
+     Net usb_reset_ctrl_inst/urst_delaye: 9 loads, 9 LSLICEs
+     Net power_control_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net e2prom_dev_addr_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net usb_reset_ctrl_inst/un1_usb_ponrst48_i_0_0: 2 loads, 2 LSLICEs
+     Net reset_control_b_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net e2prom_data_wr_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net test_interrupt_1_sqmuxa: 1 loads, 1 LSLICEs
+
+     Net test_register_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net e2prom_byte_addr_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net reset_control_a_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net riser_reset_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net wr_data_vld: 5 loads, 5 LSLICEs
+     Net server_power_control/switch_reset_control/switch_rst_cnte: 5 loads, 5
+     LSLICEs
+     Net server_power_control/switch_reset_control/N_434_i: 5 loads, 5 LSLICEs
+     Net server_power_control/switch_reset_control/current_state[2]: 1 loads, 1
+     LSLICEs
+     Net server_power_control/cpu_pwr_control/un1_next_state40_5_i_0: 1 loads, 1
+     LSLICEs
+     Net server_power_control/cpu_pwr_control/seq_cnte: 6 loads, 6 LSLICEs
+     Net server_power_control/cpu_pwr_control/un1_current_state_4_i_0: 1 loads,
+     1 LSLICEs
+     Net server_power_control/cpu_pwr_control/un1_next_state40_2_i_0_a2: 1
+     loads, 1 LSLICEs
+     Net server_power_control/cpu_pwr_control/un1_next_state42_i_0: 9 loads, 9
+     LSLICEs
+     Net int_100ms_en: 2 loads, 2 LSLICEs
+     Net server_power_control/power_signal_detect_inst/rst_btn_dbn/sec5: 1
+     loads, 1 LSLICEs
+     Net server_power_control/power_signal_detect_inst/rst_btn_dbn/cnt_timee: 5
+     loads, 5 LSLICEs
+     Net server_power_control/power_signal_detect_inst/rst_btn_dbn/cnte: 5
+     loads, 5 LSLICEs
+     Net server_power_control/power_signal_detect_inst/normal_sig_cnte: 2 loads,
+     2 LSLICEs
+     Net server_power_control/power_signal_detect_inst/low_time_cnte: 9 loads, 9
+     LSLICEs
+     Net server_power_control/power_signal_detect_inst/un1_next_state64_5_i: 1
+     loads, 1 LSLICEs
+     Net server_power_control/power_signal_detect_inst/un1_current_state_6_i: 1
+     loads, 1 LSLICEs
+     Net server_power_control/power_signal_detect_inst/force_sig_cnte: 2 loads,
+     2 LSLICEs
+     Net server_power_control/power_signal_detect_inst/debounce_cnte: 9 loads, 9
+     LSLICEs
+     Net server_power_control/psu_dlye: 5 loads, 5 LSLICEs
+     Net server_power_control/wait_time_out_cnte: 9 loads, 9 LSLICEs
+     Net server_power_control/un1_wait_time_out_0_sqmuxa_1: 1 loads, 1 LSLICEs
+     Net server_power_control/reboot_cnte: 9 loads, 9 LSLICEs
+     Net server_power_control/un1_psu_done_1_sqmuxa_1_i: 1 loads, 1 LSLICEs
+     Net server_power_control/un1_is_reboot_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net server_power_control/un1_next_state105_8_i: 1 loads, 1 LSLICEs
+     Net server_power_control.un1_next_state105_11_i: 3 loads, 2 LSLICEs
+     Net server_power_control/un1_efuse_dly_0_sqmuxa_2: 1 loads, 1 LSLICEs
+     Net server_power_control/efuse_dlye: 5 loads, 5 LSLICEs
+     Net server_power_control/un1_next_state105_10: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_ack_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/opcode_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_bit_RNO[0]: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_bit_RNO[1]: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_bit_RNO[2]: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_bit_RNO[3]: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_bit_RNO[4]: 1 loads, 1 LSLICEs
+
+     Net i2c0_slave_inst0/rcv_bit_RNO[5]: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_bit_RNO[6]: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/rcv_bit_RNO[7]: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/start_next_bit: 4 loads, 4 LSLICEs
+     Net i2c0_slave_inst0/wr_data_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net i2c0_slave_inst0/un1_start_3_i: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/un1_sda_out_reg_2_sqmuxa_i: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/un1_stretch_en_2_NE: 2 loads, 2 LSLICEs
+     Net i2c0_slave_inst0/N_52: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/timeout_cnte: 3 loads, 3 LSLICEs
+     Net i2c0_slave_inst0/un1_start_2_0: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/slave_addr_out_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net i2c0_slave_inst0/un1_sda_in_clean8: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/un1_scl_in_clean8: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/N_54: 1 loads, 1 LSLICEs
+     Net i2c0_slave_inst0/delay_cnte: 5 loads, 5 LSLICEs
+     Net timer_inst/rst_n_dly[1]: 22 loads, 22 LSLICEs
+   Number of local set/reset loads for net reset_i merged into GSR:  525
+   Number of LSRs:  1
+     Net reset_i: 7 loads, 5 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net cpld_register_addr[3]: 39 loads
+     Net cpld_register_addr[0]: 38 loads
+     Net cpld_register_addr[1]: 38 loads
+     Net cpld_register_addr[4]: 38 loads
+     Net i2c0_slave_inst0/start_next_bit: 33 loads
+     Net server_power_control/power_signal_detect_inst/low_time_cnt: 33 loads
+     Net int_1ms_en: 29 loads
+     Net server_power_control/current_state[0]: 29 loads
+     Net server_power_control/current_state[1]: 28 loads
+     Net eeprom_i2c_inst/e2prom_i2c/current_state[0]: 27 loads
+
+
+
+
+   Number of warnings:  3
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: E:/01_Project/07_SG2042_Server/99_CPLD/Project/03_Server_CPLD_V11
+     /Pre_Final/Server_CPLD_V11_PRJ/SG2042_Server_V11.lpf(314): Semantic error
+     in "IOBUF PORT "a_gpio16" IO_TYPE=LVCMOS25 ;": Port "a_gpio16" does not
+     exist in the design. This preference has been disabled.
+WARNING - map: Using local reset signal 'reset_i' to infer global GSR net.
+WARNING - map: IO buffer missing for top level port a_gpio16...logic will be
+     discarded.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| bmc_sda             | BIDIR     | LVCMOS33  | IN/TRI     |
++---------------------+-----------+-----------+------------+
+| sys_uart_rxd3       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_srst            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clock               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| cpld_led_test       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| cpld_heart          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| vga_6505_in2        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| vga_6505_in1        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_gpio5             | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| a_gpio3             | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| a_gpio2             | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| bmc_gpio54          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_gpio53          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_gpio51          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_gpio49          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_gpio48          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_gpio25          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_gpio24          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| uart1_rx_b          | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| uart1_tx_b          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| uart0_rx_b          | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| uart0_tx_b          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| uart1_rx_a          | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| uart1_tx_a          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| uart0_rx_a          | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| uart0_tx_a          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sys_uart_txd3       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| pwr_button_b        | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| pwr_button_a        | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| e2prom_sda          | BIDIR     | LVCMOS33  | IN/OUT     |
++---------------------+-----------+-----------+------------+
+| e2prom_scl          | BIDIR     | LVCMOS33  | IN/OUT     |
++---------------------+-----------+-----------+------------+
+| bmc_scl             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ddr3_event_b        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| ddr2_event_b        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| ddr1_event_b        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| ddr0_event_b        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| ddr3_event_a        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| ddr2_event_a        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| ddr1_event_a        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| ddr0_event_a        | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| en_bp_5v            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_3v3_riser        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser2_reset        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser1_reset        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser0_reset        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser2_slot16b_prsnt| INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser2_slot_id1     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser2_slot_id0     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser1_slot16b_prsnt| INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser1_slot16a_prsnt| INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser1_slot_id2     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser1_slot_id1     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser1_slot_id0     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser0_slot16b_prsnt| INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser0_slot16a_prsnt| INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| riser0_slot_id2     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser0_slot_id1     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| riser0_slot_id0     | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| usb2_ponrst         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| usb1_ponrst         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pcie_sata_rst       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pcie_usb1_rst       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pcie_usb0_rst       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pcie_nvme1_rst      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pcie_nvme0_rst      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pcie_swb_prst       | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| pcie_swa_prst       | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| pcie_swb_sys_rst    | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| pcie_swa_sys_rst    | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| sg1_pcie0_l0_reset  | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| sg0_pcie1_l0_reset  | INPUT     | LVCMOS18  | IN         |
++---------------------+-----------+-----------+------------+
+| cpub_sys_reset      | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| cpua_sys_reset      | OUTPUT    | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| pg_pcie_sw_0v8_b    | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_pcie_sw_0v8_a    | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_pcie_sw_0v8_b    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_pcie_sw_0v8_a    | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| psu_ps_on_cpld      | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| psu1_prsnt          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| psu0_prsnt          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| psu1_alert          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| psu0_alert          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| psu1_pwrok          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| psu0_pwrok          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bp_ncp_gok          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bp_ncp_d_oc         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_12v_bp           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ncp0_gok            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ncp0_d_oc           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vdd_12v          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_3v3_riser        | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_bp_5v            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_5v_aux           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vdd_5v           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vdd_3v3          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vdd_1v8          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_pcie_h_b         | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| pg_ddr_phy_b        | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vtt_b1           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vtt_b0           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vpp_b1           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vpp_b0           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vddq_b1          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vddq_b0          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_pcie_phy_b       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vddc_b           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_pcie_h_a         | INPUT     | LVCMOS18  |            |
++---------------------+-----------+-----------+------------+
+| pg_ddr_phy_a        | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vtt_a1           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vtt_a0           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vpp_a1           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| pg_vpp_a0           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vddq_a1          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vddq_a0          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_pcie_phy_a       | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| pg_vddc_a           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vdd_5v           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vdd_3v3          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vdd_1v8          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vqps18_b         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_pcie_h_b         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_ddr_phy_b        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vtt_b1           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vtt_b0           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vpp_b1           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vpp_b0           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vddq_b1          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vddq_b0          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_pcie_phy_b       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vddc_b           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vqps18_a         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_pcie_h_a         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_ddr_phy_a        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vtt_a1           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vtt_a0           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vpp_a1           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vpp_a0           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vddq_a1          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vddq_a0          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| en_pcie_phy_a       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| en_vddc_a           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_pwrgd           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_pcie_rst        | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| bmc_extrst          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| bmc_ssprst          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| fm_pwr_btn          | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| cpld_extrst         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block por/GND undriven or does not drive anything - clipped.
+Block uart_sol_inst/VCC undriven or does not drive anything - clipped.
+Block uart_sol_inst/GND undriven or does not drive anything - clipped.
+Block i2c0_slave_inst0/VCC undriven or does not drive anything - clipped.
+Block server_power_control/VCC undriven or does not drive anything - clipped.
+Block server_power_control/power_signal_detect_inst/VCC undriven or does not
+     drive anything - clipped.
+Block server_power_control/power_signal_detect_inst/rst_btn_dbn/VCC undriven or
+     does not drive anything - clipped.
+Block server_power_control/cpu_pwr_control/VCC undriven or does not drive
+     anything - clipped.
+Block server_power_control/switch_reset_control/VCC undriven or does not drive
+     anything - clipped.
+Block usb_reset_ctrl_inst/VCC undriven or does not drive anything - clipped.
+Block bmc_reset_ctrl_inst/VCC undriven or does not drive anything - clipped.
+Block eeprom_i2c_inst/GND undriven or does not drive anything - clipped.
+Block eeprom_i2c_inst/VCC undriven or does not drive anything - clipped.
+Block eeprom_i2c_inst/e2prom_i2c/VCC undriven or does not drive anything -
+     clipped.
+Signal wr_data_vld_i was merged into signal wr_data_vld
+Signal server_power_control/switch_reset_control/current_state_i[2] was merged
+     into signal server_power_control/switch_reset_control/current_state[2]
+Signal e2prom_scl_out_en_i was merged into signal
+     eeprom_i2c_inst/e2prom_i2c/e2prom_scl_out_en
+Signal timer_inst/GND undriven or does not drive anything - clipped.
+Signal i2c0_slave_inst0/GND undriven or does not drive anything - clipped.
+Signal server_power_control/GND undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/GND undriven or does not
+     drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/GND undriven or
+     does not drive anything - clipped.
+Signal server_power_control/cpu_pwr_control/GND undriven or does not drive
+     anything - clipped.
+Signal server_power_control/switch_reset_control/GND undriven or does not drive
+     anything - clipped.
+Signal usb_reset_ctrl_inst/GND undriven or does not drive anything - clipped.
+
+Signal bmc_reset_ctrl_inst/GND undriven or does not drive anything - clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/GND undriven or does not drive anything -
+     clipped.
+Signal timer_inst/un6_int_1ms_cnt_cry_13_0_COUT undriven or does not drive
+     anything - clipped.
+Signal timer_inst/un6_int_100ms_cnt_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal timer_inst/un6_int_100ms_cnt_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal timer_inst/N_2 undriven or does not drive anything - clipped.
+Signal timer_inst/un6_int_100ms_cnt_s_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal timer_inst/un6_int_100ms_cnt_s_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal timer_inst/un6_int_1ms_cnt_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal timer_inst/un6_int_1ms_cnt_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal timer_inst/N_1 undriven or does not drive anything - clipped.
+Signal i2c0_slave_inst0/timeout_cnt_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal i2c0_slave_inst0/N_1 undriven or does not drive anything - clipped.
+Signal i2c0_slave_inst0/timeout_cnt_cry_0_COUT[3] undriven or does not drive
+     anything - clipped.
+Signal i2c0_slave_inst0/word_addr_lcry_0_S1 undriven or does not drive anything
+     - clipped.
+Signal i2c0_slave_inst0/word_addr_lcry_0_S0 undriven or does not drive anything
+     - clipped.
+Signal i2c0_slave_inst0/N_2 undriven or does not drive anything - clipped.
+Signal i2c0_slave_inst0/word_addr_cry_0_COUT[6] undriven or does not drive
+     anything - clipped.
+Signal i2c0_slave_inst0/delay_cnt_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal i2c0_slave_inst0/N_3 undriven or does not drive anything - clipped.
+Signal i2c0_slave_inst0/delay_cnt_s_0_S1[7] undriven or does not drive anything
+     - clipped.
+Signal i2c0_slave_inst0/delay_cnt_s_0_COUT[7] undriven or does not drive
+     anything - clipped.
+Signal server_power_control/psu_dly_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal server_power_control/N_1 undriven or does not drive anything - clipped.
+Signal server_power_control/psu_dly_cry_0_COUT[7] undriven or does not drive
+     anything - clipped.
+Signal server_power_control/wait_time_out_cnt_cry_0_S0[0] undriven or does not
+     drive anything - clipped.
+Signal server_power_control/N_2 undriven or does not drive anything - clipped.
+Signal server_power_control/wait_time_out_cnt_s_0_S1[15] undriven or does not
+     drive anything - clipped.
+Signal server_power_control/wait_time_out_cnt_s_0_COUT[15] undriven or does not
+     drive anything - clipped.
+Signal server_power_control/efuse_dly_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal server_power_control/N_3 undriven or does not drive anything - clipped.
+Signal server_power_control/efuse_dly_cry_0_COUT[7] undriven or does not drive
+     anything - clipped.
+Signal server_power_control/reboot_cnt_cry_0_S0[0] undriven or does not drive
+
+     anything - clipped.
+Signal server_power_control/N_4 undriven or does not drive anything - clipped.
+Signal server_power_control/reboot_cnt_s_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal server_power_control/reboot_cnt_s_0_COUT[15] undriven or does not drive
+     anything - clipped.
+Signal server_power_control/un1_cpu_dly_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal server_power_control/N_5 undriven or does not drive anything - clipped.
+Signal server_power_control/un1_cpu_dly_1_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal server_power_control/un1_cpu_dly_1_s_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal server_power_control/power_signal_detect_inst/debounce_cnt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/N_1 undriven or does not
+     drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/debounce_cnt_s_0_S1[15]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/debounce_cnt_s_0_COUT[15]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/low_time_cnt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/N_2 undriven or does not
+     drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/low_time_cnt_s_0_S1[15]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/low_time_cnt_s_0_COUT[15]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/cnt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/N_4 undriven or
+     does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/cnt_s_0_S1[7]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/cnt_s_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/cnt_time_cry_0_
+     S0[0] undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/N_5 undriven or
+     does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/cnt_time_s_0_S1
+     [7] undriven or does not drive anything - clipped.
+Signal server_power_control/power_signal_detect_inst/rst_btn_dbn/cnt_time_s_0_CO
+     UT[7] undriven or does not drive anything - clipped.
+Signal server_power_control/cpu_pwr_control/seq_cnt_cry_0_S0[0] undriven or does
+     not drive anything - clipped.
+Signal server_power_control/cpu_pwr_control/N_2 undriven or does not drive
+     anything - clipped.
+Signal server_power_control/cpu_pwr_control/seq_cnt_cry_0_COUT[9] undriven or
+     does not drive anything - clipped.
+Signal server_power_control/switch_reset_control/switch_0v8_cnt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/switch_reset_control/N_2 undriven or does not drive
+     anything - clipped.
+Signal server_power_control/switch_reset_control/switch_0v8_cnt_cry_0_COUT[7]
+
+     undriven or does not drive anything - clipped.
+Signal server_power_control/switch_reset_control/switch_rst_cnt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/switch_reset_control/N_3 undriven or does not drive
+     anything - clipped.
+Signal server_power_control/switch_reset_control/switch_rst_cnt_s_0_S1[7]
+     undriven or does not drive anything - clipped.
+Signal server_power_control/switch_reset_control/switch_rst_cnt_s_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal usb_reset_ctrl_inst/urst_delay_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal usb_reset_ctrl_inst/N_1 undriven or does not drive anything - clipped.
+Signal usb_reset_ctrl_inst/urst_delay_s_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal usb_reset_ctrl_inst/urst_delay_s_0_COUT[15] undriven or does not drive
+     anything - clipped.
+Signal bmc_reset_ctrl_inst/prst_delay_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal bmc_reset_ctrl_inst/N_1 undriven or does not drive anything - clipped.
+Signal bmc_reset_ctrl_inst/prst_delay_s_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal bmc_reset_ctrl_inst/prst_delay_s_0_COUT[15] undriven or does not drive
+     anything - clipped.
+Signal bmc_reset_ctrl_inst/un1_srst_delay_1_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal bmc_reset_ctrl_inst/N_2 undriven or does not drive anything - clipped.
+Signal bmc_reset_ctrl_inst/un1_srst_delay_1_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal bmc_reset_ctrl_inst/un1_srst_delay_1_s_7_0_COUT undriven or does not
+     drive anything - clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/state_cnt_cry_0_S0[0] undriven or does not
+     drive anything - clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/N_1 undriven or does not drive anything -
+     clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/state_cnt_s_0_S1[9] undriven or does not drive
+     anything - clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/state_cnt_s_0_COUT[9] undriven or does not
+     drive anything - clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/timeout_cnt_cry_0_S0_0[0] undriven or does not
+     drive anything - clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/N_2 undriven or does not drive anything -
+     clipped.
+Signal eeprom_i2c_inst/e2prom_i2c/timeout_cnt_cry_0_COUT_0[3] undriven or does
+     not drive anything - clipped.
+Block i2c0_slave_inst0/wr_data_vld_RNIAM5A was optimized away.
+Block server_power_control/switch_reset_control/switch_sys_rst_RNO_0 was
+     optimized away.
+Block eeprom_i2c_inst/e2prom_i2c/scl_out_en_RNIRDME was optimized away.
+Block timer_inst/GND was optimized away.
+Block i2c0_slave_inst0/GND was optimized away.
+Block server_power_control/GND was optimized away.
+Block server_power_control/power_signal_detect_inst/GND was optimized away.
+Block server_power_control/power_signal_detect_inst/rst_btn_dbn/GND was
+     optimized away.
+Block server_power_control/cpu_pwr_control/GND was optimized away.
+Block server_power_control/switch_reset_control/GND was optimized away.
+
+Block usb_reset_ctrl_inst/GND was optimized away.
+Block bmc_reset_ctrl_inst/GND was optimized away.
+Block eeprom_i2c_inst/e2prom_i2c/GND was optimized away.
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'reset_i' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'reset_i'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+     These components have the GSR property set to DISABLED and are on the
+     inferred reset domain. The components will respond to the reset signal
+     'reset_i' via the local reset on the component and not the GSR component.
+
+     Type and number of components of the type: 
+   Register = 9 
+
+     Type and instance name of component: 
+   Register : server_power_control_power_signal_detect_inst_sig_r0io
+   Register : server_power_control/power_signal_detect_inst/sig_r1
+   Register : usb_reset_ctrl_inst/current_state[1]
+   Register : usb_reset_ctrl_inst/current_state[0]
+   Register : usb_reset_ctrl_inst/current_state[2]
+   Register : bmc_reset_ctrl_inst/current_state[1]
+   Register : bmc_reset_ctrl_inst/current_state[0]
+   Register : bmc_reset_ctrl_inst/sig_r1
+   Register : bmc_reset_ctrl_inst_sig_r0io
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 3 secs  
+   Peak Memory Usage: 56 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

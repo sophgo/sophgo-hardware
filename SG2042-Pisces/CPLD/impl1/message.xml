@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/01_Project/07_SG2042_Server/99_CPLD/Project/03_Server_CPLD_V11/Pre_Final/Server_CPLD_V11_PRJ/SG2042_Server_V11.lpf(314): Semantic error in &quot;IOBUF PORT &quot;a_gpio16&quot; IO_TYPE=LVCMOS25 ;&quot;: </Dynamic>
+            <Dynamic>a_gpio16</Dynamic>
+            <Navigation>E:/01_Project/07_SG2042_Server/99_CPLD/Project/03_Server_CPLD_V11/Pre_Final/Server_CPLD_V11_PRJ/SG2042_Server_V11.lpf</Navigation>
+            <Navigation>314</Navigation>
+        </Message>
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>reset_i</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>a_gpio16</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=bmc_reset_ctrl_inst/un1_next_state24_0_0 loads=1 clock_loads=1
+   Signal=usb_reset_ctrl_inst/current_state_RNI5EMP[0] loads=2 clock_loads=2
+   Signal=server_power_control/un1_next_state115_1_0 loads=3 clock_loads=3
+   Signal=server_power_control/switch_reset_control/un1_next_state43_0 loads=2 clock_loads=2
+   Sig   ....   ontrol/cpu_pwr_control/current_state_RNI16S31[1] loads=2 clock_loads=2
+   Signal=server_power_control/power_signal_detect_inst/un1_next_state69 loads=2 clock_loads=2</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=bmc_reset_ctrl_inst/un1_next_state24_0_0 loads=1 clock_loads=1
+   Signal=usb_reset_ctrl_inst/current_state_RNI5EMP[0] loads=2 clock_loads=2
+   Signal=server_power_control/un1_next_state115_1_0 loads=3 clock_loads=3
+   Signal=server_power_control/switch_reset_control/un1_next_state43_0 loads=2 clock_loads=2
+   Sig   ....   ontrol/cpu_pwr_control/current_state_RNI16S31[1] loads=2 clock_loads=2
+   Signal=server_power_control/power_signal_detect_inst/un1_next_state69 loads=2 clock_loads=2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>I2C_SPEED_DIV</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>I2C_SPEED_DIV</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLAVE_ADDR_OTHER</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLAVE_ADDR_MAX</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>SLAVE_ADDR_MIN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CAS_MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>I2C_SPEED_DIV</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CAS_MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>a_gpio16</Dynamic>
+            <Navigation>a_gpio16</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:559:0:559:5|Pruning unused register stretch_en_1d. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register stretch_en_1d. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:559:0:559:5|Pruning unused register rcv_cas_ack. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register rcv_cas_ack. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Pruning unused register start_stretch_det_dly[1:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register start_stretch_det_dly[1:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Pruning unused register det_delay_cnt[4:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register det_delay_cnt[4:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:336:0:336:5|Pruning unused register slave_addr_vld. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>336</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>336</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register slave_addr_vld. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:95:0:95:5|Pruning unused register sda_cas_in_dly[1:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register sda_cas_in_dly[1:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:95:0:95:5|Pruning unused register sda_cas_in_clean. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register sda_cas_in_clean. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL265 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:95:0:95:5|Removing unused bit 1 of sda_in_clean_dly[1:0]. Either assign all bits or reduce the width of the signal.</Dynamic>
+            <Navigation>CL265</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing unused bit 1 of sda_in_clean_dly[1:0]. Either assign all bits or reduce the width of the signal.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:559:0:559:5|Optimizing register bit mux_clk_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit mux_clk_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:559:0:559:5|Optimizing register bit mux_data_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit mux_data_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Pruning unused register stretch_cnt_en. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register stretch_cnt_en. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Pruning unused register stretch_en. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register stretch_en. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:559:0:559:5|Pruning unused register mux_clk_en. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register mux_clk_en. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:559:0:559:5|Pruning unused register mux_data_en. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register mux_data_en. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:559:0:559:5|Pruning unused register stop_1d. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>559</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register stop_1d. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v&quot;:106:1:106:4|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v&quot;:134:2:134:5|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v</Navigation>
+            <Navigation>134</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>134</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v&quot;:126:0:126:5|Pruning unused register en_pcie_sw_0v8. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v</Navigation>
+            <Navigation>126</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>126</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register en_pcie_sw_0v8. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v&quot;:73:2:73:5|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>73</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v&quot;:189:2:189:5|Latch generated from always block for signal next_state[3:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v</Navigation>
+            <Navigation>189</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>189</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Latch generated from always block for signal next_state[3:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v&quot;:58:1:58:4|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>58</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v&quot;:20:0:20:5|Pruning unused register rst_in_dly[5:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register rst_in_dly[5:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL118 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v&quot;:92:1:92:4|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Dynamic>
+            <Navigation>CL118</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v</Navigation>
+            <Navigation>92</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>92</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG781 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v&quot;:493:12:493:12|Input scl_cas_in on instance i2c0_slave_inst0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v</Navigation>
+            <Navigation>493</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>493</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>Input scl_cas_in on instance i2c0_slave_inst0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG781 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v&quot;:494:12:494:12|Input sda_cas_in on instance i2c0_slave_inst0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Navigation>CG781</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v</Navigation>
+            <Navigation>494</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>494</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>Input sda_cas_in on instance i2c0_slave_inst0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v&quot;:356:5:356:12|Removing wire power_on, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v</Navigation>
+            <Navigation>356</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>356</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>Removing wire power_on, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit start_stretch_det to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit start_stretch_det to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit stretch_cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit stretch_cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Pruning unused register stretch_cnt[8:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register stretch_cnt[8:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Pruning unused register start_stretch_det. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register start_stretch_det. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Optimizing register bit scl_cas_out_en to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit scl_cas_out_en to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:95:0:95:5|Pruning unused register scl_cas_in_clean. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register scl_cas_in_clean. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:499:0:499:5|Pruning unused register scl_cas_out_en. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>499</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register scl_cas_out_en. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:95:0:95:5|Pruning unused register scl_cas_in_dly[1:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>95</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register scl_cas_in_dly[1:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:336:0:336:5|Optimizing register bit before_state[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>336</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>336</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit before_state[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v&quot;:336:0:336:5|Pruning register bit 3 of before_state[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v</Navigation>
+            <Navigation>336</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>336</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 3 of before_state[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT532 :&quot;e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v&quot;:106:1:106:4|Found signal identified as System clock which controls 19 sequential elements including server_power_control.power_signal_detect_inst.next_state[2:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance.</Dynamic>
+            <Navigation>MT532</Navigation>
+            <Navigation>e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>106</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Found signal identified as System clock which controls 19 sequential elements including server_power_control.power_signal_detect_inst.next_state[2:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT530 :&quot;e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_on_reset.v&quot;:26:0:26:5|Found inferred clock server_top|clock which controls 545 sequential elements including por.rst_btn_dly[5]. This clock has no specified timing constraint which may adversely impact design performance.</Dynamic>
+            <Navigation>MT530</Navigation>
+            <Navigation>e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_on_reset.v</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>26</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock server_top|clock which controls 545 sequential elements including por.rst_btn_dly[5]. This clock has no specified timing constraint which may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\bmc_reset_ctrl.v&quot;:92:1:92:4|Sequential instance bmc_reset_ctrl_inst.next_state[2] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\bmc_reset_ctrl.v</Navigation>
+            <Navigation>92</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>92</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>Sequential instance bmc_reset_ctrl_inst.next_state[2] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\usb_reset_ctrl.v&quot;:20:0:20:5|Removing instance usb_reset_ctrl_inst.sig_r0 because it is equivalent to instance bmc_reset_ctrl_inst.sig_r0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\usb_reset_ctrl.v</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance usb_reset_ctrl_inst.sig_r0 because it is equivalent to instance bmc_reset_ctrl_inst.sig_r0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\usb_reset_ctrl.v&quot;:20:0:20:5|Removing instance usb_reset_ctrl_inst.sig_r1 because it is equivalent to instance bmc_reset_ctrl_inst.sig_r1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\usb_reset_ctrl.v</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance usb_reset_ctrl_inst.sig_r1 because it is equivalent to instance bmc_reset_ctrl_inst.sig_r1. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock server_top|clock with period 10.00ns. Please declare a user-defined clock on port clock.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock server_top|clock with period 10.00ns. Please declare a user-defined clock on port clock.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

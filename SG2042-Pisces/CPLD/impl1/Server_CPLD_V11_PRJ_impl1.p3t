@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Server_CPLD_V11_PRJ_impl1.log"
+-o "Server_CPLD_V11_PRJ_impl1.csv"
+-pr "Server_CPLD_V11_PRJ_impl1.prf"

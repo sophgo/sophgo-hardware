@@ -1,0 +1,185 @@
+# Wed Jul 12 16:07:17 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys Lattice Technology Pre-mapping, Version map202103lat, Build 070R, Built Oct  6 2021 11:12:38, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 133MB)
+
+@A: MF827 |No constraint file specified.
+@L: E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\Server_CPLD_V11_PRJ_impl1_scck.rpt 
+See clock summary report "E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\Server_CPLD_V11_PRJ_impl1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 147MB)
+
+@N: FX493 |Applying initial value "000000" on instance rst_btn_dly[5:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "1" on instance sda_in_clean_dly[0].
+@N: FX493 |Applying initial value "11" on instance scl_in_clean_dly[1:0].
+@N: FX493 |Applying initial value "111111" on instance scl_in_dly[5:0].
+@N: FX493 |Applying initial value "111111" on instance sda_in_dly[5:0].
+@N: FX493 |Applying initial value "1" on instance scl_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_out_reg.
+@N: FX493 |Applying initial value "000000000" on instance enable_reg[8:0].
+@N: FX493 |Applying initial value "111111" on instance scl_in_dly[5:0].
+@N: FX493 |Applying initial value "111111" on instance sda_in_dly[5:0].
+@N: FX493 |Applying initial value "11" on instance scl_in_clean_dly[1:0].
+@N: FX493 |Applying initial value "1" on instance scl_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_in_clean.
+@N: FX493 |Applying initial value "1" on instance scl_out.
+@N: FX493 |Applying initial value "1" on instance sda_out.
+@N: FX493 |Applying initial value "00000000" on instance power_control[7:0].
+Fixing fake multiple drivers on net bmc_extrst.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_slave_for_register.v":147:0:147:5|Removing sequential instance word_addr_vld (in view: work.i2c_slave_reg_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\cpu_power_control.v":201:0:201:5|Removing sequential instance pwr_button (in view: work.cpu_power_control(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\switch_reset_control.v":126:0:126:5|Removing sequential instance switch_prst (in view: work.switch_reset_control(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+Encoding state machine current_state[6:0] (in view: work.i2c_slave_reg_Z1(verilog))
+original code -> new code
+   0000 -> 0000001
+   0001 -> 0000010
+   0010 -> 0000100
+   0011 -> 0001000
+   0100 -> 0010000
+   0101 -> 0100000
+   0110 -> 1000000
+Encoding state machine current_state[2:0] (in view: work.debounce_button_FSM(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine current_state[10:0] (in view: work.i2c_master_Z2(verilog))
+original code -> new code
+   0000 -> 00000000001
+   0001 -> 00000000010
+   0010 -> 00000000100
+   0011 -> 00000001000
+   0100 -> 00000010000
+   0101 -> 00000100000
+   0110 -> 00001000000
+   0111 -> 00010000000
+   1000 -> 00100000000
+   1001 -> 01000000000
+   1010 -> 10000000000
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 180MB peak: 180MB)
+
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 180MB peak: 181MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=74 on top level netlist server_top 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 180MB peak: 181MB)
+
+
+
+Clock Summary
+******************
+
+          Start                Requested     Requested     Clock        Clock                   Clock
+Level     Clock                Frequency     Period        Type         Group                   Load 
+-----------------------------------------------------------------------------------------------------
+0 -       System               100.0 MHz     10.000        system       system_clkgroup         19   
+                                                                                                     
+0 -       server_top|clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     545  
+=====================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                     Clock     Source          Clock Pin                                 Non-clock Pin     Non-clock Pin
+Clock                Load      Pin             Seq Example                               Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------------------------
+System               19        -               bmc_reset_ctrl_inst.next_state[2:0].C     -                 -            
+                                                                                                                        
+server_top|clock     545       clock(port)     flash_1s.C                                -                 -            
+========================================================================================================================
+
+@W: MT532 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v":106:1:106:4|Found signal identified as System clock which controls 19 sequential elements including server_power_control.power_signal_detect_inst.next_state[2:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
+@W: MT530 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_on_reset.v":26:0:26:5|Found inferred clock server_top|clock which controls 545 sequential elements including por.rst_btn_dly[5]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+For details review file gcc_ICG_report.rpt
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 545 clock pin(s) of sequential element(s)
+6 gated/generated clock tree(s) driving 19 clock pin(s) of sequential element(s)
+0 instances converted, 19 sequential instances remain driven by gated/generated clocks
+
+============================ Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance 
+----------------------------------------------------------------------------------------
+@KP:ckid0_0       clock               port                   545        power_control[7]
+========================================================================================
+======================================================================================================= Gated/Generated Clocks ========================================================================================================
+Clock Tree ID     Driving Element                                                        Drive Element Type     Unconverted Fanout     Sample Instance                                                   Explanation                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       bmc_reset_ctrl_inst.un1_next_state24.OUT                               or                     3                      bmc_reset_ctrl_inst.next_state[2:0]                               Clock Optimization not enabled
+@KP:ckid0_2       usb_reset_ctrl_inst.un1_next_state42.OUT                               or                     3                      usb_reset_ctrl_inst.next_state[2:0]                               Clock Optimization not enabled
+@KP:ckid0_3       server_power_control.switch_reset_control.un1_next_state43.OUT         or                     3                      server_power_control.switch_reset_control.next_state[2:0]         Clock Optimization not enabled
+@KP:ckid0_4       server_power_control.cpu_pwr_control.un1_next_state44.OUT              or                     3                      server_power_control.cpu_pwr_control.next_state[2:0]              Clock Optimization not enabled
+@KP:ckid0_5       server_power_control.power_signal_detect_inst.un1_next_state69.OUT     or                     3                      server_power_control.power_signal_detect_inst.next_state[2:0]     Clock Optimization not enabled
+@KP:ckid0_6       server_power_control.un1_next_state115_1.OUT                           or                     4                      server_power_control.next_state[3:0]                              Clock Optimization not enabled
+=======================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 181MB peak: 181MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 181MB peak: 181MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 183MB peak: 183MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 95MB peak: 183MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jul 12 16:07:18 2023
+
+###########################################################]

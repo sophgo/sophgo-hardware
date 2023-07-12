@@ -1,0 +1,2159 @@
+<HTML>
+<HEAD><TITLE>Place & Route Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Par"></A>PAR: Place And Route Diamond (64-bit) 3.12.1.454.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jul 12 16:07:32 2023
+
+D:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f Server_CPLD_V11_PRJ_impl1.p2t
+Server_CPLD_V11_PRJ_impl1_map.ncd Server_CPLD_V11_PRJ_impl1.dir
+Server_CPLD_V11_PRJ_impl1.prf -gui
+
+
+Preference file: Server_CPLD_V11_PRJ_impl1.prf.
+
+<A name="par_cts"></A><B><U><big>Cost Table Summary</big></U></B>
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+<span style="background-color:red">5_1   *      0            26.639       0            -0.400       400          32           Completed</span>
+* : Design saved.
+
+Total (real) run time for 1-seed: 32 secs 
+
+par done!
+
+Note: user must run &apos;Trace&apos; for timing closure signoff.
+
+Lattice Place and Route Report for Design &quot;Server_CPLD_V11_PRJ_impl1_map.ncd&quot;
+Wed Jul 12 16:07:32 2023
+
+
+<A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
+PAR: Place And Route Diamond (64-bit) 3.12.1.454.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 Server_CPLD_V11_PRJ_impl1_map.ncd Server_CPLD_V11_PRJ_impl1.dir/5_1.ncd Server_CPLD_V11_PRJ_impl1.prf
+Preference file: Server_CPLD_V11_PRJ_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Server_CPLD_V11_PRJ_impl1_map.ncd.
+Design name: server_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-2100C
+Package:     CABGA256
+Performance: 5
+Loading device for application par from file &apos;xo3c2100.nph&apos; in environment: D:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.18.
+Performance Hardware Data Status:   Final          Version 37.5.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+
+<A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
+
+   PIO (prelim)  147+4(JTAG)/216     70% used
+                 147+4(JTAG)/207     73% bonded
+   IOLOGIC            7/216           3% used
+
+   SLICE            545/1056         51% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 1766
+Number of Connections: 4646
+
+Pin Constraint Summary:
+   147 out of 147 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clock_c (driver: clock, clk load #: 340)
+
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    timer_inst/rst_n_dly[1] (driver: SLICE_358, clk load #: 0, sr load #: 0, ce load #: 22)
+
+Signal reset_i is selected as Global Set/Reset.
+Starting Placer Phase 0.
+..........
+Finished Placer Phase 0.  REAL time: 3 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 245110.
+Finished Placer Phase 1.  REAL time: 6 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  242538
+Finished Placer Phase 2.  REAL time: 6 secs 
+
+
+
+<A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  PLL        : 0 out of 1 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY &quot;clock_c&quot; from comp &quot;clock&quot; on CLK_PIN site &quot;C8 (PT17A)&quot;, clk load = 340
+  SECONDARY &quot;timer_inst/rst_n_dly[1]&quot; from Q1 on comp &quot;SLICE_358&quot; on site &quot;R9C15D&quot;, clk load = 0, ce load = 22, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+
+
+
+I/O Usage Summary (final):
+   147 + 4(JTAG) out of 216 (69.9%) PIO sites used.
+   147 + 4(JTAG) out of 207 (72.9%) bonded PIO sites used.
+   Number of PIO comps: 147; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 42 / 51 ( 82%) | 3.3V       | -         |
+| 1        | 44 / 52 ( 84%) | 3.3V       | -         |
+| 2        | 30 / 52 ( 57%) | 1.8V       | -         |
+| 3        | 14 / 16 ( 87%) | 3.3V       | -         |
+| 4        | 9 / 16 ( 56%)  | 3.3V       | -         |
+| 5        | 8 / 20 ( 40%)  | 3.3V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 5 secs 
+
+Dumping design to file Server_CPLD_V11_PRJ_impl1.dir/5_1.ncd.
+
+0 connections routed; 4646 unrouted.
+Starting router resource preassignment
+
+WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
+   Signal=bmc_reset_ctrl_inst/un1_next_state24_0_0 loads=1 clock_loads=1
+   Signal=usb_reset_ctrl_inst/current_state_RNI5EMP[0] loads=2 clock_loads=2
+   Signal=server_power_control/un1_next_state115_1_0 loads=3 clock_loads=3
+   Signal=server_power_control/switch_reset_control/un1_next_state43_0 loads=2 clock_loads=2
+   Sig   ....   ontrol/cpu_pwr_control/current_state_RNI16S31[1] loads=2 clock_loads=2
+   Signal=server_power_control/power_signal_detect_inst/un1_next_state69 loads=2 clock_loads=2
+
+Completed router resource preassignment. Real time: 11 secs 
+
+Start NBR router at 16:07:43 07/12/23
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 16:07:43 07/12/23
+
+Start NBR section for initial routing at 16:07:43 07/12/23
+Level 4, iteration 1
+181(0.14%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.044ns/0.000ns; real time: 11 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:07:44 07/12/23
+Level 4, iteration 1
+99(0.08%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 2
+34(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 3
+9(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 4
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 5
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 8
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+Level 4, iteration 9
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 12 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 16:07:44 07/12/23
+Level 4, iteration 0
+Level 4, iteration 1
+19(0.01%) conflicts; 12(0.26%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 13 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 15(0.32%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 13 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 7
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 8
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 9
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 12
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 13
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 14
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 15
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 16
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 17
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 18
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 19
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 20
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 21
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 22
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 23
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 24
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 25
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 26
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 27
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 28
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 29
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 30
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 31
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 32
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 33
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 34
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 35
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 36
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 37
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 38
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 39
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 40
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 41
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 42
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 14 secs 
+Level 4, iteration 43
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 44
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 45
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 46
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 47
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 48
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 49
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 50
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 51
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 52
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 53
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 54
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 55
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 56
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 57
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 58
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 59
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 60
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 61
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 62
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 63
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 64
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 65
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 66
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 67
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 68
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 69
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 70
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 71
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 72
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 73
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 74
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 75
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 76
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 77
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 15 secs 
+Level 4, iteration 78
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 79
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 80
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 81
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 82
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 83
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 84
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 85
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 86
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 87
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 88
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 89
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 90
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 91
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 92
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 93
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 94
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 95
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 96
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 97
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 98
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 99
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 100
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 101
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 102
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 103
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 104
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 105
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 106
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 107
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 108
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 109
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 110
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 111
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 112
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 113
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 16 secs 
+Level 4, iteration 114
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 115
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 116
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 117
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 118
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 119
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 120
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 121
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 122
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 123
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 124
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 125
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 126
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 127
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 128
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 129
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 130
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 131
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 132
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 133
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 134
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 135
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 136
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 137
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 138
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 139
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 140
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 141
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 142
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 143
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 144
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 145
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 146
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 147
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 148
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 17 secs 
+Level 4, iteration 149
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 150
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 151
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 152
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 153
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 154
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 155
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 156
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 157
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 158
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 159
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 160
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 161
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 162
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 163
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 164
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 165
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 166
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 167
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 168
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 169
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 170
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 171
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 172
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 173
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 174
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 175
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 176
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 177
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 178
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 179
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 180
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 181
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 182
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 18 secs 
+Level 4, iteration 183
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 184
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 185
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 186
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 187
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 188
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 189
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 190
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 191
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 192
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 193
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 194
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 195
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 196
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 197
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 198
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 199
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 200
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 0
+1(0.00%) conflict; 16(0.34%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.619ns/0.000ns; real time: 19 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.619ns/0.000ns; real time: 19 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 1215 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: -0.405ns/-1.215ns; real time: 19 secs 
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 19 secs 
+Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 8
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 9
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 12
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 13
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 14
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 15
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 16
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 17
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 18
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 19
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 20
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 21
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 22
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 23
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 24
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 25
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 26
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 27
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 28
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 29
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 30
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 31
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 32
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 33
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 34
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 35
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 36
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 37
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 38
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 39
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 40
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 41
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 20 secs 
+Level 4, iteration 42
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 43
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 44
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 45
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 46
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 47
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 48
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 49
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 50
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 51
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 52
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 53
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 54
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 55
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 56
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 57
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 58
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 59
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 60
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 61
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 62
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 63
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 64
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 65
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 66
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 67
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 68
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 69
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 70
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 71
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 72
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 73
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 74
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 75
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 76
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 77
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 21 secs 
+Level 4, iteration 78
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 79
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 80
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 81
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 82
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 83
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 84
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 85
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 86
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 87
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 88
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 89
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 90
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 91
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 92
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 93
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 94
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 95
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 96
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 97
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 98
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 99
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 100
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 101
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 102
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 103
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 104
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 105
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 106
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 107
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 108
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 109
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 110
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 111
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 112
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 22 secs 
+Level 4, iteration 113
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 114
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 115
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 116
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 117
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 118
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 119
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 120
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 121
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 122
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 123
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 124
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 125
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 126
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 127
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 128
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 129
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 130
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 131
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 132
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 133
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 134
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 135
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 136
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 137
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 138
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 139
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 140
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 141
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 142
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 143
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 144
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 145
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 146
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 147
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 148
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 23 secs 
+Level 4, iteration 149
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 150
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 151
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 152
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 153
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 154
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 155
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 156
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 157
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 158
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 159
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 160
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 161
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 162
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 163
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 164
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 165
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 166
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 167
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 168
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 169
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 170
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 171
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 172
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 173
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 174
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 175
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 176
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 177
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 178
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 179
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 180
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 181
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 182
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 183
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 184
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 24 secs 
+Level 4, iteration 185
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 186
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 187
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 188
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 189
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 190
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 191
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 192
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 193
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 194
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 195
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 196
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 197
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 198
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 199
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 200
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 0
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.619ns/0.000ns; real time: 25 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.619ns/0.000ns; real time: 25 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 1215 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: -0.405ns/-1.215ns; real time: 25 secs 
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 8
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 25 secs 
+Level 4, iteration 9
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 12
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 13
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 14
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 15
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 16
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 17
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 18
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 19
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 20
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 21
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 22
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 23
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 24
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 25
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 26
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 27
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 28
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 29
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 30
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 31
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 32
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 33
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 34
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 35
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 36
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 37
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 38
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 39
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 40
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 41
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 42
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 43
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 44
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 26 secs 
+Level 4, iteration 45
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 46
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 47
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 48
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 49
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 50
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 51
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 52
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 53
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 54
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 55
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 56
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 57
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 58
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 59
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 60
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 61
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 62
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 63
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 64
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 65
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 66
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 67
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 68
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 69
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 70
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 71
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 72
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 73
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 74
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 75
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 76
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 77
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 78
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 79
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 80
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 27 secs 
+Level 4, iteration 81
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 82
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 83
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 84
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 85
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 86
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 87
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 88
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 89
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 90
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 91
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 92
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 93
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 94
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 95
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 96
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 97
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 98
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 99
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 100
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 101
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 102
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 103
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 104
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 105
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 106
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 107
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 108
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 109
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 110
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 111
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 112
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 113
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 114
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 115
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 116
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 28 secs 
+Level 4, iteration 117
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 118
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 119
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 120
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 121
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 122
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 123
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 124
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 125
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 126
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 127
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 128
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 129
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 130
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 131
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 132
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 133
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 134
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 135
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 136
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 137
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 138
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 139
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 140
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 141
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 142
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 143
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 144
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 145
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 146
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 147
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 148
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 149
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 150
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 151
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 152
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 29 secs 
+Level 4, iteration 153
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 154
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 155
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 156
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 157
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 158
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 159
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 160
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 161
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 162
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 163
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 164
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 165
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 166
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 167
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 168
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 169
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 170
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 171
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 172
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 173
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 174
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 175
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 176
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 177
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 178
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 179
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 180
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 181
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 182
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 183
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 184
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 185
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 186
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 187
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 188
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 30 secs 
+Level 4, iteration 189
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 190
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 191
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 192
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 193
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 194
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 195
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 196
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 197
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 198
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 199
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 200
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;hold &gt;: 0.110ns/0.000ns; real time: 31 secs 
+Level 4, iteration 0
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.619ns/0.000ns; real time: 31 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.619ns/0.000ns; real time: 31 secs 
+
+Start NBR section for re-routing at 16:08:03 07/12/23
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 26.639ns/0.000ns; real time: 31 secs 
+
+Start NBR section for post-routing at 16:08:03 07/12/23
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack&lt;setup&gt; : 26.639ns
+  Timing score&lt;setup&gt; : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
+   Signal=bmc_reset_ctrl_inst/un1_next_state24_0_0 loads=1 clock_loads=1
+   Signal=usb_reset_ctrl_inst/current_state_RNI5EMP[0] loads=2 clock_loads=2
+   Signal=server_power_control/un1_next_state115_1_0 loads=3 clock_loads=3
+   Signal=server_power_control/switch_reset_control/un1_next_state43_0 loads=2 clock_loads=2
+   Sig   ....   ontrol/cpu_pwr_control/current_state_RNI16S31[1] loads=2 clock_loads=2
+   Signal=server_power_control/power_signal_detect_inst/un1_next_state69 loads=2 clock_loads=2
+
+Total CPU time 31 secs 
+Total REAL time: 32 secs 
+Completely routed.
+End of route.  4646 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 1
+
+Timing score: 0 
+
+Dumping design to file Server_CPLD_V11_PRJ_impl1.dir/5_1.ncd.
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = 26.639
+PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 0.000
+PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = -0.400
+PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.400
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 31 secs 
+Total REAL time to completion: 32 secs 
+
+par done!
+
+Note: user must run &apos;Trace&apos; for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

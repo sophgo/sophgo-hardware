@@ -1,0 +1,958 @@
+#Build: Synplify Pro (R) R-2021.03L-SP1, Build 093R, Aug 10 2021
+#install: D:\lscc\diamond\3.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: CGITB2303316341
+
+# Wed Jul 12 16:07:12 2023
+
+#Implementation: impl1
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys HDL Compiler, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys Verilog Compiler, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
+
+@N|Running in 64-bit mode
+@I::"D:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v" (library work)
+@I::"D:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"D:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"D:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"D:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"D:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\eeprom_i2c.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_on_reset.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\timer.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\uart_sol.v" (library work)
+@I::"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v" (library work)
+Verilog syntax check successful!
+Selecting top level module server_top
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_on_reset.v":1:7:1:20|Synthesizing module power_on_reset in library work.
+Running optimization stage 1 on power_on_reset .......
+Finished optimization stage 1 on power_on_reset (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 96MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\timer.v":2:7:2:11|Synthesizing module timer in library work.
+Running optimization stage 1 on timer .......
+Finished optimization stage 1 on timer (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 97MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\uart_sol.v":1:7:1:14|Synthesizing module uart_sol in library work.
+Running optimization stage 1 on uart_sol .......
+Finished optimization stage 1 on uart_sol (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 97MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":2:7:2:19|Synthesizing module i2c_slave_reg in library work.
+
+	I2C_SPEED_DIV=10'b0011111010
+	CAS_MODE=1'b0
+	SLAVE_ADDR_MIN=7'b0111000
+	SLAVE_ADDR_MAX=7'b0111111
+	SLAVE_ADDR_OTHER=7'b0111000
+	IDLE=4'b0000
+	DEV_ADDR_STATE=4'b0001
+	WAIT_ACK=4'b0010
+	WORD_ADDR_STATE=4'b0011
+	SEND_ACK=4'b0100
+	SEND_DATA=4'b0101
+	RCV_DATA=4'b0110
+   Generated name = i2c_slave_reg_Z1
+Running optimization stage 1 on i2c_slave_reg_Z1 .......
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":559:0:559:5|Pruning unused register stretch_en_1d. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":559:0:559:5|Pruning unused register rcv_cas_ack. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Pruning unused register start_stretch_det_dly[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Pruning unused register det_delay_cnt[4:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":336:0:336:5|Pruning unused register slave_addr_vld. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":95:0:95:5|Pruning unused register sda_cas_in_dly[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":95:0:95:5|Pruning unused register sda_cas_in_clean. Make sure that there are no unused intermediate registers.
+@W: CL265 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":95:0:95:5|Removing unused bit 1 of sda_in_clean_dly[1:0]. Either assign all bits or reduce the width of the signal.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":559:0:559:5|Optimizing register bit mux_clk_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":559:0:559:5|Optimizing register bit mux_data_en to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Pruning unused register stretch_cnt_en. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Pruning unused register stretch_en. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":559:0:559:5|Pruning unused register mux_clk_en. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":559:0:559:5|Pruning unused register mux_data_en. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":559:0:559:5|Pruning unused register stop_1d. Make sure that there are no unused intermediate registers.
+Finished optimization stage 1 on i2c_slave_reg_Z1 (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":4:7:4:25|Synthesizing module debounce_button_FSM in library work.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":62:14:62:16|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":99:18:99:25|Removing redundant assignment.
+Running optimization stage 1 on debounce_button_FSM .......
+Finished optimization stage 1 on debounce_button_FSM (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":2:7:2:25|Synthesizing module power_signal_detect in library work.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":246:24:246:35|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":251:22:251:33|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":265:24:265:35|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":270:22:270:33|Removing redundant assignment.
+Running optimization stage 1 on power_signal_detect .......
+@W: CL118 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":106:1:106:4|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.
+Finished optimization stage 1 on power_signal_detect (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v":3:7:3:23|Synthesizing module cpu_power_control in library work.
+Running optimization stage 1 on cpu_power_control .......
+@W: CL118 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v":134:2:134:5|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.
+Finished optimization stage 1 on cpu_power_control (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v":1:7:1:26|Synthesizing module switch_reset_control in library work.
+Running optimization stage 1 on switch_reset_control .......
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v":126:0:126:5|Pruning unused register en_pcie_sw_0v8. Make sure that there are no unused intermediate registers.
+@W: CL118 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v":73:2:73:5|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.
+Finished optimization stage 1 on switch_reset_control (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v":2:7:2:26|Synthesizing module server_power_control in library work.
+Running optimization stage 1 on server_power_control .......
+@W: CL118 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v":189:2:189:5|Latch generated from always block for signal next_state[3:0]; possible missing assignment in an if or case statement.
+Finished optimization stage 1 on server_power_control (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 100MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v":2:7:2:20|Synthesizing module usb_reset_ctrl in library work.
+Running optimization stage 1 on usb_reset_ctrl .......
+@W: CL118 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v":58:1:58:4|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.
+Finished optimization stage 1 on usb_reset_ctrl (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 100MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v":2:7:2:20|Synthesizing module bmc_reset_ctrl in library work.
+Running optimization stage 1 on bmc_reset_ctrl .......
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v":20:0:20:5|Pruning unused register rst_in_dly[5:0]. Make sure that there are no unused intermediate registers.
+@W: CL118 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v":92:1:92:4|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.
+Finished optimization stage 1 on bmc_reset_ctrl (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 100MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v":2:7:2:16|Synthesizing module i2c_master in library work.
+
+	I2C_SPEED_DIV=10'b0011111010
+	IDLE=4'b0000
+	SEND_START=4'b0001
+	DEV_ADDR_STATE=4'b0010
+	WAIT_ACK=4'b0011
+	WORD_ADDR_STATE=4'b0100
+	SEND_ACK=4'b0101
+	SEND_DATA=4'b0110
+	REPEAT_START=4'b0111
+	READ_DATA=4'b1000
+	SEND_STOP=4'b1001
+	SEND_NACK=4'b1010
+   Generated name = i2c_master_Z2
+Running optimization stage 1 on i2c_master_Z2 .......
+Finished optimization stage 1 on i2c_master_Z2 (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 100MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\eeprom_i2c.v":1:7:1:16|Synthesizing module eeprom_i2c in library work.
+Running optimization stage 1 on eeprom_i2c .......
+Finished optimization stage 1 on eeprom_i2c (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 100MB)
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v":3:7:3:16|Synthesizing module server_top in library work.
+@W: CG781 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v":493:12:493:12|Input scl_cas_in on instance i2c0_slave_inst0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v":494:12:494:12|Input sda_cas_in on instance i2c0_slave_inst0 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG360 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v":356:5:356:12|Removing wire power_on, as there is no assignment to it.
+Running optimization stage 1 on server_top .......
+Finished optimization stage 1 on server_top (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 101MB)
+Running optimization stage 2 on server_top .......
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v":210:0:210:7|Input a_gpio16 is unused.
+Finished optimization stage 2 on server_top (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 102MB)
+Running optimization stage 2 on eeprom_i2c .......
+Finished optimization stage 2 on eeprom_i2c (CPU Time 0h:00m:00s, Memory Used current: 101MB peak: 102MB)
+Running optimization stage 2 on i2c_master_Z2 .......
+@N: CL201 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v":176:0:176:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 11 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+   1010
+Finished optimization stage 2 on i2c_master_Z2 (CPU Time 0h:00m:00s, Memory Used current: 102MB peak: 103MB)
+Running optimization stage 2 on bmc_reset_ctrl .......
+Finished optimization stage 2 on bmc_reset_ctrl (CPU Time 0h:00m:00s, Memory Used current: 102MB peak: 103MB)
+Running optimization stage 2 on usb_reset_ctrl .......
+Finished optimization stage 2 on usb_reset_ctrl (CPU Time 0h:00m:00s, Memory Used current: 102MB peak: 103MB)
+Running optimization stage 2 on server_power_control .......
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v":20:11:20:20|Input psu0_pwrok is unused.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v":21:11:21:20|Input psu1_pwrok is unused.
+Finished optimization stage 2 on server_power_control (CPU Time 0h:00m:00s, Memory Used current: 103MB peak: 104MB)
+Running optimization stage 2 on switch_reset_control .......
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v":12:0:12:15|Input pg_pcie_sw_0v8_b is unused.
+Finished optimization stage 2 on switch_reset_control (CPU Time 0h:00m:00s, Memory Used current: 103MB peak: 104MB)
+Running optimization stage 2 on cpu_power_control .......
+Finished optimization stage 2 on cpu_power_control (CPU Time 0h:00m:00s, Memory Used current: 103MB peak: 104MB)
+Running optimization stage 2 on power_signal_detect .......
+Finished optimization stage 2 on power_signal_detect (CPU Time 0h:00m:00s, Memory Used current: 103MB peak: 104MB)
+Running optimization stage 2 on debounce_button_FSM .......
+@N: CL201 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":102:0:102:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Finished optimization stage 2 on debounce_button_FSM (CPU Time 0h:00m:00s, Memory Used current: 103MB peak: 104MB)
+Running optimization stage 2 on i2c_slave_reg_Z1 .......
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit start_stretch_det to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit stretch_cnt[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Pruning unused register stretch_cnt[8:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Pruning unused register start_stretch_det. Make sure that there are no unused intermediate registers.
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Optimizing register bit scl_cas_out_en to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":95:0:95:5|Pruning unused register scl_cas_in_clean. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":499:0:499:5|Pruning unused register scl_cas_out_en. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":95:0:95:5|Pruning unused register scl_cas_in_dly[1:0]. Make sure that there are no unused intermediate registers.
+@N: CL201 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":240:0:240:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 7 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+@W: CL190 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":336:0:336:5|Optimizing register bit before_state[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":336:0:336:5|Pruning register bit 3 of before_state[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":26:16:26:25|Input scl_cas_in is unused.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":27:16:27:25|Input sda_cas_in is unused.
+Finished optimization stage 2 on i2c_slave_reg_Z1 (CPU Time 0h:00m:00s, Memory Used current: 103MB peak: 109MB)
+Running optimization stage 2 on uart_sol .......
+Finished optimization stage 2 on uart_sol (CPU Time 0h:00m:00s, Memory Used current: 103MB peak: 109MB)
+Running optimization stage 2 on timer .......
+Finished optimization stage 2 on timer (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 109MB)
+Running optimization stage 2 on power_on_reset .......
+Finished optimization stage 2 on power_on_reset (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 109MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 104MB peak: 109MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+
+Process completed successfully.
+# Wed Jul 12 16:07:15 2023
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 95MB peak: 95MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Jul 12 16:07:15 2023
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synwork\Server_CPLD_V11_PRJ_impl1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 25MB peak: 26MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+
+Process completed successfully.
+# Wed Jul 12 16:07:15 2023
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:15:36, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 95MB peak: 96MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Jul 12 16:07:16 2023
+
+###########################################################]
+Premap Report
+
+# Wed Jul 12 16:07:17 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys Lattice Technology Pre-mapping, Version map202103lat, Build 070R, Built Oct  6 2021 11:12:38, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 133MB)
+
+@A: MF827 |No constraint file specified.
+@L: E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\Server_CPLD_V11_PRJ_impl1_scck.rpt 
+See clock summary report "E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\Server_CPLD_V11_PRJ_impl1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 147MB)
+
+@N: FX493 |Applying initial value "000000" on instance rst_btn_dly[5:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "1" on instance sda_in_clean_dly[0].
+@N: FX493 |Applying initial value "11" on instance scl_in_clean_dly[1:0].
+@N: FX493 |Applying initial value "111111" on instance scl_in_dly[5:0].
+@N: FX493 |Applying initial value "111111" on instance sda_in_dly[5:0].
+@N: FX493 |Applying initial value "1" on instance scl_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_out_reg.
+@N: FX493 |Applying initial value "000000000" on instance enable_reg[8:0].
+@N: FX493 |Applying initial value "111111" on instance scl_in_dly[5:0].
+@N: FX493 |Applying initial value "111111" on instance sda_in_dly[5:0].
+@N: FX493 |Applying initial value "11" on instance scl_in_clean_dly[1:0].
+@N: FX493 |Applying initial value "1" on instance scl_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_in_clean.
+@N: FX493 |Applying initial value "1" on instance scl_out.
+@N: FX493 |Applying initial value "1" on instance sda_out.
+@N: FX493 |Applying initial value "00000000" on instance power_control[7:0].
+Fixing fake multiple drivers on net bmc_extrst.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_slave_for_register.v":147:0:147:5|Removing sequential instance word_addr_vld (in view: work.i2c_slave_reg_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\cpu_power_control.v":201:0:201:5|Removing sequential instance pwr_button (in view: work.cpu_power_control(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\switch_reset_control.v":126:0:126:5|Removing sequential instance switch_prst (in view: work.switch_reset_control(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+Encoding state machine current_state[6:0] (in view: work.i2c_slave_reg_Z1(verilog))
+original code -> new code
+   0000 -> 0000001
+   0001 -> 0000010
+   0010 -> 0000100
+   0011 -> 0001000
+   0100 -> 0010000
+   0101 -> 0100000
+   0110 -> 1000000
+Encoding state machine current_state[2:0] (in view: work.debounce_button_FSM(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine current_state[10:0] (in view: work.i2c_master_Z2(verilog))
+original code -> new code
+   0000 -> 00000000001
+   0001 -> 00000000010
+   0010 -> 00000000100
+   0011 -> 00000001000
+   0100 -> 00000010000
+   0101 -> 00000100000
+   0110 -> 00001000000
+   0111 -> 00010000000
+   1000 -> 00100000000
+   1001 -> 01000000000
+   1010 -> 10000000000
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 180MB peak: 180MB)
+
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 180MB peak: 181MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=74 on top level netlist server_top 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 180MB peak: 181MB)
+
+
+
+Clock Summary
+******************
+
+          Start                Requested     Requested     Clock        Clock                   Clock
+Level     Clock                Frequency     Period        Type         Group                   Load 
+-----------------------------------------------------------------------------------------------------
+0 -       System               100.0 MHz     10.000        system       system_clkgroup         19   
+                                                                                                     
+0 -       server_top|clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     545  
+=====================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                     Clock     Source          Clock Pin                                 Non-clock Pin     Non-clock Pin
+Clock                Load      Pin             Seq Example                               Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------------------------
+System               19        -               bmc_reset_ctrl_inst.next_state[2:0].C     -                 -            
+                                                                                                                        
+server_top|clock     545       clock(port)     flash_1s.C                                -                 -            
+========================================================================================================================
+
+@W: MT532 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v":106:1:106:4|Found signal identified as System clock which controls 19 sequential elements including server_power_control.power_signal_detect_inst.next_state[2:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
+@W: MT530 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_on_reset.v":26:0:26:5|Found inferred clock server_top|clock which controls 545 sequential elements including por.rst_btn_dly[5]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+For details review file gcc_ICG_report.rpt
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 545 clock pin(s) of sequential element(s)
+6 gated/generated clock tree(s) driving 19 clock pin(s) of sequential element(s)
+0 instances converted, 19 sequential instances remain driven by gated/generated clocks
+
+============================ Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance 
+----------------------------------------------------------------------------------------
+@KP:ckid0_0       clock               port                   545        power_control[7]
+========================================================================================
+======================================================================================================= Gated/Generated Clocks ========================================================================================================
+Clock Tree ID     Driving Element                                                        Drive Element Type     Unconverted Fanout     Sample Instance                                                   Explanation                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       bmc_reset_ctrl_inst.un1_next_state24.OUT                               or                     3                      bmc_reset_ctrl_inst.next_state[2:0]                               Clock Optimization not enabled
+@KP:ckid0_2       usb_reset_ctrl_inst.un1_next_state42.OUT                               or                     3                      usb_reset_ctrl_inst.next_state[2:0]                               Clock Optimization not enabled
+@KP:ckid0_3       server_power_control.switch_reset_control.un1_next_state43.OUT         or                     3                      server_power_control.switch_reset_control.next_state[2:0]         Clock Optimization not enabled
+@KP:ckid0_4       server_power_control.cpu_pwr_control.un1_next_state44.OUT              or                     3                      server_power_control.cpu_pwr_control.next_state[2:0]              Clock Optimization not enabled
+@KP:ckid0_5       server_power_control.power_signal_detect_inst.un1_next_state69.OUT     or                     3                      server_power_control.power_signal_detect_inst.next_state[2:0]     Clock Optimization not enabled
+@KP:ckid0_6       server_power_control.un1_next_state115_1.OUT                           or                     4                      server_power_control.next_state[3:0]                              Clock Optimization not enabled
+=======================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 181MB peak: 181MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 181MB peak: 181MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 183MB peak: 183MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 95MB peak: 183MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Jul 12 16:07:18 2023
+
+###########################################################]
+Map & Optimize Report
+
+# Wed Jul 12 16:07:18 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version map202103lat, Build 070R, Built Oct  6 2021 11:12:38, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 133MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 133MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
+
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_slave_for_register.v":147:0:147:5|Found counter in view:work.i2c_slave_reg_Z1(verilog) instance delay_cnt[7:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_slave_for_register.v":147:0:147:5|Found counter in view:work.i2c_slave_reg_Z1(verilog) instance word_addr[7:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_slave_for_register.v":449:0:449:5|Found counter in view:work.i2c_slave_reg_Z1(verilog) instance timeout_cnt[4:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\server_power_control.v":359:0:359:5|Found counter in view:work.server_power_control(verilog) instance reboot_cnt[15:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\server_power_control.v":359:0:359:5|Found counter in view:work.server_power_control(verilog) instance efuse_dly[8:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\server_power_control.v":359:0:359:5|Found counter in view:work.server_power_control(verilog) instance wait_time_out_cnt[15:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\server_power_control.v":359:0:359:5|Found counter in view:work.server_power_control(verilog) instance psu_dly[8:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v":202:0:202:5|Found counter in view:work.power_signal_detect(verilog) instance low_time_cnt[15:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v":202:0:202:5|Found counter in view:work.power_signal_detect(verilog) instance normal_sig_cnt[3:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v":202:0:202:5|Found counter in view:work.power_signal_detect(verilog) instance force_sig_cnt[3:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\power_signal_detect.v":202:0:202:5|Found counter in view:work.power_signal_detect(verilog) instance debounce_cnt[15:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\debounce_button_fsm_run.v":85:0:85:5|Found counter in view:work.debounce_button_FSM(verilog) instance cnt_time[7:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\debounce_button_fsm_run.v":48:0:48:5|Found counter in view:work.debounce_button_FSM(verilog) instance cnt[7:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\cpu_power_control.v":201:0:201:5|Found counter in view:work.cpu_power_control(verilog) instance seq_cnt[10:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\switch_reset_control.v":126:0:126:5|Found counter in view:work.switch_reset_control(verilog) instance switch_rst_cnt[7:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\switch_reset_control.v":126:0:126:5|Found counter in view:work.switch_reset_control(verilog) instance switch_0v8_cnt[8:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\usb_reset_ctrl.v":105:0:105:5|Found counter in view:work.usb_reset_ctrl(verilog) instance urst_delay[15:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\bmc_reset_ctrl.v":121:0:121:5|Found counter in view:work.bmc_reset_ctrl(verilog) instance prst_delay[15:0] 
+@W: MO129 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\bmc_reset_ctrl.v":92:1:92:4|Sequential instance bmc_reset_ctrl_inst.next_state[2] is reduced to a combinational gate by constant propagation.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\bmc_reset_ctrl.v":81:0:81:5|Removing sequential instance current_state[2] (in view: work.bmc_reset_ctrl(verilog)) because it does not drive other instances.
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_master.v":429:0:429:5|Found counter in view:work.i2c_master_Z2(verilog) instance det_delay_cnt[3:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_master.v":484:0:484:5|Found counter in view:work.i2c_master_Z2(verilog) instance timeout_cnt[4:0] 
+@N: MO231 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_master.v":95:0:95:5|Found counter in view:work.i2c_master_Z2(verilog) instance state_cnt[9:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 183MB peak: 183MB)
+
+@W: BN132 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\usb_reset_ctrl.v":20:0:20:5|Removing instance usb_reset_ctrl_inst.sig_r0 because it is equivalent to instance bmc_reset_ctrl_inst.sig_r0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\usb_reset_ctrl.v":20:0:20:5|Removing instance usb_reset_ctrl_inst.sig_r1 because it is equivalent to instance bmc_reset_ctrl_inst.sig_r1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_master.v":128:0:128:5|Removing sequential instance eeprom_i2c_inst.e2prom_i2c.start_again_en (in view: work.server_top(verilog)) because it does not drive other instances.
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_master.v":176:0:176:5|Removing sequential instance eeprom_i2c_inst.e2prom_i2c.current_state[5] (in view: work.server_top(verilog)) because it does not drive other instances.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 195MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 187MB peak: 195MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 195MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 195MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 195MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 241MB peak: 241MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -0.83ns		 808 /       540
+   2		0h:00m:02s		    -0.83ns		 798 /       540
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 241MB peak: 242MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 241MB peak: 242MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 204MB peak: 242MB)
+
+Writing Analyst data base E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\synwork\Server_CPLD_V11_PRJ_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 242MB peak: 242MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\Server_CPLD_V11_PRJ_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 248MB peak: 248MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 248MB peak: 248MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 243MB peak: 248MB)
+
+@W: MT420 |Found inferred clock server_top|clock with period 10.00ns. Please declare a user-defined clock on port clock.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Jul 12 16:07:22 2023
+#
+
+
+Top view:               server_top
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 0.218
+
+                     Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock       Frequency     Frequency     Period        Period        Slack     Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+server_top|clock     100.0 MHz     102.2 MHz     10.000        9.782         0.218     inferred     Inferred_clkgroup_0
+System               100.0 MHz     928.2 MHz     10.000        1.077         8.923     system       system_clkgroup    
+=======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                              |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------
+System            server_top|clock  |  10.000      8.923  |  No paths    -      |  No paths    -      |  No paths    -    
+server_top|clock  System            |  10.000      1.679  |  No paths    -      |  No paths    -      |  No paths    -    
+server_top|clock  server_top|clock  |  10.000      0.218  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: server_top|clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                               Starting                                                           Arrival          
+Instance                                       Reference            Type        Pin     Net                       Time        Slack
+                                               Clock                                                                               
+-----------------------------------------------------------------------------------------------------------------------------------
+server_power_control.wait_time_out_cnt[3]      server_top|clock     FD1P3DX     Q       wait_time_out_cnt[3]      1.044       0.218
+server_power_control.wait_time_out_cnt[7]      server_top|clock     FD1P3DX     Q       wait_time_out_cnt[7]      1.044       0.218
+server_power_control.wait_time_out_cnt[8]      server_top|clock     FD1P3DX     Q       wait_time_out_cnt[8]      1.044       0.218
+server_power_control.wait_time_out_cnt[10]     server_top|clock     FD1P3DX     Q       wait_time_out_cnt[10]     1.044       0.218
+server_power_control.wait_time_out_cnt[11]     server_top|clock     FD1P3DX     Q       wait_time_out_cnt[11]     1.044       0.218
+server_power_control.wait_time_out_cnt[12]     server_top|clock     FD1P3DX     Q       wait_time_out_cnt[12]     1.044       0.218
+server_power_control.efuse_dly[0]              server_top|clock     FD1P3DX     Q       efuse_dly[0]              1.108       0.801
+server_power_control.efuse_dly[1]              server_top|clock     FD1P3DX     Q       efuse_dly[1]              1.108       0.801
+server_power_control.efuse_dly[3]              server_top|clock     FD1P3DX     Q       efuse_dly[3]              1.108       0.801
+server_power_control.efuse_dly[4]              server_top|clock     FD1P3DX     Q       efuse_dly[4]              1.108       0.801
+===================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                                             Required          
+Instance                                       Reference            Type        Pin     Net                         Time         Slack
+                                               Clock                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------------
+server_power_control.wait_time_out_cnt[15]     server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[15]     9.894        0.218
+server_power_control.wait_time_out_cnt[13]     server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[13]     9.894        0.361
+server_power_control.wait_time_out_cnt[14]     server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[14]     9.894        0.361
+server_power_control.wait_time_out_cnt[11]     server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[11]     9.894        0.504
+server_power_control.wait_time_out_cnt[12]     server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[12]     9.894        0.504
+server_power_control.wait_time_out_cnt[9]      server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[9]      9.894        0.647
+server_power_control.wait_time_out_cnt[10]     server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[10]     9.894        0.647
+server_power_control.wait_time_out_cnt[7]      server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[7]      9.894        0.789
+server_power_control.wait_time_out_cnt[8]      server_top|clock     FD1P3DX     D       wait_time_out_cnt_s[8]      9.894        0.789
+server_power_control.efuse_dly[7]              server_top|clock     FD1P3DX     D       efuse_dly_s[7]              9.894        0.801
+======================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.894
+
+    - Propagation time:                      9.676
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     0.218
+
+    Number of logic level(s):                13
+    Starting point:                          server_power_control.wait_time_out_cnt[3] / Q
+    Ending point:                            server_power_control.wait_time_out_cnt[15] / D
+    The start point is clocked by            server_top|clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
+    The end   point is clocked by            server_top|clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
+
+Instance / Net                                                       Pin      Pin               Arrival     No. of    
+Name                                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------
+server_power_control.wait_time_out_cnt[3]               FD1P3DX      Q        Out     1.044     1.044 r     -         
+wait_time_out_cnt[3]                                    Net          -        -       -         -           2         
+server_power_control.wait_time_out_cnt_RNI4UEG[3]       ORCALUT4     A        In      0.000     1.044 r     -         
+server_power_control.wait_time_out_cnt_RNI4UEG[3]       ORCALUT4     Z        Out     1.017     2.061 r     -         
+g0_5                                                    Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_RNI9EHE2[13]     ORCALUT4     A        In      0.000     2.061 r     -         
+server_power_control.wait_time_out_cnt_RNI9EHE2[13]     ORCALUT4     Z        Out     1.017     3.077 r     -         
+g0_16                                                   Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_RNI8SII4[0]      ORCALUT4     D        In      0.000     3.077 r     -         
+server_power_control.wait_time_out_cnt_RNI8SII4[0]      ORCALUT4     Z        Out     1.193     4.270 r     -         
+wait_time_out_0_sqmuxa                                  Net          -        -       -         -           4         
+server_power_control.next_state105_RNIEA5S4             ORCALUT4     A        In      0.000     4.270 r     -         
+server_power_control.next_state105_RNIEA5S4             ORCALUT4     Z        Out     1.313     5.583 f     -         
+wait_time_out_cnt                                       Net          -        -       -         -           17        
+server_power_control.wait_time_out_cnt_cry_0[0]         CCU2D        A1       In      0.000     5.583 f     -         
+server_power_control.wait_time_out_cnt_cry_0[0]         CCU2D        COUT     Out     1.544     7.128 r     -         
+wait_time_out_cnt_cry[0]                                Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_cry_0[1]         CCU2D        CIN      In      0.000     7.128 r     -         
+server_power_control.wait_time_out_cnt_cry_0[1]         CCU2D        COUT     Out     0.143     7.270 r     -         
+wait_time_out_cnt_cry[2]                                Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_cry_0[3]         CCU2D        CIN      In      0.000     7.270 r     -         
+server_power_control.wait_time_out_cnt_cry_0[3]         CCU2D        COUT     Out     0.143     7.413 r     -         
+wait_time_out_cnt_cry[4]                                Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_cry_0[5]         CCU2D        CIN      In      0.000     7.413 r     -         
+server_power_control.wait_time_out_cnt_cry_0[5]         CCU2D        COUT     Out     0.143     7.556 r     -         
+wait_time_out_cnt_cry[6]                                Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_cry_0[7]         CCU2D        CIN      In      0.000     7.556 r     -         
+server_power_control.wait_time_out_cnt_cry_0[7]         CCU2D        COUT     Out     0.143     7.699 r     -         
+wait_time_out_cnt_cry[8]                                Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_cry_0[9]         CCU2D        CIN      In      0.000     7.699 r     -         
+server_power_control.wait_time_out_cnt_cry_0[9]         CCU2D        COUT     Out     0.143     7.841 r     -         
+wait_time_out_cnt_cry[10]                               Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_cry_0[11]        CCU2D        CIN      In      0.000     7.841 r     -         
+server_power_control.wait_time_out_cnt_cry_0[11]        CCU2D        COUT     Out     0.143     7.984 r     -         
+wait_time_out_cnt_cry[12]                               Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_cry_0[13]        CCU2D        CIN      In      0.000     7.984 r     -         
+server_power_control.wait_time_out_cnt_cry_0[13]        CCU2D        COUT     Out     0.143     8.127 r     -         
+wait_time_out_cnt_cry[14]                               Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt_s_0[15]          CCU2D        CIN      In      0.000     8.127 r     -         
+server_power_control.wait_time_out_cnt_s_0[15]          CCU2D        S0       Out     1.549     9.676 r     -         
+wait_time_out_cnt_s[15]                                 Net          -        -       -         -           1         
+server_power_control.wait_time_out_cnt[15]              FD1P3DX      D        In      0.000     9.676 r     -         
+======================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                Starting                                            Arrival          
+Instance                                                        Reference     Type        Pin     Net               Time        Slack
+                                                                Clock                                                                
+-------------------------------------------------------------------------------------------------------------------------------------
+bmc_reset_ctrl_inst.next_state[0]                               System        FD1S1AY     Q       next_state[0]     0.972       8.923
+server_power_control.next_state[0]                              System        FD1S1AY     Q       next_state[0]     0.972       8.923
+usb_reset_ctrl_inst.next_state[0]                               System        FD1S1AY     Q       next_state[0]     0.972       8.923
+server_power_control.power_signal_detect_inst.next_state[0]     System        FD1S1AY     Q       next_state[0]     0.972       8.923
+server_power_control.cpu_pwr_control.next_state[0]              System        FD1S1AY     Q       next_state[0]     0.972       8.923
+server_power_control.switch_reset_control.next_state[0]         System        FD1S1AY     Q       next_state[0]     0.972       8.923
+server_power_control.next_state[1]                              System        FD1S1AY     Q       next_state[1]     0.972       8.923
+usb_reset_ctrl_inst.next_state[1]                               System        FD1S1AY     Q       next_state[1]     0.972       8.923
+server_power_control.power_signal_detect_inst.next_state[1]     System        FD1S1AY     Q       next_state[1]     0.972       8.923
+bmc_reset_ctrl_inst.next_state[1]                               System        FD1S1AY     Q       next_state[1]     0.972       8.923
+=====================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                   Starting                                            Required          
+Instance                                                           Reference     Type        Pin     Net               Time         Slack
+                                                                   Clock                                                                 
+-----------------------------------------------------------------------------------------------------------------------------------------
+bmc_reset_ctrl_inst.current_state[0]                               System        FD1S3IX     D       next_state[0]     9.894        8.923
+server_power_control.current_state[0]                              System        FD1S3DX     D       next_state[0]     9.894        8.923
+usb_reset_ctrl_inst.current_state[0]                               System        FD1S3IX     D       next_state[0]     9.894        8.923
+server_power_control.power_signal_detect_inst.current_state[0]     System        FD1S3DX     D       next_state[0]     9.894        8.923
+server_power_control.cpu_pwr_control.current_state[0]              System        FD1S3DX     D       next_state[0]     9.894        8.923
+server_power_control.switch_reset_control.current_state[0]         System        FD1S3DX     D       next_state[0]     9.894        8.923
+server_power_control.current_state[1]                              System        FD1S3DX     D       next_state[1]     9.894        8.923
+usb_reset_ctrl_inst.current_state[1]                               System        FD1S3IX     D       next_state[1]     9.894        8.923
+server_power_control.power_signal_detect_inst.current_state[1]     System        FD1S3DX     D       next_state[1]     9.894        8.923
+bmc_reset_ctrl_inst.current_state[1]                               System        FD1S3IX     D       next_state[1]     9.894        8.923
+=========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.894
+
+    - Propagation time:                      0.972
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 8.923
+
+    Number of logic level(s):                0
+    Starting point:                          bmc_reset_ctrl_inst.next_state[0] / Q
+    Ending point:                            bmc_reset_ctrl_inst.current_state[0] / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            server_top|clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                     Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+bmc_reset_ctrl_inst.next_state[0]        FD1S1AY     Q        Out     0.972     0.972 r     -         
+next_state[0]                            Net         -        -       -         -           1         
+bmc_reset_ctrl_inst.current_state[0]     FD1S3IX     D        In      0.000     0.972 r     -         
+======================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 244MB peak: 248MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 244MB peak: 248MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo3lf_2100c-5
+
+Register bits: 540 of 16896 (3%)
+Latch bits:      18
+PIC Latch:       0
+I/O cells:       147
+
+
+Details:
+BB:             3
+CCU2D:          142
+FD1P3BX:        35
+FD1P3DX:        379
+FD1S1AY:        18
+FD1S3AX:        6
+FD1S3BX:        35
+FD1S3DX:        68
+FD1S3IX:        7
+GSR:            1
+IB:             75
+IFS1P3BX:       3
+IFS1P3IX:       2
+INV:            7
+L6MUX21:        13
+OB:             64
+OBZ:            5
+OFS1P3BX:       3
+OFS1P3DX:       2
+ORCALUT4:       792
+PFUMX:          48
+PUR:            1
+VHI:            14
+VLO:            14
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 74MB peak: 248MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Wed Jul 12 16:07:22 2023
+
+###########################################################]

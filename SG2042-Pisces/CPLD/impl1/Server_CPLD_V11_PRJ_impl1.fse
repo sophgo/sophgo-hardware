@@ -1,0 +1,54 @@
+
+fsm_encoding {1124002403} onehot
+
+fsm_state_encoding {1124002403} IDLE {0000001}
+
+fsm_state_encoding {1124002403} DEV_ADDR_STATE {0000010}
+
+fsm_state_encoding {1124002403} WAIT_ACK {0000100}
+
+fsm_state_encoding {1124002403} WORD_ADDR_STATE {0001000}
+
+fsm_state_encoding {1124002403} SEND_ACK {0010000}
+
+fsm_state_encoding {1124002403} SEND_DATA {0100000}
+
+fsm_state_encoding {1124002403} RCV_DATA {1000000}
+
+fsm_registers {1124002403} {current_state[6]}  {current_state[5]}  {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {810201022} sequential
+
+fsm_state_encoding {810201022} 00 {00}
+
+fsm_state_encoding {810201022} 01 {01}
+
+fsm_state_encoding {810201022} 10 {10}
+
+fsm_registers {810201022} {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {1017601761} onehot
+
+fsm_state_encoding {1017601761} IDLE {00000000001}
+
+fsm_state_encoding {1017601761} SEND_START {00000000010}
+
+fsm_state_encoding {1017601761} DEV_ADDR_STATE {00000000100}
+
+fsm_state_encoding {1017601761} WAIT_ACK {00000001000}
+
+fsm_state_encoding {1017601761} WORD_ADDR_STATE {00000010000}
+
+fsm_state_encoding {1017601761} SEND_ACK {00000100000}
+
+fsm_state_encoding {1017601761} SEND_DATA {00001000000}
+
+fsm_state_encoding {1017601761} REPEAT_START {00010000000}
+
+fsm_state_encoding {1017601761} READ_DATA {00100000000}
+
+fsm_state_encoding {1017601761} SEND_STOP {01000000000}
+
+fsm_state_encoding {1017601761} SEND_NACK {10000000000}
+
+fsm_registers {1017601761} {current_state[10]}  {current_state[9]}  {current_state[8]}  {current_state[7]}  {current_state[6]}  {current_state[5]}  {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 

@@ -1,0 +1,33 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_on_reset.v":1:7:1:20|Synthesizing module power_on_reset in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\timer.v":2:7:2:11|Synthesizing module timer in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\uart_sol.v":1:7:1:14|Synthesizing module uart_sol in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":2:7:2:19|Synthesizing module i2c_slave_reg in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":4:7:4:25|Synthesizing module debounce_button_FSM in library work.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":62:14:62:16|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":99:18:99:25|Removing redundant assignment.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":2:7:2:25|Synthesizing module power_signal_detect in library work.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":246:24:246:35|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":251:22:251:33|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":265:24:265:35|Removing redundant assignment.
+@N: CG179 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\power_signal_detect.v":270:22:270:33|Removing redundant assignment.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\cpu_power_control.v":3:7:3:23|Synthesizing module cpu_power_control in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v":1:7:1:26|Synthesizing module switch_reset_control in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v":2:7:2:26|Synthesizing module server_power_control in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\usb_reset_ctrl.v":2:7:2:20|Synthesizing module usb_reset_ctrl in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\bmc_reset_ctrl.v":2:7:2:20|Synthesizing module bmc_reset_ctrl in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v":2:7:2:16|Synthesizing module i2c_master in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\eeprom_i2c.v":1:7:1:16|Synthesizing module eeprom_i2c in library work.
+@N: CG364 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v":3:7:3:16|Synthesizing module server_top in library work.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\top.v":210:0:210:7|Input a_gpio16 is unused.
+@N: CL201 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_master.v":176:0:176:5|Trying to extract state machine for register current_state.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v":20:11:20:20|Input psu0_pwrok is unused.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\server_power_control.v":21:11:21:20|Input psu1_pwrok is unused.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\switch_reset_control.v":12:0:12:15|Input pg_pcie_sw_0v8_b is unused.
+@N: CL201 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\debounce_button_FSM_run.v":102:0:102:5|Trying to extract state machine for register current_state.
+@N: CL201 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":240:0:240:5|Trying to extract state machine for register current_state.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":26:16:26:25|Input scl_cas_in is unused.
+@N: CL159 :"E:\01_Project\07_SG2042_Server\99_CPLD\Project\03_Server_CPLD_V11\Pre_Final\Server_CPLD_V11_PRJ\impl1\source\i2c_slave_for_register.v":27:16:27:25|Input sda_cas_in is unused.
+@N|Running in 64-bit mode
+

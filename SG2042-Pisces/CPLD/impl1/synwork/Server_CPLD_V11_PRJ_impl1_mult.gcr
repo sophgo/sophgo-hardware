@@ -1,0 +1,107 @@
+i clock
+m 0 0
+u 195 545
+p {p:clock}{t:power_control[7].C}
+e ckid0_0 {t:power_control[7].C} dffre
+c ckid0_0 {p:clock} port Unsupported/too complex instance on clock path
+i bmc_reset_ctrl_inst.un1_next_state24
+m 0 0
+u 1 3
+n ckid0_1 {t:bmc_reset_ctrl_inst.next_state[2:0].C} Clock Optimization not enabled
+p {t:bmc_reset_ctrl_inst.un1_next_state24.OUT}{t:bmc_reset_ctrl_inst.next_state[2:0].C}
+e ckid0_1 {t:bmc_reset_ctrl_inst.next_state[2:0].C} lat
+d ckid0_1 {t:bmc_reset_ctrl_inst.un1_next_state24.OUT} or Clock Optimization not enabled
+i usb_reset_ctrl_inst.un1_next_state42
+m 0 0
+u 1 3
+n ckid0_2 {t:usb_reset_ctrl_inst.next_state[2:0].C} Clock Optimization not enabled
+p {t:usb_reset_ctrl_inst.un1_next_state42.OUT}{t:usb_reset_ctrl_inst.next_state[2:0].C}
+e ckid0_2 {t:usb_reset_ctrl_inst.next_state[2:0].C} lat
+d ckid0_2 {t:usb_reset_ctrl_inst.un1_next_state42.OUT} or Clock Optimization not enabled
+i server_power_control.switch_reset_control.un1_next_state43
+m 0 0
+u 1 3
+n ckid0_3 {t:server_power_control.switch_reset_control.next_state[2:0].C} Clock Optimization not enabled
+p {t:server_power_control.switch_reset_control.un1_next_state43.OUT}{t:server_power_control.switch_reset_control.next_state[2:0].C}
+e ckid0_3 {t:server_power_control.switch_reset_control.next_state[2:0].C} lat
+d ckid0_3 {t:server_power_control.switch_reset_control.un1_next_state43.OUT} or Clock Optimization not enabled
+i server_power_control.cpu_pwr_control.un1_next_state44
+m 0 0
+u 1 3
+n ckid0_4 {t:server_power_control.cpu_pwr_control.next_state[2:0].C} Clock Optimization not enabled
+p {t:server_power_control.cpu_pwr_control.un1_next_state44.OUT}{t:server_power_control.cpu_pwr_control.next_state[2:0].C}
+e ckid0_4 {t:server_power_control.cpu_pwr_control.next_state[2:0].C} lat
+d ckid0_4 {t:server_power_control.cpu_pwr_control.un1_next_state44.OUT} or Clock Optimization not enabled
+i server_power_control.power_signal_detect_inst.un1_next_state69
+m 0 0
+u 1 3
+n ckid0_5 {t:server_power_control.power_signal_detect_inst.next_state[2:0].C} Clock Optimization not enabled
+p {t:server_power_control.power_signal_detect_inst.un1_next_state69.OUT}{t:server_power_control.power_signal_detect_inst.next_state[2:0].C}
+e ckid0_5 {t:server_power_control.power_signal_detect_inst.next_state[2:0].C} lat
+d ckid0_5 {t:server_power_control.power_signal_detect_inst.un1_next_state69.OUT} or Clock Optimization not enabled
+i server_power_control.un1_next_state115_1
+m 0 0
+u 1 4
+n ckid0_6 {t:server_power_control.next_state[3:0].C} Clock Optimization not enabled
+p {t:server_power_control.un1_next_state115_1.OUT}{t:server_power_control.next_state[3:0].C}
+e ckid0_6 {t:server_power_control.next_state[3:0].C} lat
+d ckid0_6 {t:server_power_control.un1_next_state115_1.OUT} or Clock Optimization not enabled
+i bmc_reset_ctrl_inst.current_state[2]
+m 0 0
+u 0 0
+i bmc_reset_ctrl_inst.current_state[1]
+m 0 0
+u 0 0
+i bmc_reset_ctrl_inst.current_state[0]
+m 0 0
+u 0 0
+i usb_reset_ctrl_inst.current_state[2]
+m 0 0
+u 0 0
+i usb_reset_ctrl_inst.current_state[1]
+m 0 0
+u 0 0
+i usb_reset_ctrl_inst.current_state[0]
+m 0 0
+u 0 0
+i server_power_control.switch_reset_control.current_state[2]
+m 0 0
+u 0 0
+i server_power_control.switch_reset_control.current_state[1]
+m 0 0
+u 0 0
+i server_power_control.switch_reset_control.current_state[0]
+m 0 0
+u 0 0
+i server_power_control.cpu_pwr_control.current_state[2]
+m 0 0
+u 0 0
+i server_power_control.cpu_pwr_control.current_state[1]
+m 0 0
+u 0 0
+i server_power_control.cpu_pwr_control.current_state[0]
+m 0 0
+u 0 0
+i server_power_control.power_signal_detect_inst.current_state[1]
+m 0 0
+u 0 0
+i server_power_control.power_signal_detect_inst.current_state[2]
+m 0 0
+u 0 0
+i server_power_control.power_signal_detect_inst.current_state[0]
+m 0 0
+u 0 0
+i server_power_control.current_state[2]
+m 0 0
+u 0 0
+i server_power_control.current_state[3]
+m 0 0
+u 0 0
+i server_power_control.current_state[1]
+m 0 0
+u 0 0
+i server_power_control.current_state[0]
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

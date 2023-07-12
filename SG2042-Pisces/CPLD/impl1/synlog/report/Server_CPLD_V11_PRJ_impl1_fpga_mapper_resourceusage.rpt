@@ -1,0 +1,33 @@
+Resource Usage Report
+Part: lcmxo3lf_2100c-5
+
+Register bits: 540 of 16896 (3%)
+Latch bits:      18
+PIC Latch:       0
+I/O cells:       147
+
+Details:
+BB:             3
+CCU2D:          142
+FD1P3BX:        35
+FD1P3DX:        379
+FD1S1AY:        18
+FD1S3AX:        6
+FD1S3BX:        35
+FD1S3DX:        68
+FD1S3IX:        7
+GSR:            1
+IB:             75
+IFS1P3BX:       3
+IFS1P3IX:       2
+INV:            7
+L6MUX21:        13
+OB:             64
+OBZ:            5
+OFS1P3BX:       3
+OFS1P3DX:       2
+ORCALUT4:       792
+PFUMX:          48
+PUR:            1
+VHI:            14
+VLO:            14

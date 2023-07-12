@@ -1,0 +1,7 @@
+ckid0_0:@|S:clock@|E:power_control[7]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:bmc_reset_ctrl_inst.un1_next_state24.OUT@|E:bmc_reset_ctrl_inst.next_state[2:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_2:@|S:usb_reset_ctrl_inst.un1_next_state42.OUT@|E:usb_reset_ctrl_inst.next_state[2:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_3:@|S:server_power_control.switch_reset_control.un1_next_state43.OUT@|E:server_power_control.switch_reset_control.next_state[2:0]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_4:@|S:server_power_control.cpu_pwr_control.un1_next_state44.OUT@|E:server_power_control.cpu_pwr_control.next_state[2:0]@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4
+ckid0_5:@|S:server_power_control.power_signal_detect_inst.un1_next_state69.OUT@|E:server_power_control.power_signal_detect_inst.next_state[2:0]@|F:@syn_dgcc_clockid0_5==1@|M:ClockId_0_5
+ckid0_6:@|S:server_power_control.un1_next_state115_1.OUT@|E:server_power_control.next_state[3:0]@|F:@syn_dgcc_clockid0_6==1@|M:ClockId_0_6

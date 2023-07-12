@@ -1,0 +1,225 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: D:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: CGITB2303316341
+
+Implementation : impl1
+
+# Written on Wed Jul 12 16:07:18 2023
+
+##### DESIGN INFO #######################################################
+
+Top View:                "server_top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting             Ending               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+System               server_top|clock     |     No paths         |     No paths         |     No paths         |     10.000                           
+server_top|clock     System               |     No paths         |     No paths         |     10.000           |     No paths                         
+server_top|clock     server_top|clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+=====================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:a_gpio2
+p:a_gpio3
+p:a_gpio5
+p:a_gpio16
+p:bmc_extrst
+p:bmc_gpio24
+p:bmc_gpio25
+p:bmc_gpio48
+p:bmc_gpio49
+p:bmc_gpio51
+p:bmc_gpio53
+p:bmc_gpio54
+p:bmc_pcie_rst
+p:bmc_pwrgd
+p:bmc_scl
+p:bmc_sda (bidir end point)
+p:bmc_sda (bidir start point)
+p:bmc_srst
+p:bmc_ssprst
+p:bp_ncp_d_oc
+p:bp_ncp_gok
+p:cpld_extrst
+p:cpld_heart
+p:cpld_led_test
+p:cpua_sys_reset
+p:cpub_sys_reset
+p:ddr0_event_a
+p:ddr0_event_b
+p:ddr1_event_a
+p:ddr1_event_b
+p:ddr2_event_a
+p:ddr2_event_b
+p:ddr3_event_a
+p:ddr3_event_b
+p:e2prom_scl (bidir end point)
+p:e2prom_scl (bidir start point)
+p:e2prom_sda (bidir end point)
+p:e2prom_sda (bidir start point)
+p:en_3v3_riser
+p:en_12v_bp
+p:en_bp_5v
+p:en_ddr_phy_a
+p:en_ddr_phy_b
+p:en_pcie_h_a
+p:en_pcie_h_b
+p:en_pcie_phy_a
+p:en_pcie_phy_b
+p:en_pcie_sw_0v8_a
+p:en_pcie_sw_0v8_b
+p:en_vdd_1v8
+p:en_vdd_3v3
+p:en_vdd_5v
+p:en_vdd_12v
+p:en_vddc_a
+p:en_vddc_b
+p:en_vddq_a0
+p:en_vddq_a1
+p:en_vddq_b0
+p:en_vddq_b1
+p:en_vpp_a0
+p:en_vpp_a1
+p:en_vpp_b0
+p:en_vpp_b1
+p:en_vqps18_a
+p:en_vqps18_b
+p:en_vtt_a0
+p:en_vtt_a1
+p:en_vtt_b0
+p:en_vtt_b1
+p:fm_pwr_btn
+p:ncp0_d_oc
+p:ncp0_gok
+p:pcie_nvme0_rst
+p:pcie_nvme1_rst
+p:pcie_sata_rst
+p:pcie_swa_prst
+p:pcie_swa_sys_rst
+p:pcie_swb_prst
+p:pcie_swb_sys_rst
+p:pcie_usb0_rst
+p:pcie_usb1_rst
+p:pg_3v3_riser
+p:pg_5v_aux
+p:pg_bp_5v
+p:pg_ddr_phy_a
+p:pg_ddr_phy_b
+p:pg_pcie_h_a
+p:pg_pcie_h_b
+p:pg_pcie_phy_a
+p:pg_pcie_phy_b
+p:pg_pcie_sw_0v8_a
+p:pg_pcie_sw_0v8_b
+p:pg_vdd_1v8
+p:pg_vdd_3v3
+p:pg_vdd_5v
+p:pg_vddc_a
+p:pg_vddc_b
+p:pg_vddq_a0
+p:pg_vddq_a1
+p:pg_vddq_b0
+p:pg_vddq_b1
+p:pg_vpp_a0
+p:pg_vpp_a1
+p:pg_vpp_b0
+p:pg_vpp_b1
+p:pg_vtt_a0
+p:pg_vtt_a1
+p:pg_vtt_b0
+p:pg_vtt_b1
+p:psu0_alert
+p:psu0_prsnt
+p:psu0_pwrok
+p:psu1_alert
+p:psu1_prsnt
+p:psu1_pwrok
+p:psu_ps_on_cpld
+p:pwr_button_a
+p:pwr_button_b
+p:riser0_reset
+p:riser0_slot16a_prsnt
+p:riser0_slot16b_prsnt
+p:riser0_slot_id0
+p:riser0_slot_id1
+p:riser0_slot_id2
+p:riser1_reset
+p:riser1_slot16a_prsnt
+p:riser1_slot16b_prsnt
+p:riser1_slot_id0
+p:riser1_slot_id1
+p:riser1_slot_id2
+p:riser2_reset
+p:riser2_slot16b_prsnt
+p:riser2_slot_id0
+p:riser2_slot_id1
+p:sg0_pcie1_l0_reset
+p:sg1_pcie0_l0_reset
+p:sys_uart_rxd3
+p:sys_uart_txd3
+p:uart0_rx_a
+p:uart0_rx_b
+p:uart0_tx_a
+p:uart0_tx_b
+p:uart1_rx_a
+p:uart1_rx_b
+p:uart1_tx_a
+p:uart1_tx_b
+p:usb1_ponrst
+p:usb2_ponrst
+p:vga_6505_in1
+p:vga_6505_in2
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

@@ -1,0 +1,1297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
+Wed Jul 12 16:10:25 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     server_top
+Device,speed:    LCMXO3LF-2100C,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+Voltage:    2.375 V
+
+
+
+</A><A name="FREQUENCY NET 'clock_c' 25.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "clock_c" 25.000000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 26.639ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[1]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              13.212ns  (27.0% logic, 73.0% route), 8 logic levels.
+
+ Constraint Details:
+
+     13.212ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 26.639ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C23D.CLK,R6C23D.Q0,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 3.203,R6C23D.Q0,R4C22C.B1,eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:CTOF_DEL, 0.451,R4C22C.B1,R4C22C.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_440:ROUTE, 2.350,R4C22C.F1,R5C22A.A0,eeprom_i2c_inst/e2prom_i2c/next_state21:CTOF_DEL, 0.451,R5C22A.A0,R5C22A.F0,eeprom_i2c_inst/SLICE_457:ROUTE, 0.837,R5C22A.F0,R4C23A.D0,eeprom_i2c_inst/e2prom_i2c/next_state_1[0]:CTOF_DEL, 0.451,R4C23A.D0,R4C23A.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_413:ROUTE, 0.543,R4C23A.F0,R4C23D.D0,eeprom_i2c_inst/e2prom_i2c/un31_0:CTOF_DEL, 0.451,R4C23D.D0,R4C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_442:ROUTE, 0.902,R4C23D.F0,R5C23A.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE_1:CTOF_DEL, 0.451,R5C23A.B1,R5C23A.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.929,R5C23A.F1,R6C23B.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE:CTOF_DEL, 0.451,R6C23B.B1,R6C23B.F1,SLICE_412:ROUTE, 0.883,R6C23B.F1,R6C23D.B1,eeprom_i2c_inst/e2prom_i2c/N_476_i_1:CTOF_DEL, 0.451,R6C23D.B1,R6C23D.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 0.000,R6C23D.F1,R6C23D.DI1,eeprom_i2c_inst/e2prom_i2c/N_476_i">Data path</A> eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C23D.CLK to      R6C23D.Q0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        16     3.203<A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:R6C23D.Q0:R4C22C.B1:3.203">      R6C23D.Q0 to R4C22C.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>
+CTOF_DEL    ---     0.451      R4C22C.B1 to      R4C22C.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_440">eeprom_i2c_inst/e2prom_i2c/SLICE_440</A>
+ROUTE        10     2.350<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21:R4C22C.F1:R5C22A.A0:2.350">      R4C22C.F1 to R5C22A.A0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21">eeprom_i2c_inst/e2prom_i2c/next_state21</A>
+CTOF_DEL    ---     0.451      R5C22A.A0 to      R5C22A.F0 <A href="#@comp:eeprom_i2c_inst/SLICE_457">eeprom_i2c_inst/SLICE_457</A>
+ROUTE         1     0.837<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[0]:R5C22A.F0:R4C23A.D0:0.837">      R5C22A.F0 to R4C23A.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[0]">eeprom_i2c_inst/e2prom_i2c/next_state_1[0]</A>
+CTOF_DEL    ---     0.451      R4C23A.D0 to      R4C23A.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_413">eeprom_i2c_inst/e2prom_i2c/SLICE_413</A>
+ROUTE         1     0.543<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_0:R4C23A.F0:R4C23D.D0:0.543">      R4C23A.F0 to R4C23D.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_0">eeprom_i2c_inst/e2prom_i2c/un31_0</A>
+CTOF_DEL    ---     0.451      R4C23D.D0 to      R4C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_442">eeprom_i2c_inst/e2prom_i2c/SLICE_442</A>
+ROUTE         1     0.902<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1:R4C23D.F0:R5C23A.B1:0.902">      R4C23D.F0 to R5C23A.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1">eeprom_i2c_inst/e2prom_i2c/un31_NE_1</A>
+CTOF_DEL    ---     0.451      R5C23A.B1 to      R5C23A.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         5     0.929<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE:R5C23A.F1:R6C23B.B1:0.929">      R5C23A.F1 to R6C23B.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE">eeprom_i2c_inst/e2prom_i2c/un31_NE</A>
+CTOF_DEL    ---     0.451      R6C23B.B1 to      R6C23B.F1 <A href="#@comp:SLICE_412">SLICE_412</A>
+ROUTE         1     0.883<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1:R6C23B.F1:R6C23D.B1:0.883">      R6C23B.F1 to R6C23D.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1">eeprom_i2c_inst/e2prom_i2c/N_476_i_1</A>
+CTOF_DEL    ---     0.451      R6C23D.B1 to      R6C23D.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A>
+ROUTE         1     0.000<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i:R6C23D.F1:R6C23D.DI1:0.000">      R6C23D.F1 to R6C23D.DI1    </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i">eeprom_i2c_inst/e2prom_i2c/N_476_i</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   13.212   (27.0% logic, 73.0% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Source Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Destination Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 27.255ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:i2c0_slave_inst0/SLICE_115">i2c0_slave_inst0/word_addr[4]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_162">data_out_r[5]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              12.596ns  (21.1% logic, 78.9% route), 6 logic levels.
+
+ Constraint Details:
+
+     12.596ns physical path delay i2c0_slave_inst0/SLICE_115 to SLICE_162 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 27.255ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C16D.CLK,R6C16D.Q0,i2c0_slave_inst0/SLICE_115:ROUTE, 4.148,R6C16D.Q0,R10C22B.D1,cpld_register_addr[4]:CTOF_DEL, 0.451,R10C22B.D1,R10C22B.F1,usb_reset_ctrl_inst/SLICE_578:ROUTE, 1.619,R10C22B.F1,R10C22D.B1,usb_reset_ctrl_inst/data_out_r_20_sn_N_52:CTOF_DEL, 0.451,R10C22D.B1,R10C22D.F1,usb_reset_ctrl_inst/SLICE_467:ROUTE, 2.931,R10C22D.F1,R10C17D.A0,data_out_r_20_sn_N_25:CTOF_DEL, 0.451,R10C17D.A0,R10C17D.F0,server_power_control/SLICE_430:ROUTE, 0.383,R10C17D.F0,R10C17D.C1,server_power_control/data_out_r_20_0_0[5]:CTOF_DEL, 0.451,R10C17D.C1,R10C17D.F1,server_power_control/SLICE_430:ROUTE, 0.852,R10C17D.F1,R10C17B.A1,server_power_control/data_out_r_20_0_1[5]:CTOF_DEL, 0.451,R10C17B.A1,R10C17B.F1,SLICE_162:ROUTE, 0.000,R10C17B.F1,R10C17B.DI1,data_out_r_20[5]">Data path</A> i2c0_slave_inst0/SLICE_115 to SLICE_162:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C16D.CLK to      R6C16D.Q0 <A href="#@comp:i2c0_slave_inst0/SLICE_115">i2c0_slave_inst0/SLICE_115</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        38     4.148<A href="#@net:cpld_register_addr[4]:R6C16D.Q0:R10C22B.D1:4.148">      R6C16D.Q0 to R10C22B.D1    </A> <A href="#@net:cpld_register_addr[4]">cpld_register_addr[4]</A>
+CTOF_DEL    ---     0.451     R10C22B.D1 to     R10C22B.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_578">usb_reset_ctrl_inst/SLICE_578</A>
+ROUTE         1     1.619<A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_N_52:R10C22B.F1:R10C22D.B1:1.619">     R10C22B.F1 to R10C22D.B1    </A> <A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_N_52">usb_reset_ctrl_inst/data_out_r_20_sn_N_52</A>
+CTOF_DEL    ---     0.451     R10C22D.B1 to     R10C22D.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_467">usb_reset_ctrl_inst/SLICE_467</A>
+ROUTE        10     2.931<A href="#@net:data_out_r_20_sn_N_25:R10C22D.F1:R10C17D.A0:2.931">     R10C22D.F1 to R10C17D.A0    </A> <A href="#@net:data_out_r_20_sn_N_25">data_out_r_20_sn_N_25</A>
+CTOF_DEL    ---     0.451     R10C17D.A0 to     R10C17D.F0 <A href="#@comp:server_power_control/SLICE_430">server_power_control/SLICE_430</A>
+ROUTE         1     0.383<A href="#@net:server_power_control/data_out_r_20_0_0[5]:R10C17D.F0:R10C17D.C1:0.383">     R10C17D.F0 to R10C17D.C1    </A> <A href="#@net:server_power_control/data_out_r_20_0_0[5]">server_power_control/data_out_r_20_0_0[5]</A>
+CTOF_DEL    ---     0.451     R10C17D.C1 to     R10C17D.F1 <A href="#@comp:server_power_control/SLICE_430">server_power_control/SLICE_430</A>
+ROUTE         1     0.852<A href="#@net:server_power_control/data_out_r_20_0_1[5]:R10C17D.F1:R10C17B.A1:0.852">     R10C17D.F1 to R10C17B.A1    </A> <A href="#@net:server_power_control/data_out_r_20_0_1[5]">server_power_control/data_out_r_20_0_1[5]</A>
+CTOF_DEL    ---     0.451     R10C17B.A1 to     R10C17B.F1 <A href="#@comp:SLICE_162">SLICE_162</A>
+ROUTE         1     0.000<A href="#@net:data_out_r_20[5]:R10C17B.F1:R10C17B.DI1:0.000">     R10C17B.F1 to R10C17B.DI1   </A> <A href="#@net:data_out_r_20[5]">data_out_r_20[5]</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   12.596   (21.1% logic, 78.9% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C16D.CLK,clock_c">Source Clock Path</A> clock to i2c0_slave_inst0/SLICE_115:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C16D.CLK:2.175">       C8.PADDI to R6C16D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R10C17B.CLK,clock_c">Destination Clock Path</A> clock to SLICE_162:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R10C17B.CLK:2.175">       C8.PADDI to R10C17B.CLK   </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 27.811ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[1]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              12.040ns  (29.6% logic, 70.4% route), 8 logic levels.
+
+ Constraint Details:
+
+     12.040ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 27.811ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C23D.CLK,R6C23D.Q0,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 3.203,R6C23D.Q0,R4C22C.B1,eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:CTOF_DEL, 0.451,R4C22C.B1,R4C22C.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_440:ROUTE, 1.341,R4C22C.F1,R7C23C.D0,eeprom_i2c_inst/e2prom_i2c/next_state21:CTOF_DEL, 0.451,R7C23C.D0,R7C23C.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_595:ROUTE, 0.562,R7C23C.F0,R5C23B.D0,eeprom_i2c_inst/e2prom_i2c/N_248:CTOF_DEL, 0.451,R5C23B.D0,R5C23B.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_445:ROUTE, 0.655,R5C23B.F0,R4C23D.C0,eeprom_i2c_inst/e2prom_i2c/un31_2:CTOF_DEL, 0.451,R4C23D.C0,R4C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_442:ROUTE, 0.902,R4C23D.F0,R5C23A.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE_1:CTOF_DEL, 0.451,R5C23A.B1,R5C23A.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.929,R5C23A.F1,R6C23B.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE:CTOF_DEL, 0.451,R6C23B.B1,R6C23B.F1,SLICE_412:ROUTE, 0.883,R6C23B.F1,R6C23D.B1,eeprom_i2c_inst/e2prom_i2c/N_476_i_1:CTOF_DEL, 0.451,R6C23D.B1,R6C23D.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 0.000,R6C23D.F1,R6C23D.DI1,eeprom_i2c_inst/e2prom_i2c/N_476_i">Data path</A> eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C23D.CLK to      R6C23D.Q0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        16     3.203<A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:R6C23D.Q0:R4C22C.B1:3.203">      R6C23D.Q0 to R4C22C.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>
+CTOF_DEL    ---     0.451      R4C22C.B1 to      R4C22C.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_440">eeprom_i2c_inst/e2prom_i2c/SLICE_440</A>
+ROUTE        10     1.341<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21:R4C22C.F1:R7C23C.D0:1.341">      R4C22C.F1 to R7C23C.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21">eeprom_i2c_inst/e2prom_i2c/next_state21</A>
+CTOF_DEL    ---     0.451      R7C23C.D0 to      R7C23C.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_595">eeprom_i2c_inst/e2prom_i2c/SLICE_595</A>
+ROUTE         1     0.562<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_248:R7C23C.F0:R5C23B.D0:0.562">      R7C23C.F0 to R5C23B.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_248">eeprom_i2c_inst/e2prom_i2c/N_248</A>
+CTOF_DEL    ---     0.451      R5C23B.D0 to      R5C23B.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_445">eeprom_i2c_inst/e2prom_i2c/SLICE_445</A>
+ROUTE         1     0.655<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_2:R5C23B.F0:R4C23D.C0:0.655">      R5C23B.F0 to R4C23D.C0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_2">eeprom_i2c_inst/e2prom_i2c/un31_2</A>
+CTOF_DEL    ---     0.451      R4C23D.C0 to      R4C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_442">eeprom_i2c_inst/e2prom_i2c/SLICE_442</A>
+ROUTE         1     0.902<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1:R4C23D.F0:R5C23A.B1:0.902">      R4C23D.F0 to R5C23A.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1">eeprom_i2c_inst/e2prom_i2c/un31_NE_1</A>
+CTOF_DEL    ---     0.451      R5C23A.B1 to      R5C23A.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         5     0.929<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE:R5C23A.F1:R6C23B.B1:0.929">      R5C23A.F1 to R6C23B.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE">eeprom_i2c_inst/e2prom_i2c/un31_NE</A>
+CTOF_DEL    ---     0.451      R6C23B.B1 to      R6C23B.F1 <A href="#@comp:SLICE_412">SLICE_412</A>
+ROUTE         1     0.883<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1:R6C23B.F1:R6C23D.B1:0.883">      R6C23B.F1 to R6C23D.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1">eeprom_i2c_inst/e2prom_i2c/N_476_i_1</A>
+CTOF_DEL    ---     0.451      R6C23D.B1 to      R6C23D.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A>
+ROUTE         1     0.000<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i:R6C23D.F1:R6C23D.DI1:0.000">      R6C23D.F1 to R6C23D.DI1    </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i">eeprom_i2c_inst/e2prom_i2c/N_476_i</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   12.040   (29.6% logic, 70.4% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Source Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Destination Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 28.042ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/bit_cnt[2]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              11.809ns  (26.4% logic, 73.6% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.809ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_185 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 28.042ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C23D.CLK,R6C23D.Q0,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 3.203,R6C23D.Q0,R4C22C.B1,eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:CTOF_DEL, 0.451,R4C22C.B1,R4C22C.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_440:ROUTE, 2.350,R4C22C.F1,R5C22A.A0,eeprom_i2c_inst/e2prom_i2c/next_state21:CTOF_DEL, 0.451,R5C22A.A0,R5C22A.F0,eeprom_i2c_inst/SLICE_457:ROUTE, 0.837,R5C22A.F0,R4C23A.D0,eeprom_i2c_inst/e2prom_i2c/next_state_1[0]:CTOF_DEL, 0.451,R4C23A.D0,R4C23A.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_413:ROUTE, 0.543,R4C23A.F0,R4C23D.D0,eeprom_i2c_inst/e2prom_i2c/un31_0:CTOF_DEL, 0.451,R4C23D.D0,R4C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_442:ROUTE, 0.902,R4C23D.F0,R5C23A.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE_1:CTOF_DEL, 0.451,R5C23A.B1,R5C23A.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.860,R5C23A.F1,R5C23A.A0,eeprom_i2c_inst/e2prom_i2c/un31_NE:CTOF_DEL, 0.451,R5C23A.A0,R5C23A.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.000,R5C23A.F0,R5C23A.DI0,eeprom_i2c_inst/e2prom_i2c/N_475_i">Data path</A> eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_185:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C23D.CLK to      R6C23D.Q0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        16     3.203<A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:R6C23D.Q0:R4C22C.B1:3.203">      R6C23D.Q0 to R4C22C.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>
+CTOF_DEL    ---     0.451      R4C22C.B1 to      R4C22C.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_440">eeprom_i2c_inst/e2prom_i2c/SLICE_440</A>
+ROUTE        10     2.350<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21:R4C22C.F1:R5C22A.A0:2.350">      R4C22C.F1 to R5C22A.A0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21">eeprom_i2c_inst/e2prom_i2c/next_state21</A>
+CTOF_DEL    ---     0.451      R5C22A.A0 to      R5C22A.F0 <A href="#@comp:eeprom_i2c_inst/SLICE_457">eeprom_i2c_inst/SLICE_457</A>
+ROUTE         1     0.837<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[0]:R5C22A.F0:R4C23A.D0:0.837">      R5C22A.F0 to R4C23A.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[0]">eeprom_i2c_inst/e2prom_i2c/next_state_1[0]</A>
+CTOF_DEL    ---     0.451      R4C23A.D0 to      R4C23A.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_413">eeprom_i2c_inst/e2prom_i2c/SLICE_413</A>
+ROUTE         1     0.543<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_0:R4C23A.F0:R4C23D.D0:0.543">      R4C23A.F0 to R4C23D.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_0">eeprom_i2c_inst/e2prom_i2c/un31_0</A>
+CTOF_DEL    ---     0.451      R4C23D.D0 to      R4C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_442">eeprom_i2c_inst/e2prom_i2c/SLICE_442</A>
+ROUTE         1     0.902<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1:R4C23D.F0:R5C23A.B1:0.902">      R4C23D.F0 to R5C23A.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1">eeprom_i2c_inst/e2prom_i2c/un31_NE_1</A>
+CTOF_DEL    ---     0.451      R5C23A.B1 to      R5C23A.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         5     0.860<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE:R5C23A.F1:R5C23A.A0:0.860">      R5C23A.F1 to R5C23A.A0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE">eeprom_i2c_inst/e2prom_i2c/un31_NE</A>
+CTOF_DEL    ---     0.451      R5C23A.A0 to      R5C23A.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         1     0.000<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_475_i:R5C23A.F0:R5C23A.DI0:0.000">      R5C23A.F0 to R5C23A.DI0    </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_475_i">eeprom_i2c_inst/e2prom_i2c/N_475_i</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   11.809   (26.4% logic, 73.6% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Source Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R5C23A.CLK,clock_c">Destination Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_185:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C23A.CLK:2.175">       C8.PADDI to R5C23A.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 28.089ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:i2c0_slave_inst0/SLICE_115">i2c0_slave_inst0/word_addr[4]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_162">data_out_r[5]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              11.762ns  (18.8% logic, 81.2% route), 5 logic levels.
+
+ Constraint Details:
+
+     11.762ns physical path delay i2c0_slave_inst0/SLICE_115 to SLICE_162 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 28.089ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C16D.CLK,R6C16D.Q0,i2c0_slave_inst0/SLICE_115:ROUTE, 4.148,R6C16D.Q0,R10C22B.D1,cpld_register_addr[4]:CTOF_DEL, 0.451,R10C22B.D1,R10C22B.F1,usb_reset_ctrl_inst/SLICE_578:ROUTE, 1.619,R10C22B.F1,R10C22D.B1,usb_reset_ctrl_inst/data_out_r_20_sn_N_52:CTOF_DEL, 0.451,R10C22D.B1,R10C22D.F1,usb_reset_ctrl_inst/SLICE_467:ROUTE, 2.931,R10C22D.F1,R10C17D.A1,data_out_r_20_sn_N_25:CTOF_DEL, 0.451,R10C17D.A1,R10C17D.F1,server_power_control/SLICE_430:ROUTE, 0.852,R10C17D.F1,R10C17B.A1,server_power_control/data_out_r_20_0_1[5]:CTOF_DEL, 0.451,R10C17B.A1,R10C17B.F1,SLICE_162:ROUTE, 0.000,R10C17B.F1,R10C17B.DI1,data_out_r_20[5]">Data path</A> i2c0_slave_inst0/SLICE_115 to SLICE_162:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C16D.CLK to      R6C16D.Q0 <A href="#@comp:i2c0_slave_inst0/SLICE_115">i2c0_slave_inst0/SLICE_115</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        38     4.148<A href="#@net:cpld_register_addr[4]:R6C16D.Q0:R10C22B.D1:4.148">      R6C16D.Q0 to R10C22B.D1    </A> <A href="#@net:cpld_register_addr[4]">cpld_register_addr[4]</A>
+CTOF_DEL    ---     0.451     R10C22B.D1 to     R10C22B.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_578">usb_reset_ctrl_inst/SLICE_578</A>
+ROUTE         1     1.619<A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_N_52:R10C22B.F1:R10C22D.B1:1.619">     R10C22B.F1 to R10C22D.B1    </A> <A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_N_52">usb_reset_ctrl_inst/data_out_r_20_sn_N_52</A>
+CTOF_DEL    ---     0.451     R10C22D.B1 to     R10C22D.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_467">usb_reset_ctrl_inst/SLICE_467</A>
+ROUTE        10     2.931<A href="#@net:data_out_r_20_sn_N_25:R10C22D.F1:R10C17D.A1:2.931">     R10C22D.F1 to R10C17D.A1    </A> <A href="#@net:data_out_r_20_sn_N_25">data_out_r_20_sn_N_25</A>
+CTOF_DEL    ---     0.451     R10C17D.A1 to     R10C17D.F1 <A href="#@comp:server_power_control/SLICE_430">server_power_control/SLICE_430</A>
+ROUTE         1     0.852<A href="#@net:server_power_control/data_out_r_20_0_1[5]:R10C17D.F1:R10C17B.A1:0.852">     R10C17D.F1 to R10C17B.A1    </A> <A href="#@net:server_power_control/data_out_r_20_0_1[5]">server_power_control/data_out_r_20_0_1[5]</A>
+CTOF_DEL    ---     0.451     R10C17B.A1 to     R10C17B.F1 <A href="#@comp:SLICE_162">SLICE_162</A>
+ROUTE         1     0.000<A href="#@net:data_out_r_20[5]:R10C17B.F1:R10C17B.DI1:0.000">     R10C17B.F1 to R10C17B.DI1   </A> <A href="#@net:data_out_r_20[5]">data_out_r_20[5]</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   11.762   (18.8% logic, 81.2% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C16D.CLK,clock_c">Source Clock Path</A> clock to i2c0_slave_inst0/SLICE_115:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C16D.CLK:2.175">       C8.PADDI to R6C16D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R10C17B.CLK,clock_c">Destination Clock Path</A> clock to SLICE_162:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R10C17B.CLK:2.175">       C8.PADDI to R10C17B.CLK   </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 28.226ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[1]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              11.625ns  (30.7% logic, 69.3% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.625ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 28.226ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C23D.CLK,R6C23D.Q0,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 3.172,R6C23D.Q0,R4C22D.A1,eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:CTOF_DEL, 0.451,R4C22D.A1,R4C22D.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_454:ROUTE, 0.391,R4C22D.F1,R4C22D.C0,eeprom_i2c_inst/e2prom_i2c/N_186:CTOF_DEL, 0.451,R4C22D.C0,R4C22D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_454:ROUTE, 0.562,R4C22D.F0,R4C21A.D0,eeprom_i2c_inst/e2prom_i2c/next_state_3[1]:CTOF_DEL, 0.451,R4C21A.D0,R4C21A.F0,eeprom_i2c_inst/SLICE_450:ROUTE, 1.221,R4C21A.F0,R4C23D.A0,eeprom_i2c_inst/e2prom_i2c/next_state[1]:CTOF_DEL, 0.451,R4C23D.A0,R4C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_442:ROUTE, 0.902,R4C23D.F0,R5C23A.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE_1:CTOF_DEL, 0.451,R5C23A.B1,R5C23A.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.929,R5C23A.F1,R6C23B.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE:CTOF_DEL, 0.451,R6C23B.B1,R6C23B.F1,SLICE_412:ROUTE, 0.883,R6C23B.F1,R6C23D.B1,eeprom_i2c_inst/e2prom_i2c/N_476_i_1:CTOF_DEL, 0.451,R6C23D.B1,R6C23D.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 0.000,R6C23D.F1,R6C23D.DI1,eeprom_i2c_inst/e2prom_i2c/N_476_i">Data path</A> eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C23D.CLK to      R6C23D.Q0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        16     3.172<A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:R6C23D.Q0:R4C22D.A1:3.172">      R6C23D.Q0 to R4C22D.A1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>
+CTOF_DEL    ---     0.451      R4C22D.A1 to      R4C22D.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_454">eeprom_i2c_inst/e2prom_i2c/SLICE_454</A>
+ROUTE         2     0.391<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_186:R4C22D.F1:R4C22D.C0:0.391">      R4C22D.F1 to R4C22D.C0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_186">eeprom_i2c_inst/e2prom_i2c/N_186</A>
+CTOF_DEL    ---     0.451      R4C22D.C0 to      R4C22D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_454">eeprom_i2c_inst/e2prom_i2c/SLICE_454</A>
+ROUTE         1     0.562<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_3[1]:R4C22D.F0:R4C21A.D0:0.562">      R4C22D.F0 to R4C21A.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_3[1]">eeprom_i2c_inst/e2prom_i2c/next_state_3[1]</A>
+CTOF_DEL    ---     0.451      R4C21A.D0 to      R4C21A.F0 <A href="#@comp:eeprom_i2c_inst/SLICE_450">eeprom_i2c_inst/SLICE_450</A>
+ROUTE         1     1.221<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state[1]:R4C21A.F0:R4C23D.A0:1.221">      R4C21A.F0 to R4C23D.A0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state[1]">eeprom_i2c_inst/e2prom_i2c/next_state[1]</A>
+CTOF_DEL    ---     0.451      R4C23D.A0 to      R4C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_442">eeprom_i2c_inst/e2prom_i2c/SLICE_442</A>
+ROUTE         1     0.902<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1:R4C23D.F0:R5C23A.B1:0.902">      R4C23D.F0 to R5C23A.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1">eeprom_i2c_inst/e2prom_i2c/un31_NE_1</A>
+CTOF_DEL    ---     0.451      R5C23A.B1 to      R5C23A.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         5     0.929<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE:R5C23A.F1:R6C23B.B1:0.929">      R5C23A.F1 to R6C23B.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE">eeprom_i2c_inst/e2prom_i2c/un31_NE</A>
+CTOF_DEL    ---     0.451      R6C23B.B1 to      R6C23B.F1 <A href="#@comp:SLICE_412">SLICE_412</A>
+ROUTE         1     0.883<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1:R6C23B.F1:R6C23D.B1:0.883">      R6C23B.F1 to R6C23D.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1">eeprom_i2c_inst/e2prom_i2c/N_476_i_1</A>
+CTOF_DEL    ---     0.451      R6C23D.B1 to      R6C23D.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A>
+ROUTE         1     0.000<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i:R6C23D.F1:R6C23D.DI1:0.000">      R6C23D.F1 to R6C23D.DI1    </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i">eeprom_i2c_inst/e2prom_i2c/N_476_i</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   11.625   (30.7% logic, 69.3% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Source Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Destination Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 28.247ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_186">eeprom_i2c_inst/e2prom_i2c/current_state[1]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[1]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              11.604ns  (30.7% logic, 69.3% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.604ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_186 to eeprom_i2c_inst/e2prom_i2c/SLICE_184 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 28.247ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R3C20B.CLK,R3C20B.Q1,eeprom_i2c_inst/e2prom_i2c/SLICE_186:ROUTE, 1.916,R3C20B.Q1,R3C22C.C1,eeprom_i2c_inst/e2prom_i2c/current_state[1]:CTOF_DEL, 0.451,R3C22C.C1,R3C22C.F1,SLICE_460:ROUTE, 1.336,R3C22C.F1,R4C21A.A1,eeprom_i2c_inst/e2prom_i2c/N_198:CTOF_DEL, 0.451,R4C21A.A1,R4C21A.F1,eeprom_i2c_inst/SLICE_450:ROUTE, 0.852,R4C21A.F1,R4C21A.A0,eeprom_i2c_inst/e2prom_i2c/next_state_1[1]:CTOF_DEL, 0.451,R4C21A.A0,R4C21A.F0,eeprom_i2c_inst/SLICE_450:ROUTE, 1.221,R4C21A.F0,R4C23D.A0,eeprom_i2c_inst/e2prom_i2c/next_state[1]:CTOF_DEL, 0.451,R4C23D.A0,R4C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_442:ROUTE, 0.902,R4C23D.F0,R5C23A.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE_1:CTOF_DEL, 0.451,R5C23A.B1,R5C23A.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.929,R5C23A.F1,R6C23B.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE:CTOF_DEL, 0.451,R6C23B.B1,R6C23B.F1,SLICE_412:ROUTE, 0.883,R6C23B.F1,R6C23D.B1,eeprom_i2c_inst/e2prom_i2c/N_476_i_1:CTOF_DEL, 0.451,R6C23D.B1,R6C23D.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 0.000,R6C23D.F1,R6C23D.DI1,eeprom_i2c_inst/e2prom_i2c/N_476_i">Data path</A> eeprom_i2c_inst/e2prom_i2c/SLICE_186 to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R3C20B.CLK to      R3C20B.Q1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_186">eeprom_i2c_inst/e2prom_i2c/SLICE_186</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         7     1.916<A href="#@net:eeprom_i2c_inst/e2prom_i2c/current_state[1]:R3C20B.Q1:R3C22C.C1:1.916">      R3C20B.Q1 to R3C22C.C1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/current_state[1]">eeprom_i2c_inst/e2prom_i2c/current_state[1]</A>
+CTOF_DEL    ---     0.451      R3C22C.C1 to      R3C22C.F1 <A href="#@comp:SLICE_460">SLICE_460</A>
+ROUTE         3     1.336<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_198:R3C22C.F1:R4C21A.A1:1.336">      R3C22C.F1 to R4C21A.A1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_198">eeprom_i2c_inst/e2prom_i2c/N_198</A>
+CTOF_DEL    ---     0.451      R4C21A.A1 to      R4C21A.F1 <A href="#@comp:eeprom_i2c_inst/SLICE_450">eeprom_i2c_inst/SLICE_450</A>
+ROUTE         1     0.852<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[1]:R4C21A.F1:R4C21A.A0:0.852">      R4C21A.F1 to R4C21A.A0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[1]">eeprom_i2c_inst/e2prom_i2c/next_state_1[1]</A>
+CTOF_DEL    ---     0.451      R4C21A.A0 to      R4C21A.F0 <A href="#@comp:eeprom_i2c_inst/SLICE_450">eeprom_i2c_inst/SLICE_450</A>
+ROUTE         1     1.221<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state[1]:R4C21A.F0:R4C23D.A0:1.221">      R4C21A.F0 to R4C23D.A0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state[1]">eeprom_i2c_inst/e2prom_i2c/next_state[1]</A>
+CTOF_DEL    ---     0.451      R4C23D.A0 to      R4C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_442">eeprom_i2c_inst/e2prom_i2c/SLICE_442</A>
+ROUTE         1     0.902<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1:R4C23D.F0:R5C23A.B1:0.902">      R4C23D.F0 to R5C23A.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1">eeprom_i2c_inst/e2prom_i2c/un31_NE_1</A>
+CTOF_DEL    ---     0.451      R5C23A.B1 to      R5C23A.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         5     0.929<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE:R5C23A.F1:R6C23B.B1:0.929">      R5C23A.F1 to R6C23B.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE">eeprom_i2c_inst/e2prom_i2c/un31_NE</A>
+CTOF_DEL    ---     0.451      R6C23B.B1 to      R6C23B.F1 <A href="#@comp:SLICE_412">SLICE_412</A>
+ROUTE         1     0.883<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1:R6C23B.F1:R6C23D.B1:0.883">      R6C23B.F1 to R6C23D.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1">eeprom_i2c_inst/e2prom_i2c/N_476_i_1</A>
+CTOF_DEL    ---     0.451      R6C23D.B1 to      R6C23D.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A>
+ROUTE         1     0.000<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i:R6C23D.F1:R6C23D.DI1:0.000">      R6C23D.F1 to R6C23D.DI1    </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i">eeprom_i2c_inst/e2prom_i2c/N_476_i</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   11.604   (30.7% logic, 69.3% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R3C20B.CLK,clock_c">Source Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_186:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R3C20B.CLK:2.175">       C8.PADDI to R3C20B.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Destination Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 28.308ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[1]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              11.543ns  (27.0% logic, 73.0% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.543ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 28.308ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C23D.CLK,R6C23D.Q0,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 3.203,R6C23D.Q0,R4C22C.B1,eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:CTOF_DEL, 0.451,R4C22C.B1,R4C22C.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_440:ROUTE, 2.003,R4C22C.F1,R5C23D.B0,eeprom_i2c_inst/e2prom_i2c/next_state21:CTOF_DEL, 0.451,R5C23D.B0,R5C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_448:ROUTE, 0.540,R5C23D.F0,R4C23C.D0,eeprom_i2c_inst/e2prom_i2c/N_250:CTOF_DEL, 0.451,R4C23C.D0,R4C23C.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_444:ROUTE, 0.871,R4C23C.F0,R5C23A.A1,eeprom_i2c_inst/e2prom_i2c/next_state_1_0[3]:CTOF_DEL, 0.451,R5C23A.A1,R5C23A.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.929,R5C23A.F1,R6C23B.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE:CTOF_DEL, 0.451,R6C23B.B1,R6C23B.F1,SLICE_412:ROUTE, 0.883,R6C23B.F1,R6C23D.B1,eeprom_i2c_inst/e2prom_i2c/N_476_i_1:CTOF_DEL, 0.451,R6C23D.B1,R6C23D.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 0.000,R6C23D.F1,R6C23D.DI1,eeprom_i2c_inst/e2prom_i2c/N_476_i">Data path</A> eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C23D.CLK to      R6C23D.Q0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        16     3.203<A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:R6C23D.Q0:R4C22C.B1:3.203">      R6C23D.Q0 to R4C22C.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>
+CTOF_DEL    ---     0.451      R4C22C.B1 to      R4C22C.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_440">eeprom_i2c_inst/e2prom_i2c/SLICE_440</A>
+ROUTE        10     2.003<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21:R4C22C.F1:R5C23D.B0:2.003">      R4C22C.F1 to R5C23D.B0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21">eeprom_i2c_inst/e2prom_i2c/next_state21</A>
+CTOF_DEL    ---     0.451      R5C23D.B0 to      R5C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_448">eeprom_i2c_inst/e2prom_i2c/SLICE_448</A>
+ROUTE         1     0.540<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_250:R5C23D.F0:R4C23C.D0:0.540">      R5C23D.F0 to R4C23C.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_250">eeprom_i2c_inst/e2prom_i2c/N_250</A>
+CTOF_DEL    ---     0.451      R4C23C.D0 to      R4C23C.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_444">eeprom_i2c_inst/e2prom_i2c/SLICE_444</A>
+ROUTE         1     0.871<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1_0[3]:R4C23C.F0:R5C23A.A1:0.871">      R4C23C.F0 to R5C23A.A1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1_0[3]">eeprom_i2c_inst/e2prom_i2c/next_state_1_0[3]</A>
+CTOF_DEL    ---     0.451      R5C23A.A1 to      R5C23A.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         5     0.929<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE:R5C23A.F1:R6C23B.B1:0.929">      R5C23A.F1 to R6C23B.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE">eeprom_i2c_inst/e2prom_i2c/un31_NE</A>
+CTOF_DEL    ---     0.451      R6C23B.B1 to      R6C23B.F1 <A href="#@comp:SLICE_412">SLICE_412</A>
+ROUTE         1     0.883<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1:R6C23B.F1:R6C23D.B1:0.883">      R6C23B.F1 to R6C23D.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i_1">eeprom_i2c_inst/e2prom_i2c/N_476_i_1</A>
+CTOF_DEL    ---     0.451      R6C23D.B1 to      R6C23D.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A>
+ROUTE         1     0.000<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i:R6C23D.F1:R6C23D.DI1:0.000">      R6C23D.F1 to R6C23D.DI1    </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_476_i">eeprom_i2c_inst/e2prom_i2c/N_476_i</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   11.543   (27.0% logic, 73.0% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Source Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Destination Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 28.313ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              11.538ns  (27.0% logic, 73.0% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.538ns physical path delay eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 28.313ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C23D.CLK,R6C23D.Q0,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 3.203,R6C23D.Q0,R4C22C.B1,eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:CTOF_DEL, 0.451,R4C22C.B1,R4C22C.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_440:ROUTE, 2.350,R4C22C.F1,R5C22A.A0,eeprom_i2c_inst/e2prom_i2c/next_state21:CTOF_DEL, 0.451,R5C22A.A0,R5C22A.F0,eeprom_i2c_inst/SLICE_457:ROUTE, 0.837,R5C22A.F0,R4C23A.D0,eeprom_i2c_inst/e2prom_i2c/next_state_1[0]:CTOF_DEL, 0.451,R4C23A.D0,R4C23A.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_413:ROUTE, 0.543,R4C23A.F0,R4C23D.D0,eeprom_i2c_inst/e2prom_i2c/un31_0:CTOF_DEL, 0.451,R4C23D.D0,R4C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_442:ROUTE, 0.902,R4C23D.F0,R5C23A.B1,eeprom_i2c_inst/e2prom_i2c/un31_NE_1:CTOF_DEL, 0.451,R5C23A.B1,R5C23A.F1,eeprom_i2c_inst/e2prom_i2c/SLICE_185:ROUTE, 0.589,R5C23A.F1,R6C23D.D0,eeprom_i2c_inst/e2prom_i2c/un31_NE:CTOF_DEL, 0.451,R6C23D.D0,R6C23D.F0,eeprom_i2c_inst/e2prom_i2c/SLICE_184:ROUTE, 0.000,R6C23D.F0,R6C23D.DI0,eeprom_i2c_inst/e2prom_i2c/N_477_i">Data path</A> eeprom_i2c_inst/e2prom_i2c/SLICE_184 to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C23D.CLK to      R6C23D.Q0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        16     3.203<A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]:R6C23D.Q0:R4C22C.B1:3.203">      R6C23D.Q0 to R4C22C.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]">eeprom_i2c_inst/e2prom_i2c/bit_cnt[0]</A>
+CTOF_DEL    ---     0.451      R4C22C.B1 to      R4C22C.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_440">eeprom_i2c_inst/e2prom_i2c/SLICE_440</A>
+ROUTE        10     2.350<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21:R4C22C.F1:R5C22A.A0:2.350">      R4C22C.F1 to R5C22A.A0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state21">eeprom_i2c_inst/e2prom_i2c/next_state21</A>
+CTOF_DEL    ---     0.451      R5C22A.A0 to      R5C22A.F0 <A href="#@comp:eeprom_i2c_inst/SLICE_457">eeprom_i2c_inst/SLICE_457</A>
+ROUTE         1     0.837<A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[0]:R5C22A.F0:R4C23A.D0:0.837">      R5C22A.F0 to R4C23A.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/next_state_1[0]">eeprom_i2c_inst/e2prom_i2c/next_state_1[0]</A>
+CTOF_DEL    ---     0.451      R4C23A.D0 to      R4C23A.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_413">eeprom_i2c_inst/e2prom_i2c/SLICE_413</A>
+ROUTE         1     0.543<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_0:R4C23A.F0:R4C23D.D0:0.543">      R4C23A.F0 to R4C23D.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_0">eeprom_i2c_inst/e2prom_i2c/un31_0</A>
+CTOF_DEL    ---     0.451      R4C23D.D0 to      R4C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_442">eeprom_i2c_inst/e2prom_i2c/SLICE_442</A>
+ROUTE         1     0.902<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1:R4C23D.F0:R5C23A.B1:0.902">      R4C23D.F0 to R5C23A.B1     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE_1">eeprom_i2c_inst/e2prom_i2c/un31_NE_1</A>
+CTOF_DEL    ---     0.451      R5C23A.B1 to      R5C23A.F1 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_185">eeprom_i2c_inst/e2prom_i2c/SLICE_185</A>
+ROUTE         5     0.589<A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE:R5C23A.F1:R6C23D.D0:0.589">      R5C23A.F1 to R6C23D.D0     </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/un31_NE">eeprom_i2c_inst/e2prom_i2c/un31_NE</A>
+CTOF_DEL    ---     0.451      R6C23D.D0 to      R6C23D.F0 <A href="#@comp:eeprom_i2c_inst/e2prom_i2c/SLICE_184">eeprom_i2c_inst/e2prom_i2c/SLICE_184</A>
+ROUTE         1     0.000<A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_477_i:R6C23D.F0:R6C23D.DI0:0.000">      R6C23D.F0 to R6C23D.DI0    </A> <A href="#@net:eeprom_i2c_inst/e2prom_i2c/N_477_i">eeprom_i2c_inst/e2prom_i2c/N_477_i</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   11.538   (27.0% logic, 73.0% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Source Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C23D.CLK,clock_c">Destination Clock Path</A> clock to eeprom_i2c_inst/e2prom_i2c/SLICE_184:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C23D.CLK:2.175">       C8.PADDI to R6C23D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 28.443ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:i2c0_slave_inst0/SLICE_117">i2c0_slave_inst0/word_addr[1]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_162">data_out_r[5]</A>  (to <A href="#@net:clock_c">clock_c</A> +)
+
+   Delay:              11.408ns  (27.3% logic, 72.7% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.408ns physical path delay i2c0_slave_inst0/SLICE_117 to SLICE_162 meets
+     40.000ns delay constraint less
+      0.000ns skew and
+      0.149ns DIN_SET requirement (totaling 39.851ns) by 28.443ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:REG_DEL, 0.408,R6C16B.CLK,R6C16B.Q1,i2c0_slave_inst0/SLICE_117:ROUTE, 2.968,R6C16B.Q1,R10C22A.B1,cpld_register_addr[1]:CTOF_DEL, 0.451,R10C22A.B1,R10C22A.F1,usb_reset_ctrl_inst/SLICE_489:ROUTE, 0.617,R10C22A.F1,R10C22A.B0,usb_reset_ctrl_inst/data_out_r_20_sn_N_49_1:CTOF_DEL, 0.451,R10C22A.B0,R10C22A.F0,usb_reset_ctrl_inst/SLICE_489:ROUTE, 0.543,R10C22A.F0,R10C22D.D1,usb_reset_ctrl_inst/data_out_r_20_sn_m36_i_2:CTOF_DEL, 0.451,R10C22D.D1,R10C22D.F1,usb_reset_ctrl_inst/SLICE_467:ROUTE, 2.931,R10C22D.F1,R10C17D.A0,data_out_r_20_sn_N_25:CTOF_DEL, 0.451,R10C17D.A0,R10C17D.F0,server_power_control/SLICE_430:ROUTE, 0.383,R10C17D.F0,R10C17D.C1,server_power_control/data_out_r_20_0_0[5]:CTOF_DEL, 0.451,R10C17D.C1,R10C17D.F1,server_power_control/SLICE_430:ROUTE, 0.852,R10C17D.F1,R10C17B.A1,server_power_control/data_out_r_20_0_1[5]:CTOF_DEL, 0.451,R10C17B.A1,R10C17B.F1,SLICE_162:ROUTE, 0.000,R10C17B.F1,R10C17B.DI1,data_out_r_20[5]">Data path</A> i2c0_slave_inst0/SLICE_117 to SLICE_162:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C16B.CLK to      R6C16B.Q1 <A href="#@comp:i2c0_slave_inst0/SLICE_117">i2c0_slave_inst0/SLICE_117</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        38     2.968<A href="#@net:cpld_register_addr[1]:R6C16B.Q1:R10C22A.B1:2.968">      R6C16B.Q1 to R10C22A.B1    </A> <A href="#@net:cpld_register_addr[1]">cpld_register_addr[1]</A>
+CTOF_DEL    ---     0.451     R10C22A.B1 to     R10C22A.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_489">usb_reset_ctrl_inst/SLICE_489</A>
+ROUTE         2     0.617<A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_N_49_1:R10C22A.F1:R10C22A.B0:0.617">     R10C22A.F1 to R10C22A.B0    </A> <A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_N_49_1">usb_reset_ctrl_inst/data_out_r_20_sn_N_49_1</A>
+CTOF_DEL    ---     0.451     R10C22A.B0 to     R10C22A.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_489">usb_reset_ctrl_inst/SLICE_489</A>
+ROUTE         1     0.543<A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_m36_i_2:R10C22A.F0:R10C22D.D1:0.543">     R10C22A.F0 to R10C22D.D1    </A> <A href="#@net:usb_reset_ctrl_inst/data_out_r_20_sn_m36_i_2">usb_reset_ctrl_inst/data_out_r_20_sn_m36_i_2</A>
+CTOF_DEL    ---     0.451     R10C22D.D1 to     R10C22D.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_467">usb_reset_ctrl_inst/SLICE_467</A>
+ROUTE        10     2.931<A href="#@net:data_out_r_20_sn_N_25:R10C22D.F1:R10C17D.A0:2.931">     R10C22D.F1 to R10C17D.A0    </A> <A href="#@net:data_out_r_20_sn_N_25">data_out_r_20_sn_N_25</A>
+CTOF_DEL    ---     0.451     R10C17D.A0 to     R10C17D.F0 <A href="#@comp:server_power_control/SLICE_430">server_power_control/SLICE_430</A>
+ROUTE         1     0.383<A href="#@net:server_power_control/data_out_r_20_0_0[5]:R10C17D.F0:R10C17D.C1:0.383">     R10C17D.F0 to R10C17D.C1    </A> <A href="#@net:server_power_control/data_out_r_20_0_0[5]">server_power_control/data_out_r_20_0_0[5]</A>
+CTOF_DEL    ---     0.451     R10C17D.C1 to     R10C17D.F1 <A href="#@comp:server_power_control/SLICE_430">server_power_control/SLICE_430</A>
+ROUTE         1     0.852<A href="#@net:server_power_control/data_out_r_20_0_1[5]:R10C17D.F1:R10C17B.A1:0.852">     R10C17D.F1 to R10C17B.A1    </A> <A href="#@net:server_power_control/data_out_r_20_0_1[5]">server_power_control/data_out_r_20_0_1[5]</A>
+CTOF_DEL    ---     0.451     R10C17B.A1 to     R10C17B.F1 <A href="#@comp:SLICE_162">SLICE_162</A>
+ROUTE         1     0.000<A href="#@net:data_out_r_20[5]:R10C17B.F1:R10C17B.DI1:0.000">     R10C17B.F1 to R10C17B.DI1   </A> <A href="#@net:data_out_r_20[5]">data_out_r_20[5]</A> (to <A href="#@net:clock_c">clock_c</A>)
+                  --------
+                   11.408   (27.3% logic, 72.7% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R6C16B.CLK,clock_c">Source Clock Path</A> clock to i2c0_slave_inst0/SLICE_117:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C16B.CLK:2.175">       C8.PADDI to R6C16B.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clock_c' 25.000000 MHz ;:ROUTE, 2.175,C8.PADDI,R10C17B.CLK,clock_c">Destination Clock Path</A> clock to SLICE_162:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R10C17B.CLK:2.175">       C8.PADDI to R10C17B.CLK   </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    2.175   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   74.845MHz is the maximum frequency for this preference.
+
+
+</A><A name="FREQUENCY PORT 'clock' 25.000000 MH"></A>================================================================================
+Preference: FREQUENCY PORT "clock" 25.000000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.748ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/cpu_pwr_control/SLICE_158">server_power_control/cpu_pwr_control/sys_rst_x</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:usb_reset_ctrl_inst/SLICE_362">usb_reset_ctrl_inst/next_state[0]</A>  (to <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A> +)
+
+   Delay:              12.370ns  (14.2% logic, 85.8% route), 4 logic levels.
+
+ Constraint Details:
+
+     12.370ns physical path delay server_power_control/cpu_pwr_control/SLICE_158 to usb_reset_ctrl_inst/SLICE_362 meets
+     40.000ns delay constraint less
+     -3.267ns skew and
+      0.149ns DIN_SET requirement (totaling 43.118ns) by 30.748ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R6C18C.CLK,R6C18C.Q0,server_power_control/cpu_pwr_control/SLICE_158:ROUTE, 6.713,R6C18C.Q0,R7C12B.B1,cpua_sys_reset_c:CTOF_DEL, 0.451,R7C12B.B1,R7C12B.F1,usb_reset_ctrl_inst/SLICE_423:ROUTE, 1.709,R7C12B.F1,R7C12B.C0,usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]:CTOF_DEL, 0.451,R7C12B.C0,R7C12B.F0,usb_reset_ctrl_inst/SLICE_423:ROUTE, 2.187,R7C12B.F0,R6C12A.D0,usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]:CTOF_DEL, 0.451,R6C12A.D0,R6C12A.F0,usb_reset_ctrl_inst/SLICE_362:ROUTE, 0.000,R6C12A.F0,R6C12A.DI0,usb_reset_ctrl_inst/N_8_i">Data path</A> server_power_control/cpu_pwr_control/SLICE_158 to usb_reset_ctrl_inst/SLICE_362:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C18C.CLK to      R6C18C.Q0 <A href="#@comp:server_power_control/cpu_pwr_control/SLICE_158">server_power_control/cpu_pwr_control/SLICE_158</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         8     6.713<A href="#@net:cpua_sys_reset_c:R6C18C.Q0:R7C12B.B1:6.713">      R6C18C.Q0 to R7C12B.B1     </A> <A href="#@net:cpua_sys_reset_c">cpua_sys_reset_c</A>
+CTOF_DEL    ---     0.451      R7C12B.B1 to      R7C12B.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_423">usb_reset_ctrl_inst/SLICE_423</A>
+ROUTE         1     1.709<A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]:R7C12B.F1:R7C12B.C0:1.709">      R7C12B.F1 to R7C12B.C0     </A> <A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]">usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]</A>
+CTOF_DEL    ---     0.451      R7C12B.C0 to      R7C12B.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_423">usb_reset_ctrl_inst/SLICE_423</A>
+ROUTE         1     2.187<A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]:R7C12B.F0:R6C12A.D0:2.187">      R7C12B.F0 to R6C12A.D0     </A> <A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]">usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]</A>
+CTOF_DEL    ---     0.451      R6C12A.D0 to      R6C12A.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_362">usb_reset_ctrl_inst/SLICE_362</A>
+ROUTE         1     0.000<A href="#@net:usb_reset_ctrl_inst/N_8_i:R6C12A.F0:R6C12A.DI0:0.000">      R6C12A.F0 to R6C12A.DI0    </A> <A href="#@net:usb_reset_ctrl_inst/N_8_i">usb_reset_ctrl_inst/N_8_i</A> (to <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>)
+                  --------
+                   12.370   (14.2% logic, 85.8% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R6C18C.CLK,clock_c">Source Clock Path</A> clock to server_power_control/cpu_pwr_control/SLICE_158:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C18C.CLK:2.175">       C8.PADDI to R6C18C.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C18D.CLK,clock_c:REG_DEL, 0.408,R5C18D.CLK,R5C18D.Q1,SLICE_360:ROUTE, 1.487,R5C18D.Q1,R7C12C.D0,usb_reset_ctrl_inst/current_state[1]:CTOF_DEL, 0.451,R7C12C.D0,R7C12C.F0,usb_reset_ctrl_inst/SLICE_577:ROUTE, 0.921,R7C12C.F0,R6C12A.CLK,usb_reset_ctrl_inst/current_state_RNI5EMP[0]">Destination Clock Path</A> clock to usb_reset_ctrl_inst/SLICE_362:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C18D.CLK:2.175">       C8.PADDI to R5C18D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408     R5C18D.CLK to      R5C18D.Q1 <A href="#@comp:SLICE_360">SLICE_360</A>
+ROUTE        14     1.487<A href="#@net:usb_reset_ctrl_inst/current_state[1]:R5C18D.Q1:R7C12C.D0:1.487">      R5C18D.Q1 to R7C12C.D0     </A> <A href="#@net:usb_reset_ctrl_inst/current_state[1]">usb_reset_ctrl_inst/current_state[1]</A>
+CTOF_DEL    ---     0.451      R7C12C.D0 to      R7C12C.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_577">usb_reset_ctrl_inst/SLICE_577</A>
+ROUTE         2     0.921<A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]:R7C12C.F0:R6C12A.CLK:0.921">      R7C12C.F0 to R6C12A.CLK    </A> <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>
+                  --------
+                    6.574   (30.3% logic, 69.7% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 30.986ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_360">usb_reset_ctrl_inst/current_state[1]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:usb_reset_ctrl_inst/SLICE_362">usb_reset_ctrl_inst/next_state[0]</A>  (to <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A> +)
+
+   Delay:              12.132ns  (14.5% logic, 85.5% route), 4 logic levels.
+
+ Constraint Details:
+
+     12.132ns physical path delay SLICE_360 to usb_reset_ctrl_inst/SLICE_362 meets
+     40.000ns delay constraint less
+     -3.267ns skew and
+      0.149ns DIN_SET requirement (totaling 43.118ns) by 30.986ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R5C18D.CLK,R5C18D.Q1,SLICE_360:ROUTE, 6.475,R5C18D.Q1,R7C12B.A1,usb_reset_ctrl_inst/current_state[1]:CTOF_DEL, 0.451,R7C12B.A1,R7C12B.F1,usb_reset_ctrl_inst/SLICE_423:ROUTE, 1.709,R7C12B.F1,R7C12B.C0,usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]:CTOF_DEL, 0.451,R7C12B.C0,R7C12B.F0,usb_reset_ctrl_inst/SLICE_423:ROUTE, 2.187,R7C12B.F0,R6C12A.D0,usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]:CTOF_DEL, 0.451,R6C12A.D0,R6C12A.F0,usb_reset_ctrl_inst/SLICE_362:ROUTE, 0.000,R6C12A.F0,R6C12A.DI0,usb_reset_ctrl_inst/N_8_i">Data path</A> SLICE_360 to usb_reset_ctrl_inst/SLICE_362:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R5C18D.CLK to      R5C18D.Q1 <A href="#@comp:SLICE_360">SLICE_360</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE        14     6.475<A href="#@net:usb_reset_ctrl_inst/current_state[1]:R5C18D.Q1:R7C12B.A1:6.475">      R5C18D.Q1 to R7C12B.A1     </A> <A href="#@net:usb_reset_ctrl_inst/current_state[1]">usb_reset_ctrl_inst/current_state[1]</A>
+CTOF_DEL    ---     0.451      R7C12B.A1 to      R7C12B.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_423">usb_reset_ctrl_inst/SLICE_423</A>
+ROUTE         1     1.709<A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]:R7C12B.F1:R7C12B.C0:1.709">      R7C12B.F1 to R7C12B.C0     </A> <A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]">usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]</A>
+CTOF_DEL    ---     0.451      R7C12B.C0 to      R7C12B.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_423">usb_reset_ctrl_inst/SLICE_423</A>
+ROUTE         1     2.187<A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]:R7C12B.F0:R6C12A.D0:2.187">      R7C12B.F0 to R6C12A.D0     </A> <A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]">usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]</A>
+CTOF_DEL    ---     0.451      R6C12A.D0 to      R6C12A.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_362">usb_reset_ctrl_inst/SLICE_362</A>
+ROUTE         1     0.000<A href="#@net:usb_reset_ctrl_inst/N_8_i:R6C12A.F0:R6C12A.DI0:0.000">      R6C12A.F0 to R6C12A.DI0    </A> <A href="#@net:usb_reset_ctrl_inst/N_8_i">usb_reset_ctrl_inst/N_8_i</A> (to <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>)
+                  --------
+                   12.132   (14.5% logic, 85.5% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C18D.CLK,clock_c">Source Clock Path</A> clock to SLICE_360:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C18D.CLK:2.175">       C8.PADDI to R5C18D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C18D.CLK,clock_c:REG_DEL, 0.408,R5C18D.CLK,R5C18D.Q1,SLICE_360:ROUTE, 1.487,R5C18D.Q1,R7C12C.D0,usb_reset_ctrl_inst/current_state[1]:CTOF_DEL, 0.451,R7C12C.D0,R7C12C.F0,usb_reset_ctrl_inst/SLICE_577:ROUTE, 0.921,R7C12C.F0,R6C12A.CLK,usb_reset_ctrl_inst/current_state_RNI5EMP[0]">Destination Clock Path</A> clock to usb_reset_ctrl_inst/SLICE_362:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C18D.CLK:2.175">       C8.PADDI to R5C18D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408     R5C18D.CLK to      R5C18D.Q1 <A href="#@comp:SLICE_360">SLICE_360</A>
+ROUTE        14     1.487<A href="#@net:usb_reset_ctrl_inst/current_state[1]:R5C18D.Q1:R7C12C.D0:1.487">      R5C18D.Q1 to R7C12C.D0     </A> <A href="#@net:usb_reset_ctrl_inst/current_state[1]">usb_reset_ctrl_inst/current_state[1]</A>
+CTOF_DEL    ---     0.451      R7C12C.D0 to      R7C12C.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_577">usb_reset_ctrl_inst/SLICE_577</A>
+ROUTE         2     0.921<A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]:R7C12C.F0:R6C12A.CLK:0.921">      R7C12C.F0 to R6C12A.CLK    </A> <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>
+                  --------
+                    6.574   (30.3% logic, 69.7% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.105ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/cpu_pwr_control/SLICE_158">server_power_control/cpu_pwr_control/sys_rst_x</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:server_power_control/SLICE_322">server_power_control/next_state[3]</A>  (to <A href="#@net:server_power_control/un1_next_state115_1_0">server_power_control/un1_next_state115_1_0</A> +)
+
+   Delay:              11.442ns  (21.2% logic, 78.8% route), 5 logic levels.
+
+ Constraint Details:
+
+     11.442ns physical path delay server_power_control/cpu_pwr_control/SLICE_158 to server_power_control/SLICE_322 meets
+     40.000ns delay constraint less
+     -2.696ns skew and
+      0.149ns DIN_SET requirement (totaling 42.547ns) by 31.105ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R6C18C.CLK,R6C18C.Q0,server_power_control/cpu_pwr_control/SLICE_158:ROUTE, 1.800,R6C18C.Q0,R7C18C.D0,cpua_sys_reset_c:CTOF_DEL, 0.451,R7C18C.D0,R7C18C.F0,SLICE_427:ROUTE, 1.801,R7C18C.F0,R7C18D.B1,server_power_control/cpua_pwrok:CTOF_DEL, 0.451,R7C18D.B1,R7C18D.F1,SLICE_498:ROUTE, 3.334,R7C18D.F1,R10C13A.A0,bmc_gpio51_c:CTOOFX_DEL, 0.659,R10C13A.A0,R10C13A.OFX0,server_power_control/next_state_1_3_0_.m49/SLICE_393:ROUTE, 2.087,R10C13A.OFX0,R10C13D.C0,server_power_control/i15_mux_2:CTOF_DEL, 0.451,R10C13D.C0,R10C13D.F0,server_power_control/SLICE_322:ROUTE, 0.000,R10C13D.F0,R10C13D.DI0,server_power_control/next_state_1[3]">Data path</A> server_power_control/cpu_pwr_control/SLICE_158 to server_power_control/SLICE_322:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R6C18C.CLK to      R6C18C.Q0 <A href="#@comp:server_power_control/cpu_pwr_control/SLICE_158">server_power_control/cpu_pwr_control/SLICE_158</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         8     1.800<A href="#@net:cpua_sys_reset_c:R6C18C.Q0:R7C18C.D0:1.800">      R6C18C.Q0 to R7C18C.D0     </A> <A href="#@net:cpua_sys_reset_c">cpua_sys_reset_c</A>
+CTOF_DEL    ---     0.451      R7C18C.D0 to      R7C18C.F0 <A href="#@comp:SLICE_427">SLICE_427</A>
+ROUTE         2     1.801<A href="#@net:server_power_control/cpua_pwrok:R7C18C.F0:R7C18D.B1:1.801">      R7C18C.F0 to R7C18D.B1     </A> <A href="#@net:server_power_control/cpua_pwrok">server_power_control/cpua_pwrok</A>
+CTOF_DEL    ---     0.451      R7C18D.B1 to      R7C18D.F1 <A href="#@comp:SLICE_498">SLICE_498</A>
+ROUTE         5     3.334<A href="#@net:bmc_gpio51_c:R7C18D.F1:R10C13A.A0:3.334">      R7C18D.F1 to R10C13A.A0    </A> <A href="#@net:bmc_gpio51_c">bmc_gpio51_c</A>
+CTOOFX_DEL  ---     0.659     R10C13A.A0 to   R10C13A.OFX0 <A href="#@comp:server_power_control/next_state_1_3_0_.m49/SLICE_393">server_power_control/next_state_1_3_0_.m49/SLICE_393</A>
+ROUTE         1     2.087<A href="#@net:server_power_control/i15_mux_2:R10C13A.OFX0:R10C13D.C0:2.087">   R10C13A.OFX0 to R10C13D.C0    </A> <A href="#@net:server_power_control/i15_mux_2">server_power_control/i15_mux_2</A>
+CTOF_DEL    ---     0.451     R10C13D.C0 to     R10C13D.F0 <A href="#@comp:server_power_control/SLICE_322">server_power_control/SLICE_322</A>
+ROUTE         1     0.000<A href="#@net:server_power_control/next_state_1[3]:R10C13D.F0:R10C13D.DI0:0.000">     R10C13D.F0 to R10C13D.DI0   </A> <A href="#@net:server_power_control/next_state_1[3]">server_power_control/next_state_1[3]</A> (to <A href="#@net:server_power_control/un1_next_state115_1_0">server_power_control/un1_next_state115_1_0</A>)
+                  --------
+                   11.442   (21.2% logic, 78.8% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R6C18C.CLK,clock_c">Source Clock Path</A> clock to server_power_control/cpu_pwr_control/SLICE_158:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R6C18C.CLK:2.175">       C8.PADDI to R6C18C.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R10C17C.CLK,clock_c:REG_DEL, 0.408,R10C17C.CLK,R10C17C.Q1,server_power_control/SLICE_643:ROUTE, 0.887,R10C17C.Q1,R9C15B.D1,server_power_control/current_state[0]:CTOF_DEL, 0.451,R9C15B.D1,R9C15B.F1,server_power_control/SLICE_228:ROUTE, 0.950,R9C15B.F1,R10C13D.CLK,server_power_control/un1_next_state115_1_0">Destination Clock Path</A> clock to server_power_control/SLICE_322:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R10C17C.CLK:2.175">       C8.PADDI to R10C17C.CLK   </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408    R10C17C.CLK to     R10C17C.Q1 <A href="#@comp:server_power_control/SLICE_643">server_power_control/SLICE_643</A>
+ROUTE        29     0.887<A href="#@net:server_power_control/current_state[0]:R10C17C.Q1:R9C15B.D1:0.887">     R10C17C.Q1 to R9C15B.D1     </A> <A href="#@net:server_power_control/current_state[0]">server_power_control/current_state[0]</A>
+CTOF_DEL    ---     0.451      R9C15B.D1 to      R9C15B.F1 <A href="#@comp:server_power_control/SLICE_228">server_power_control/SLICE_228</A>
+ROUTE         3     0.950<A href="#@net:server_power_control/un1_next_state115_1_0:R9C15B.F1:R10C13D.CLK:0.950">      R9C15B.F1 to R10C13D.CLK   </A> <A href="#@net:server_power_control/un1_next_state115_1_0">server_power_control/un1_next_state115_1_0</A>
+                  --------
+                    6.003   (33.2% logic, 66.8% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.302ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_70">server_power_control/power_signal_detect_inst/debounce_cnt[10]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/next_state[0]</A>  (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A> +)
+
+   Delay:              11.615ns  (30.7% logic, 69.3% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.615ns physical path delay server_power_control/power_signal_detect_inst/SLICE_70 to server_power_control/power_signal_detect_inst/SLICE_327 meets
+     40.000ns delay constraint less
+     -3.066ns skew and
+      0.149ns DIN_SET requirement (totaling 42.917ns) by 31.302ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R5C5B.CLK,R5C5B.Q1,server_power_control/power_signal_detect_inst/SLICE_70:ROUTE, 1.242,R5C5B.Q1,R6C5A.A1,server_power_control/power_signal_detect_inst/debounce_cnt[10]:CTOF_DEL, 0.451,R6C5A.A1,R6C5A.F1,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.852,R6C5A.F1,R6C5A.A0,server_power_control/power_signal_detect_inst/un1_force_15slto10_1:CTOF_DEL, 0.451,R6C5A.A0,R6C5A.F0,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.586,R6C5A.F0,R6C5C.A0,server_power_control/power_signal_detect_inst/un1_force_15slt12:CTOF_DEL, 0.451,R6C5C.A0,R6C5C.F0,server_power_control/power_signal_detect_inst/SLICE_511:ROUTE, 0.878,R6C5C.F0,R6C6B.A0,server_power_control/power_signal_detect_inst/N_4:CTOF_DEL, 0.451,R6C6B.A0,R6C6B.F0,server_power_control/power_signal_detect_inst/SLICE_509:ROUTE, 0.655,R6C6B.F0,R6C7A.C1,server_power_control/power_signal_detect_inst/N_6:CTOF_DEL, 0.451,R6C7A.C1,R6C7A.F1,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.934,R6C7A.F1,R6C7A.B0,server_power_control/power_signal_detect_inst/N_7:CTOF_DEL, 0.451,R6C7A.B0,R6C7A.F0,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.903,R6C7A.F0,R7C7C.A0,server_power_control/power_signal_detect_inst/N_9:CTOF_DEL, 0.451,R7C7C.A0,R7C7C.F0,server_power_control/power_signal_detect_inst/SLICE_327:ROUTE, 0.000,R7C7C.F0,R7C7C.DI0,server_power_control/power_signal_detect_inst/next_state_1[0]">Data path</A> server_power_control/power_signal_detect_inst/SLICE_70 to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408      R5C5B.CLK to       R5C5B.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_70">server_power_control/power_signal_detect_inst/SLICE_70</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         3     1.242<A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[10]:R5C5B.Q1:R6C5A.A1:1.242">       R5C5B.Q1 to R6C5A.A1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[10]">server_power_control/power_signal_detect_inst/debounce_cnt[10]</A>
+CTOF_DEL    ---     0.451       R6C5A.A1 to       R6C5A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         1     0.852<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slto10_1:R6C5A.F1:R6C5A.A0:0.852">       R6C5A.F1 to R6C5A.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slto10_1">server_power_control/power_signal_detect_inst/un1_force_15slto10_1</A>
+CTOF_DEL    ---     0.451       R6C5A.A0 to       R6C5A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         2     0.586<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12:R6C5A.F0:R6C5C.A0:0.586">       R6C5A.F0 to R6C5C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12">server_power_control/power_signal_detect_inst/un1_force_15slt12</A>
+CTOF_DEL    ---     0.451       R6C5C.A0 to       R6C5C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_511">server_power_control/power_signal_detect_inst/SLICE_511</A>
+ROUTE         2     0.878<A href="#@net:server_power_control/power_signal_detect_inst/N_4:R6C5C.F0:R6C6B.A0:0.878">       R6C5C.F0 to R6C6B.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_4">server_power_control/power_signal_detect_inst/N_4</A>
+CTOF_DEL    ---     0.451       R6C6B.A0 to       R6C6B.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_509">server_power_control/power_signal_detect_inst/SLICE_509</A>
+ROUTE         1     0.655<A href="#@net:server_power_control/power_signal_detect_inst/N_6:R6C6B.F0:R6C7A.C1:0.655">       R6C6B.F0 to R6C7A.C1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_6">server_power_control/power_signal_detect_inst/N_6</A>
+CTOF_DEL    ---     0.451       R6C7A.C1 to       R6C7A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.934<A href="#@net:server_power_control/power_signal_detect_inst/N_7:R6C7A.F1:R6C7A.B0:1.934">       R6C7A.F1 to R6C7A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_7">server_power_control/power_signal_detect_inst/N_7</A>
+CTOF_DEL    ---     0.451       R6C7A.B0 to       R6C7A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.903<A href="#@net:server_power_control/power_signal_detect_inst/N_9:R6C7A.F0:R7C7C.A0:1.903">       R6C7A.F0 to R7C7C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_9">server_power_control/power_signal_detect_inst/N_9</A>
+CTOF_DEL    ---     0.451       R7C7C.A0 to       R7C7C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/SLICE_327</A>
+ROUTE         1     0.000<A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]:R7C7C.F0:R7C7C.DI0:0.000">       R7C7C.F0 to R7C7C.DI0     </A> <A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]">server_power_control/power_signal_detect_inst/next_state_1[0]</A> (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>)
+                  --------
+                   11.615   (30.7% logic, 69.3% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C5B.CLK,clock_c">Source Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_70:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C5B.CLK:2.175">       C8.PADDI to R5C5B.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R7C7A.CLK,clock_c:REG_DEL, 0.408,R7C7A.CLK,R7C7A.Q1,server_power_control/power_signal_detect_inst/SLICE_519:ROUTE, 1.178,R7C7A.Q1,R10C9B.C1,server_power_control/power_signal_detect_inst/low_time_cnt:CTOF_DEL, 0.451,R10C9B.C1,R10C9B.F1,server_power_control/SLICE_338:ROUTE, 1.029,R10C9B.F1,R7C7C.CLK,server_power_control/power_signal_detect_inst/un1_next_state69">Destination Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R7C7A.CLK:2.175">       C8.PADDI to R7C7A.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408      R7C7A.CLK to       R7C7A.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_519">server_power_control/power_signal_detect_inst/SLICE_519</A>
+ROUTE        33     1.178<A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt:R7C7A.Q1:R10C9B.C1:1.178">       R7C7A.Q1 to R10C9B.C1     </A> <A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt">server_power_control/power_signal_detect_inst/low_time_cnt</A>
+CTOF_DEL    ---     0.451      R10C9B.C1 to      R10C9B.F1 <A href="#@comp:server_power_control/SLICE_338">server_power_control/SLICE_338</A>
+ROUTE         2     1.029<A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69:R10C9B.F1:R7C7C.CLK:1.029">      R10C9B.F1 to R7C7C.CLK     </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>
+                  --------
+                    6.373   (31.2% logic, 68.8% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.460ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_71">server_power_control/power_signal_detect_inst/debounce_cnt[7]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/next_state[0]</A>  (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A> +)
+
+   Delay:              11.457ns  (31.1% logic, 68.9% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.457ns physical path delay server_power_control/power_signal_detect_inst/SLICE_71 to server_power_control/power_signal_detect_inst/SLICE_327 meets
+     40.000ns delay constraint less
+     -3.066ns skew and
+      0.149ns DIN_SET requirement (totaling 42.917ns) by 31.460ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R5C5A.CLK,R5C5A.Q0,server_power_control/power_signal_detect_inst/SLICE_71:ROUTE, 1.553,R5C5A.Q0,R6C4C.A0,server_power_control/power_signal_detect_inst/debounce_cnt[7]:CTOF_DEL, 0.451,R6C4C.A0,R6C4C.F0,server_power_control/power_signal_detect_inst/SLICE_644:ROUTE, 0.383,R6C4C.F0,R6C5A.C0,server_power_control/power_signal_detect_inst/un1_force_15slto7_i_a3_1:CTOF_DEL, 0.451,R6C5A.C0,R6C5A.F0,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.586,R6C5A.F0,R6C5C.A0,server_power_control/power_signal_detect_inst/un1_force_15slt12:CTOF_DEL, 0.451,R6C5C.A0,R6C5C.F0,server_power_control/power_signal_detect_inst/SLICE_511:ROUTE, 0.878,R6C5C.F0,R6C6B.A0,server_power_control/power_signal_detect_inst/N_4:CTOF_DEL, 0.451,R6C6B.A0,R6C6B.F0,server_power_control/power_signal_detect_inst/SLICE_509:ROUTE, 0.655,R6C6B.F0,R6C7A.C1,server_power_control/power_signal_detect_inst/N_6:CTOF_DEL, 0.451,R6C7A.C1,R6C7A.F1,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.934,R6C7A.F1,R6C7A.B0,server_power_control/power_signal_detect_inst/N_7:CTOF_DEL, 0.451,R6C7A.B0,R6C7A.F0,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.903,R6C7A.F0,R7C7C.A0,server_power_control/power_signal_detect_inst/N_9:CTOF_DEL, 0.451,R7C7C.A0,R7C7C.F0,server_power_control/power_signal_detect_inst/SLICE_327:ROUTE, 0.000,R7C7C.F0,R7C7C.DI0,server_power_control/power_signal_detect_inst/next_state_1[0]">Data path</A> server_power_control/power_signal_detect_inst/SLICE_71 to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408      R5C5A.CLK to       R5C5A.Q0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_71">server_power_control/power_signal_detect_inst/SLICE_71</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         4     1.553<A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[7]:R5C5A.Q0:R6C4C.A0:1.553">       R5C5A.Q0 to R6C4C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[7]">server_power_control/power_signal_detect_inst/debounce_cnt[7]</A>
+CTOF_DEL    ---     0.451       R6C4C.A0 to       R6C4C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_644">server_power_control/power_signal_detect_inst/SLICE_644</A>
+ROUTE         1     0.383<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slto7_i_a3_1:R6C4C.F0:R6C5A.C0:0.383">       R6C4C.F0 to R6C5A.C0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slto7_i_a3_1">server_power_control/power_signal_detect_inst/un1_force_15slto7_i_a3_1</A>
+CTOF_DEL    ---     0.451       R6C5A.C0 to       R6C5A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         2     0.586<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12:R6C5A.F0:R6C5C.A0:0.586">       R6C5A.F0 to R6C5C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12">server_power_control/power_signal_detect_inst/un1_force_15slt12</A>
+CTOF_DEL    ---     0.451       R6C5C.A0 to       R6C5C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_511">server_power_control/power_signal_detect_inst/SLICE_511</A>
+ROUTE         2     0.878<A href="#@net:server_power_control/power_signal_detect_inst/N_4:R6C5C.F0:R6C6B.A0:0.878">       R6C5C.F0 to R6C6B.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_4">server_power_control/power_signal_detect_inst/N_4</A>
+CTOF_DEL    ---     0.451       R6C6B.A0 to       R6C6B.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_509">server_power_control/power_signal_detect_inst/SLICE_509</A>
+ROUTE         1     0.655<A href="#@net:server_power_control/power_signal_detect_inst/N_6:R6C6B.F0:R6C7A.C1:0.655">       R6C6B.F0 to R6C7A.C1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_6">server_power_control/power_signal_detect_inst/N_6</A>
+CTOF_DEL    ---     0.451       R6C7A.C1 to       R6C7A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.934<A href="#@net:server_power_control/power_signal_detect_inst/N_7:R6C7A.F1:R6C7A.B0:1.934">       R6C7A.F1 to R6C7A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_7">server_power_control/power_signal_detect_inst/N_7</A>
+CTOF_DEL    ---     0.451       R6C7A.B0 to       R6C7A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.903<A href="#@net:server_power_control/power_signal_detect_inst/N_9:R6C7A.F0:R7C7C.A0:1.903">       R6C7A.F0 to R7C7C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_9">server_power_control/power_signal_detect_inst/N_9</A>
+CTOF_DEL    ---     0.451       R7C7C.A0 to       R7C7C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/SLICE_327</A>
+ROUTE         1     0.000<A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]:R7C7C.F0:R7C7C.DI0:0.000">       R7C7C.F0 to R7C7C.DI0     </A> <A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]">server_power_control/power_signal_detect_inst/next_state_1[0]</A> (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>)
+                  --------
+                   11.457   (31.1% logic, 68.9% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C5A.CLK,clock_c">Source Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_71:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C5A.CLK:2.175">       C8.PADDI to R5C5A.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R7C7A.CLK,clock_c:REG_DEL, 0.408,R7C7A.CLK,R7C7A.Q1,server_power_control/power_signal_detect_inst/SLICE_519:ROUTE, 1.178,R7C7A.Q1,R10C9B.C1,server_power_control/power_signal_detect_inst/low_time_cnt:CTOF_DEL, 0.451,R10C9B.C1,R10C9B.F1,server_power_control/SLICE_338:ROUTE, 1.029,R10C9B.F1,R7C7C.CLK,server_power_control/power_signal_detect_inst/un1_next_state69">Destination Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R7C7A.CLK:2.175">       C8.PADDI to R7C7A.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408      R7C7A.CLK to       R7C7A.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_519">server_power_control/power_signal_detect_inst/SLICE_519</A>
+ROUTE        33     1.178<A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt:R7C7A.Q1:R10C9B.C1:1.178">       R7C7A.Q1 to R10C9B.C1     </A> <A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt">server_power_control/power_signal_detect_inst/low_time_cnt</A>
+CTOF_DEL    ---     0.451      R10C9B.C1 to      R10C9B.F1 <A href="#@comp:server_power_control/SLICE_338">server_power_control/SLICE_338</A>
+ROUTE         2     1.029<A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69:R10C9B.F1:R7C7C.CLK:1.029">      R10C9B.F1 to R7C7C.CLK     </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>
+                  --------
+                    6.373   (31.2% logic, 68.8% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.515ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_74">server_power_control/power_signal_detect_inst/debounce_cnt[2]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/next_state[0]</A>  (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A> +)
+
+   Delay:              11.402ns  (31.3% logic, 68.7% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.402ns physical path delay server_power_control/power_signal_detect_inst/SLICE_74 to server_power_control/power_signal_detect_inst/SLICE_327 meets
+     40.000ns delay constraint less
+     -3.066ns skew and
+      0.149ns DIN_SET requirement (totaling 42.917ns) by 31.515ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R5C4B.CLK,R5C4B.Q1,server_power_control/power_signal_detect_inst/SLICE_74:ROUTE, 1.272,R5C4B.Q1,R6C4D.B0,server_power_control/power_signal_detect_inst/debounce_cnt[2]:CTOF_DEL, 0.451,R6C4D.B0,R6C4D.F0,server_power_control/power_signal_detect_inst/SLICE_584:ROUTE, 0.609,R6C4D.F0,R6C5A.B0,server_power_control/power_signal_detect_inst/N_658:CTOF_DEL, 0.451,R6C5A.B0,R6C5A.F0,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.586,R6C5A.F0,R6C5C.A0,server_power_control/power_signal_detect_inst/un1_force_15slt12:CTOF_DEL, 0.451,R6C5C.A0,R6C5C.F0,server_power_control/power_signal_detect_inst/SLICE_511:ROUTE, 0.878,R6C5C.F0,R6C6B.A0,server_power_control/power_signal_detect_inst/N_4:CTOF_DEL, 0.451,R6C6B.A0,R6C6B.F0,server_power_control/power_signal_detect_inst/SLICE_509:ROUTE, 0.655,R6C6B.F0,R6C7A.C1,server_power_control/power_signal_detect_inst/N_6:CTOF_DEL, 0.451,R6C7A.C1,R6C7A.F1,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.934,R6C7A.F1,R6C7A.B0,server_power_control/power_signal_detect_inst/N_7:CTOF_DEL, 0.451,R6C7A.B0,R6C7A.F0,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.903,R6C7A.F0,R7C7C.A0,server_power_control/power_signal_detect_inst/N_9:CTOF_DEL, 0.451,R7C7C.A0,R7C7C.F0,server_power_control/power_signal_detect_inst/SLICE_327:ROUTE, 0.000,R7C7C.F0,R7C7C.DI0,server_power_control/power_signal_detect_inst/next_state_1[0]">Data path</A> server_power_control/power_signal_detect_inst/SLICE_74 to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408      R5C4B.CLK to       R5C4B.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_74">server_power_control/power_signal_detect_inst/SLICE_74</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         3     1.272<A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[2]:R5C4B.Q1:R6C4D.B0:1.272">       R5C4B.Q1 to R6C4D.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[2]">server_power_control/power_signal_detect_inst/debounce_cnt[2]</A>
+CTOF_DEL    ---     0.451       R6C4D.B0 to       R6C4D.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_584">server_power_control/power_signal_detect_inst/SLICE_584</A>
+ROUTE         1     0.609<A href="#@net:server_power_control/power_signal_detect_inst/N_658:R6C4D.F0:R6C5A.B0:0.609">       R6C4D.F0 to R6C5A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_658">server_power_control/power_signal_detect_inst/N_658</A>
+CTOF_DEL    ---     0.451       R6C5A.B0 to       R6C5A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         2     0.586<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12:R6C5A.F0:R6C5C.A0:0.586">       R6C5A.F0 to R6C5C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12">server_power_control/power_signal_detect_inst/un1_force_15slt12</A>
+CTOF_DEL    ---     0.451       R6C5C.A0 to       R6C5C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_511">server_power_control/power_signal_detect_inst/SLICE_511</A>
+ROUTE         2     0.878<A href="#@net:server_power_control/power_signal_detect_inst/N_4:R6C5C.F0:R6C6B.A0:0.878">       R6C5C.F0 to R6C6B.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_4">server_power_control/power_signal_detect_inst/N_4</A>
+CTOF_DEL    ---     0.451       R6C6B.A0 to       R6C6B.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_509">server_power_control/power_signal_detect_inst/SLICE_509</A>
+ROUTE         1     0.655<A href="#@net:server_power_control/power_signal_detect_inst/N_6:R6C6B.F0:R6C7A.C1:0.655">       R6C6B.F0 to R6C7A.C1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_6">server_power_control/power_signal_detect_inst/N_6</A>
+CTOF_DEL    ---     0.451       R6C7A.C1 to       R6C7A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.934<A href="#@net:server_power_control/power_signal_detect_inst/N_7:R6C7A.F1:R6C7A.B0:1.934">       R6C7A.F1 to R6C7A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_7">server_power_control/power_signal_detect_inst/N_7</A>
+CTOF_DEL    ---     0.451       R6C7A.B0 to       R6C7A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.903<A href="#@net:server_power_control/power_signal_detect_inst/N_9:R6C7A.F0:R7C7C.A0:1.903">       R6C7A.F0 to R7C7C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_9">server_power_control/power_signal_detect_inst/N_9</A>
+CTOF_DEL    ---     0.451       R7C7C.A0 to       R7C7C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/SLICE_327</A>
+ROUTE         1     0.000<A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]:R7C7C.F0:R7C7C.DI0:0.000">       R7C7C.F0 to R7C7C.DI0     </A> <A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]">server_power_control/power_signal_detect_inst/next_state_1[0]</A> (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>)
+                  --------
+                   11.402   (31.3% logic, 68.7% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C4B.CLK,clock_c">Source Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_74:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C4B.CLK:2.175">       C8.PADDI to R5C4B.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R7C7A.CLK,clock_c:REG_DEL, 0.408,R7C7A.CLK,R7C7A.Q1,server_power_control/power_signal_detect_inst/SLICE_519:ROUTE, 1.178,R7C7A.Q1,R10C9B.C1,server_power_control/power_signal_detect_inst/low_time_cnt:CTOF_DEL, 0.451,R10C9B.C1,R10C9B.F1,server_power_control/SLICE_338:ROUTE, 1.029,R10C9B.F1,R7C7C.CLK,server_power_control/power_signal_detect_inst/un1_next_state69">Destination Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R7C7A.CLK:2.175">       C8.PADDI to R7C7A.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408      R7C7A.CLK to       R7C7A.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_519">server_power_control/power_signal_detect_inst/SLICE_519</A>
+ROUTE        33     1.178<A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt:R7C7A.Q1:R10C9B.C1:1.178">       R7C7A.Q1 to R10C9B.C1     </A> <A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt">server_power_control/power_signal_detect_inst/low_time_cnt</A>
+CTOF_DEL    ---     0.451      R10C9B.C1 to      R10C9B.F1 <A href="#@comp:server_power_control/SLICE_338">server_power_control/SLICE_338</A>
+ROUTE         2     1.029<A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69:R10C9B.F1:R7C7C.CLK:1.029">      R10C9B.F1 to R7C7C.CLK     </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>
+                  --------
+                    6.373   (31.2% logic, 68.8% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.535ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:bmc_reset_ctrl_inst/SLICE_10">bmc_reset_ctrl_inst/sig_r1</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:usb_reset_ctrl_inst/SLICE_362">usb_reset_ctrl_inst/next_state[0]</A>  (to <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A> +)
+
+   Delay:              11.583ns  (15.2% logic, 84.8% route), 4 logic levels.
+
+ Constraint Details:
+
+     11.583ns physical path delay bmc_reset_ctrl_inst/SLICE_10 to usb_reset_ctrl_inst/SLICE_362 meets
+     40.000ns delay constraint less
+     -3.267ns skew and
+      0.149ns DIN_SET requirement (totaling 43.118ns) by 31.535ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R10C6D.CLK,R10C6D.Q0,bmc_reset_ctrl_inst/SLICE_10:ROUTE, 5.926,R10C6D.Q0,R7C12B.D1,bmc_reset_ctrl_inst.sig_r1:CTOF_DEL, 0.451,R7C12B.D1,R7C12B.F1,usb_reset_ctrl_inst/SLICE_423:ROUTE, 1.709,R7C12B.F1,R7C12B.C0,usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]:CTOF_DEL, 0.451,R7C12B.C0,R7C12B.F0,usb_reset_ctrl_inst/SLICE_423:ROUTE, 2.187,R7C12B.F0,R6C12A.D0,usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]:CTOF_DEL, 0.451,R6C12A.D0,R6C12A.F0,usb_reset_ctrl_inst/SLICE_362:ROUTE, 0.000,R6C12A.F0,R6C12A.DI0,usb_reset_ctrl_inst/N_8_i">Data path</A> bmc_reset_ctrl_inst/SLICE_10 to usb_reset_ctrl_inst/SLICE_362:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408     R10C6D.CLK to      R10C6D.Q0 <A href="#@comp:bmc_reset_ctrl_inst/SLICE_10">bmc_reset_ctrl_inst/SLICE_10</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         4     5.926<A href="#@net:bmc_reset_ctrl_inst.sig_r1:R10C6D.Q0:R7C12B.D1:5.926">      R10C6D.Q0 to R7C12B.D1     </A> <A href="#@net:bmc_reset_ctrl_inst.sig_r1">bmc_reset_ctrl_inst.sig_r1</A>
+CTOF_DEL    ---     0.451      R7C12B.D1 to      R7C12B.F1 <A href="#@comp:usb_reset_ctrl_inst/SLICE_423">usb_reset_ctrl_inst/SLICE_423</A>
+ROUTE         1     1.709<A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]:R7C12B.F1:R7C12B.C0:1.709">      R7C12B.F1 to R7C12B.C0     </A> <A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]">usb_reset_ctrl_inst/next_state_1_i_0_0_m2[0]</A>
+CTOF_DEL    ---     0.451      R7C12B.C0 to      R7C12B.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_423">usb_reset_ctrl_inst/SLICE_423</A>
+ROUTE         1     2.187<A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]:R7C12B.F0:R6C12A.D0:2.187">      R7C12B.F0 to R6C12A.D0     </A> <A href="#@net:usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]">usb_reset_ctrl_inst/next_state_1_i_0_0_0[0]</A>
+CTOF_DEL    ---     0.451      R6C12A.D0 to      R6C12A.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_362">usb_reset_ctrl_inst/SLICE_362</A>
+ROUTE         1     0.000<A href="#@net:usb_reset_ctrl_inst/N_8_i:R6C12A.F0:R6C12A.DI0:0.000">      R6C12A.F0 to R6C12A.DI0    </A> <A href="#@net:usb_reset_ctrl_inst/N_8_i">usb_reset_ctrl_inst/N_8_i</A> (to <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>)
+                  --------
+                   11.583   (15.2% logic, 84.8% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R10C6D.CLK,clock_c">Source Clock Path</A> clock to bmc_reset_ctrl_inst/SLICE_10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R10C6D.CLK:2.175">       C8.PADDI to R10C6D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C18D.CLK,clock_c:REG_DEL, 0.408,R5C18D.CLK,R5C18D.Q1,SLICE_360:ROUTE, 1.487,R5C18D.Q1,R7C12C.D0,usb_reset_ctrl_inst/current_state[1]:CTOF_DEL, 0.451,R7C12C.D0,R7C12C.F0,usb_reset_ctrl_inst/SLICE_577:ROUTE, 0.921,R7C12C.F0,R6C12A.CLK,usb_reset_ctrl_inst/current_state_RNI5EMP[0]">Destination Clock Path</A> clock to usb_reset_ctrl_inst/SLICE_362:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C18D.CLK:2.175">       C8.PADDI to R5C18D.CLK    </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408     R5C18D.CLK to      R5C18D.Q1 <A href="#@comp:SLICE_360">SLICE_360</A>
+ROUTE        14     1.487<A href="#@net:usb_reset_ctrl_inst/current_state[1]:R5C18D.Q1:R7C12C.D0:1.487">      R5C18D.Q1 to R7C12C.D0     </A> <A href="#@net:usb_reset_ctrl_inst/current_state[1]">usb_reset_ctrl_inst/current_state[1]</A>
+CTOF_DEL    ---     0.451      R7C12C.D0 to      R7C12C.F0 <A href="#@comp:usb_reset_ctrl_inst/SLICE_577">usb_reset_ctrl_inst/SLICE_577</A>
+ROUTE         2     0.921<A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]:R7C12C.F0:R6C12A.CLK:0.921">      R7C12C.F0 to R6C12A.CLK    </A> <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>
+                  --------
+                    6.574   (30.3% logic, 69.7% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.609ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_70">server_power_control/power_signal_detect_inst/debounce_cnt[10]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/next_state[0]</A>  (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A> +)
+
+   Delay:              11.308ns  (31.5% logic, 68.5% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.308ns physical path delay server_power_control/power_signal_detect_inst/SLICE_70 to server_power_control/power_signal_detect_inst/SLICE_327 meets
+     40.000ns delay constraint less
+     -3.066ns skew and
+      0.149ns DIN_SET requirement (totaling 42.917ns) by 31.609ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R5C5B.CLK,R5C5B.Q1,server_power_control/power_signal_detect_inst/SLICE_70:ROUTE, 1.242,R5C5B.Q1,R6C5A.A1,server_power_control/power_signal_detect_inst/debounce_cnt[10]:CTOF_DEL, 0.451,R6C5A.A1,R6C5A.F1,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.852,R6C5A.F1,R6C5A.A0,server_power_control/power_signal_detect_inst/un1_force_15slto10_1:CTOF_DEL, 0.451,R6C5A.A0,R6C5A.F0,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.617,R6C5A.F0,R6C5B.B1,server_power_control/power_signal_detect_inst/un1_force_15slt12:CTOF_DEL, 0.451,R6C5B.B1,R6C5B.F1,server_power_control/power_signal_detect_inst/SLICE_506:ROUTE, 0.540,R6C5B.F1,R6C6B.D0,server_power_control/power_signal_detect_inst/N_5:CTOF_DEL, 0.451,R6C6B.D0,R6C6B.F0,server_power_control/power_signal_detect_inst/SLICE_509:ROUTE, 0.655,R6C6B.F0,R6C7A.C1,server_power_control/power_signal_detect_inst/N_6:CTOF_DEL, 0.451,R6C7A.C1,R6C7A.F1,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.934,R6C7A.F1,R6C7A.B0,server_power_control/power_signal_detect_inst/N_7:CTOF_DEL, 0.451,R6C7A.B0,R6C7A.F0,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.903,R6C7A.F0,R7C7C.A0,server_power_control/power_signal_detect_inst/N_9:CTOF_DEL, 0.451,R7C7C.A0,R7C7C.F0,server_power_control/power_signal_detect_inst/SLICE_327:ROUTE, 0.000,R7C7C.F0,R7C7C.DI0,server_power_control/power_signal_detect_inst/next_state_1[0]">Data path</A> server_power_control/power_signal_detect_inst/SLICE_70 to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408      R5C5B.CLK to       R5C5B.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_70">server_power_control/power_signal_detect_inst/SLICE_70</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         3     1.242<A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[10]:R5C5B.Q1:R6C5A.A1:1.242">       R5C5B.Q1 to R6C5A.A1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[10]">server_power_control/power_signal_detect_inst/debounce_cnt[10]</A>
+CTOF_DEL    ---     0.451       R6C5A.A1 to       R6C5A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         1     0.852<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slto10_1:R6C5A.F1:R6C5A.A0:0.852">       R6C5A.F1 to R6C5A.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slto10_1">server_power_control/power_signal_detect_inst/un1_force_15slto10_1</A>
+CTOF_DEL    ---     0.451       R6C5A.A0 to       R6C5A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         2     0.617<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12:R6C5A.F0:R6C5B.B1:0.617">       R6C5A.F0 to R6C5B.B1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12">server_power_control/power_signal_detect_inst/un1_force_15slt12</A>
+CTOF_DEL    ---     0.451       R6C5B.B1 to       R6C5B.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_506">server_power_control/power_signal_detect_inst/SLICE_506</A>
+ROUTE         1     0.540<A href="#@net:server_power_control/power_signal_detect_inst/N_5:R6C5B.F1:R6C6B.D0:0.540">       R6C5B.F1 to R6C6B.D0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_5">server_power_control/power_signal_detect_inst/N_5</A>
+CTOF_DEL    ---     0.451       R6C6B.D0 to       R6C6B.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_509">server_power_control/power_signal_detect_inst/SLICE_509</A>
+ROUTE         1     0.655<A href="#@net:server_power_control/power_signal_detect_inst/N_6:R6C6B.F0:R6C7A.C1:0.655">       R6C6B.F0 to R6C7A.C1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_6">server_power_control/power_signal_detect_inst/N_6</A>
+CTOF_DEL    ---     0.451       R6C7A.C1 to       R6C7A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.934<A href="#@net:server_power_control/power_signal_detect_inst/N_7:R6C7A.F1:R6C7A.B0:1.934">       R6C7A.F1 to R6C7A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_7">server_power_control/power_signal_detect_inst/N_7</A>
+CTOF_DEL    ---     0.451       R6C7A.B0 to       R6C7A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.903<A href="#@net:server_power_control/power_signal_detect_inst/N_9:R6C7A.F0:R7C7C.A0:1.903">       R6C7A.F0 to R7C7C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_9">server_power_control/power_signal_detect_inst/N_9</A>
+CTOF_DEL    ---     0.451       R7C7C.A0 to       R7C7C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/SLICE_327</A>
+ROUTE         1     0.000<A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]:R7C7C.F0:R7C7C.DI0:0.000">       R7C7C.F0 to R7C7C.DI0     </A> <A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]">server_power_control/power_signal_detect_inst/next_state_1[0]</A> (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>)
+                  --------
+                   11.308   (31.5% logic, 68.5% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C5B.CLK,clock_c">Source Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_70:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C5B.CLK:2.175">       C8.PADDI to R5C5B.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R7C7A.CLK,clock_c:REG_DEL, 0.408,R7C7A.CLK,R7C7A.Q1,server_power_control/power_signal_detect_inst/SLICE_519:ROUTE, 1.178,R7C7A.Q1,R10C9B.C1,server_power_control/power_signal_detect_inst/low_time_cnt:CTOF_DEL, 0.451,R10C9B.C1,R10C9B.F1,server_power_control/SLICE_338:ROUTE, 1.029,R10C9B.F1,R7C7C.CLK,server_power_control/power_signal_detect_inst/un1_next_state69">Destination Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R7C7A.CLK:2.175">       C8.PADDI to R7C7A.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408      R7C7A.CLK to       R7C7A.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_519">server_power_control/power_signal_detect_inst/SLICE_519</A>
+ROUTE        33     1.178<A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt:R7C7A.Q1:R10C9B.C1:1.178">       R7C7A.Q1 to R10C9B.C1     </A> <A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt">server_power_control/power_signal_detect_inst/low_time_cnt</A>
+CTOF_DEL    ---     0.451      R10C9B.C1 to      R10C9B.F1 <A href="#@comp:server_power_control/SLICE_338">server_power_control/SLICE_338</A>
+ROUTE         2     1.029<A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69:R10C9B.F1:R7C7C.CLK:1.029">      R10C9B.F1 to R7C7C.CLK     </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>
+                  --------
+                    6.373   (31.2% logic, 68.8% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.633ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_73">server_power_control/power_signal_detect_inst/debounce_cnt[4]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/next_state[0]</A>  (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A> +)
+
+   Delay:              11.284ns  (27.6% logic, 72.4% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.284ns physical path delay server_power_control/power_signal_detect_inst/SLICE_73 to server_power_control/power_signal_detect_inst/SLICE_327 meets
+     40.000ns delay constraint less
+     -3.066ns skew and
+      0.149ns DIN_SET requirement (totaling 42.917ns) by 31.633ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R5C4C.CLK,R5C4C.Q1,server_power_control/power_signal_detect_inst/SLICE_73:ROUTE, 2.214,R5C4C.Q1,R6C5A.D0,server_power_control/power_signal_detect_inst/debounce_cnt[4]:CTOF_DEL, 0.451,R6C5A.D0,R6C5A.F0,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.586,R6C5A.F0,R6C5C.A0,server_power_control/power_signal_detect_inst/un1_force_15slt12:CTOF_DEL, 0.451,R6C5C.A0,R6C5C.F0,server_power_control/power_signal_detect_inst/SLICE_511:ROUTE, 0.878,R6C5C.F0,R6C6B.A0,server_power_control/power_signal_detect_inst/N_4:CTOF_DEL, 0.451,R6C6B.A0,R6C6B.F0,server_power_control/power_signal_detect_inst/SLICE_509:ROUTE, 0.655,R6C6B.F0,R6C7A.C1,server_power_control/power_signal_detect_inst/N_6:CTOF_DEL, 0.451,R6C7A.C1,R6C7A.F1,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.934,R6C7A.F1,R6C7A.B0,server_power_control/power_signal_detect_inst/N_7:CTOF_DEL, 0.451,R6C7A.B0,R6C7A.F0,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.903,R6C7A.F0,R7C7C.A0,server_power_control/power_signal_detect_inst/N_9:CTOF_DEL, 0.451,R7C7C.A0,R7C7C.F0,server_power_control/power_signal_detect_inst/SLICE_327:ROUTE, 0.000,R7C7C.F0,R7C7C.DI0,server_power_control/power_signal_detect_inst/next_state_1[0]">Data path</A> server_power_control/power_signal_detect_inst/SLICE_73 to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408      R5C4C.CLK to       R5C4C.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_73">server_power_control/power_signal_detect_inst/SLICE_73</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         4     2.214<A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[4]:R5C4C.Q1:R6C5A.D0:2.214">       R5C4C.Q1 to R6C5A.D0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[4]">server_power_control/power_signal_detect_inst/debounce_cnt[4]</A>
+CTOF_DEL    ---     0.451       R6C5A.D0 to       R6C5A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         2     0.586<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12:R6C5A.F0:R6C5C.A0:0.586">       R6C5A.F0 to R6C5C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12">server_power_control/power_signal_detect_inst/un1_force_15slt12</A>
+CTOF_DEL    ---     0.451       R6C5C.A0 to       R6C5C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_511">server_power_control/power_signal_detect_inst/SLICE_511</A>
+ROUTE         2     0.878<A href="#@net:server_power_control/power_signal_detect_inst/N_4:R6C5C.F0:R6C6B.A0:0.878">       R6C5C.F0 to R6C6B.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_4">server_power_control/power_signal_detect_inst/N_4</A>
+CTOF_DEL    ---     0.451       R6C6B.A0 to       R6C6B.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_509">server_power_control/power_signal_detect_inst/SLICE_509</A>
+ROUTE         1     0.655<A href="#@net:server_power_control/power_signal_detect_inst/N_6:R6C6B.F0:R6C7A.C1:0.655">       R6C6B.F0 to R6C7A.C1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_6">server_power_control/power_signal_detect_inst/N_6</A>
+CTOF_DEL    ---     0.451       R6C7A.C1 to       R6C7A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.934<A href="#@net:server_power_control/power_signal_detect_inst/N_7:R6C7A.F1:R6C7A.B0:1.934">       R6C7A.F1 to R6C7A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_7">server_power_control/power_signal_detect_inst/N_7</A>
+CTOF_DEL    ---     0.451       R6C7A.B0 to       R6C7A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.903<A href="#@net:server_power_control/power_signal_detect_inst/N_9:R6C7A.F0:R7C7C.A0:1.903">       R6C7A.F0 to R7C7C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_9">server_power_control/power_signal_detect_inst/N_9</A>
+CTOF_DEL    ---     0.451       R7C7C.A0 to       R7C7C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/SLICE_327</A>
+ROUTE         1     0.000<A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]:R7C7C.F0:R7C7C.DI0:0.000">       R7C7C.F0 to R7C7C.DI0     </A> <A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]">server_power_control/power_signal_detect_inst/next_state_1[0]</A> (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>)
+                  --------
+                   11.284   (27.6% logic, 72.4% route), 7 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C4C.CLK,clock_c">Source Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C4C.CLK:2.175">       C8.PADDI to R5C4C.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R7C7A.CLK,clock_c:REG_DEL, 0.408,R7C7A.CLK,R7C7A.Q1,server_power_control/power_signal_detect_inst/SLICE_519:ROUTE, 1.178,R7C7A.Q1,R10C9B.C1,server_power_control/power_signal_detect_inst/low_time_cnt:CTOF_DEL, 0.451,R10C9B.C1,R10C9B.F1,server_power_control/SLICE_338:ROUTE, 1.029,R10C9B.F1,R7C7C.CLK,server_power_control/power_signal_detect_inst/un1_next_state69">Destination Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R7C7A.CLK:2.175">       C8.PADDI to R7C7A.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408      R7C7A.CLK to       R7C7A.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_519">server_power_control/power_signal_detect_inst/SLICE_519</A>
+ROUTE        33     1.178<A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt:R7C7A.Q1:R10C9B.C1:1.178">       R7C7A.Q1 to R10C9B.C1     </A> <A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt">server_power_control/power_signal_detect_inst/low_time_cnt</A>
+CTOF_DEL    ---     0.451      R10C9B.C1 to      R10C9B.F1 <A href="#@comp:server_power_control/SLICE_338">server_power_control/SLICE_338</A>
+ROUTE         2     1.029<A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69:R10C9B.F1:R7C7C.CLK:1.029">      R10C9B.F1 to R7C7C.CLK     </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>
+                  --------
+                    6.373   (31.2% logic, 68.8% route), 3 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 31.727ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_73">server_power_control/power_signal_detect_inst/debounce_cnt[3]</A>  (from <A href="#@net:clock_c">clock_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/next_state[0]</A>  (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A> +)
+
+   Delay:              11.190ns  (31.9% logic, 68.1% route), 8 logic levels.
+
+ Constraint Details:
+
+     11.190ns physical path delay server_power_control/power_signal_detect_inst/SLICE_73 to server_power_control/power_signal_detect_inst/SLICE_327 meets
+     40.000ns delay constraint less
+     -3.066ns skew and
+      0.149ns DIN_SET requirement (totaling 42.917ns) by 31.727ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:REG_DEL, 0.408,R5C4C.CLK,R5C4C.Q0,server_power_control/power_signal_detect_inst/SLICE_73:ROUTE, 1.060,R5C4C.Q0,R6C4D.C0,server_power_control/power_signal_detect_inst/debounce_cnt[3]:CTOF_DEL, 0.451,R6C4D.C0,R6C4D.F0,server_power_control/power_signal_detect_inst/SLICE_584:ROUTE, 0.609,R6C4D.F0,R6C5A.B0,server_power_control/power_signal_detect_inst/N_658:CTOF_DEL, 0.451,R6C5A.B0,R6C5A.F0,server_power_control/power_signal_detect_inst/SLICE_516:ROUTE, 0.586,R6C5A.F0,R6C5C.A0,server_power_control/power_signal_detect_inst/un1_force_15slt12:CTOF_DEL, 0.451,R6C5C.A0,R6C5C.F0,server_power_control/power_signal_detect_inst/SLICE_511:ROUTE, 0.878,R6C5C.F0,R6C6B.A0,server_power_control/power_signal_detect_inst/N_4:CTOF_DEL, 0.451,R6C6B.A0,R6C6B.F0,server_power_control/power_signal_detect_inst/SLICE_509:ROUTE, 0.655,R6C6B.F0,R6C7A.C1,server_power_control/power_signal_detect_inst/N_6:CTOF_DEL, 0.451,R6C7A.C1,R6C7A.F1,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.934,R6C7A.F1,R6C7A.B0,server_power_control/power_signal_detect_inst/N_7:CTOF_DEL, 0.451,R6C7A.B0,R6C7A.F0,server_power_control/power_signal_detect_inst/SLICE_409:ROUTE, 1.903,R6C7A.F0,R7C7C.A0,server_power_control/power_signal_detect_inst/N_9:CTOF_DEL, 0.451,R7C7C.A0,R7C7C.F0,server_power_control/power_signal_detect_inst/SLICE_327:ROUTE, 0.000,R7C7C.F0,R7C7C.DI0,server_power_control/power_signal_detect_inst/next_state_1[0]">Data path</A> server_power_control/power_signal_detect_inst/SLICE_73 to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.408      R5C4C.CLK to       R5C4C.Q0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_73">server_power_control/power_signal_detect_inst/SLICE_73</A> (from <A href="#@net:clock_c">clock_c</A>)
+ROUTE         4     1.060<A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[3]:R5C4C.Q0:R6C4D.C0:1.060">       R5C4C.Q0 to R6C4D.C0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/debounce_cnt[3]">server_power_control/power_signal_detect_inst/debounce_cnt[3]</A>
+CTOF_DEL    ---     0.451       R6C4D.C0 to       R6C4D.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_584">server_power_control/power_signal_detect_inst/SLICE_584</A>
+ROUTE         1     0.609<A href="#@net:server_power_control/power_signal_detect_inst/N_658:R6C4D.F0:R6C5A.B0:0.609">       R6C4D.F0 to R6C5A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_658">server_power_control/power_signal_detect_inst/N_658</A>
+CTOF_DEL    ---     0.451       R6C5A.B0 to       R6C5A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_516">server_power_control/power_signal_detect_inst/SLICE_516</A>
+ROUTE         2     0.586<A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12:R6C5A.F0:R6C5C.A0:0.586">       R6C5A.F0 to R6C5C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_force_15slt12">server_power_control/power_signal_detect_inst/un1_force_15slt12</A>
+CTOF_DEL    ---     0.451       R6C5C.A0 to       R6C5C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_511">server_power_control/power_signal_detect_inst/SLICE_511</A>
+ROUTE         2     0.878<A href="#@net:server_power_control/power_signal_detect_inst/N_4:R6C5C.F0:R6C6B.A0:0.878">       R6C5C.F0 to R6C6B.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_4">server_power_control/power_signal_detect_inst/N_4</A>
+CTOF_DEL    ---     0.451       R6C6B.A0 to       R6C6B.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_509">server_power_control/power_signal_detect_inst/SLICE_509</A>
+ROUTE         1     0.655<A href="#@net:server_power_control/power_signal_detect_inst/N_6:R6C6B.F0:R6C7A.C1:0.655">       R6C6B.F0 to R6C7A.C1      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_6">server_power_control/power_signal_detect_inst/N_6</A>
+CTOF_DEL    ---     0.451       R6C7A.C1 to       R6C7A.F1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.934<A href="#@net:server_power_control/power_signal_detect_inst/N_7:R6C7A.F1:R6C7A.B0:1.934">       R6C7A.F1 to R6C7A.B0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_7">server_power_control/power_signal_detect_inst/N_7</A>
+CTOF_DEL    ---     0.451       R6C7A.B0 to       R6C7A.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_409">server_power_control/power_signal_detect_inst/SLICE_409</A>
+ROUTE         1     1.903<A href="#@net:server_power_control/power_signal_detect_inst/N_9:R6C7A.F0:R7C7C.A0:1.903">       R6C7A.F0 to R7C7C.A0      </A> <A href="#@net:server_power_control/power_signal_detect_inst/N_9">server_power_control/power_signal_detect_inst/N_9</A>
+CTOF_DEL    ---     0.451       R7C7C.A0 to       R7C7C.F0 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_327">server_power_control/power_signal_detect_inst/SLICE_327</A>
+ROUTE         1     0.000<A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]:R7C7C.F0:R7C7C.DI0:0.000">       R7C7C.F0 to R7C7C.DI0     </A> <A href="#@net:server_power_control/power_signal_detect_inst/next_state_1[0]">server_power_control/power_signal_detect_inst/next_state_1[0]</A> (to <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>)
+                  --------
+                   11.190   (31.9% logic, 68.1% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R5C4C.CLK,clock_c">Source Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R5C4C.CLK:2.175">       C8.PADDI to R5C4C.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+                  --------
+                    3.307   (34.2% logic, 65.8% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY PORT 'clock' 25.000000 MHz ;:PADI_DEL, 1.132,C8.PAD,C8.PADDI,clock:ROUTE, 2.175,C8.PADDI,R7C7A.CLK,clock_c:REG_DEL, 0.408,R7C7A.CLK,R7C7A.Q1,server_power_control/power_signal_detect_inst/SLICE_519:ROUTE, 1.178,R7C7A.Q1,R10C9B.C1,server_power_control/power_signal_detect_inst/low_time_cnt:CTOF_DEL, 0.451,R10C9B.C1,R10C9B.F1,server_power_control/SLICE_338:ROUTE, 1.029,R10C9B.F1,R7C7C.CLK,server_power_control/power_signal_detect_inst/un1_next_state69">Destination Clock Path</A> clock to server_power_control/power_signal_detect_inst/SLICE_327:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         C8.PAD to       C8.PADDI <A href="#@comp:clock">clock</A>
+ROUTE       340     2.175<A href="#@net:clock_c:C8.PADDI:R7C7A.CLK:2.175">       C8.PADDI to R7C7A.CLK     </A> <A href="#@net:clock_c">clock_c</A>
+REG_DEL     ---     0.408      R7C7A.CLK to       R7C7A.Q1 <A href="#@comp:server_power_control/power_signal_detect_inst/SLICE_519">server_power_control/power_signal_detect_inst/SLICE_519</A>
+ROUTE        33     1.178<A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt:R7C7A.Q1:R10C9B.C1:1.178">       R7C7A.Q1 to R10C9B.C1     </A> <A href="#@net:server_power_control/power_signal_detect_inst/low_time_cnt">server_power_control/power_signal_detect_inst/low_time_cnt</A>
+CTOF_DEL    ---     0.451      R10C9B.C1 to      R10C9B.F1 <A href="#@comp:server_power_control/SLICE_338">server_power_control/SLICE_338</A>
+ROUTE         2     1.029<A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69:R10C9B.F1:R7C7C.CLK:1.029">      R10C9B.F1 to R7C7C.CLK     </A> <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>
+                  --------
+                    6.373   (31.2% logic, 68.8% route), 3 logic levels.
+
+Report:  108.085MHz is the maximum frequency for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clock_c" 25.000000 MHz ; |   25.000 MHz|   74.845 MHz|   8  
+                                        |             |             |
+FREQUENCY PORT "clock" 25.000000 MHz ;  |   25.000 MHz|  108.085 MHz|   4  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 7 clocks:
+
+Clock Domain: <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>   Source: usb_reset_ctrl_inst/SLICE_577.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:clock_c">clock_c</A>   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 22
+
+Clock Domain: <A href="#@net:server_power_control/un1_next_state115_1_0">server_power_control/un1_next_state115_1_0</A>   Source: server_power_control/SLICE_228.F1   Loads: 3
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:clock_c">clock_c</A>   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 29
+
+Clock Domain: <A href="#@net:server_power_control/switch_reset_control/un1_next_state43_0">server_power_control/switch_reset_control/un1_next_state43_0</A>   Source: server_power_control/switch_reset_control/SLICE_581.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:clock_c">clock_c</A>   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 20
+
+Clock Domain: <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>   Source: server_power_control/SLICE_338.F1   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:clock_c">clock_c</A>   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 45
+
+Clock Domain: <A href="#@net:server_power_control/cpu_pwr_control/current_state_RNI16S31[1]">server_power_control/cpu_pwr_control/current_state_RNI16S31[1]</A>   Source: SLICE_582.F0   Loads: 2
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:clock_c">clock_c</A>   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 16
+
+Clock Domain: <A href="#@net:clock_c">clock_c</A>   Source: clock.PAD   Loads: 340
+   Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:usb_reset_ctrl_inst/current_state_RNI5EMP[0]">usb_reset_ctrl_inst/current_state_RNI5EMP[0]</A>   Source: usb_reset_ctrl_inst/SLICE_577.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: <A href="#@net:server_power_control/un1_next_state115_1_0">server_power_control/un1_next_state115_1_0</A>   Source: server_power_control/SLICE_228.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 4
+
+   Clock Domain: <A href="#@net:server_power_control/switch_reset_control/un1_next_state43_0">server_power_control/switch_reset_control/un1_next_state43_0</A>   Source: server_power_control/switch_reset_control/SLICE_581.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: <A href="#@net:server_power_control/power_signal_detect_inst/un1_next_state69">server_power_control/power_signal_detect_inst/un1_next_state69</A>   Source: server_power_control/SLICE_338.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: <A href="#@net:server_power_control/cpu_pwr_control/current_state_RNI16S31[1]">server_power_control/cpu_pwr_control/current_state_RNI16S31[1]</A>   Source: SLICE_582.F0
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 3
+
+   Clock Domain: <A href="#@net:bmc_reset_ctrl_inst/un1_next_state24_0_0">bmc_reset_ctrl_inst/un1_next_state24_0_0</A>   Source: bmc_reset_ctrl_inst/SLICE_600.F1
+      Covered under: FREQUENCY NET "clock_c" 25.000000 MHz ;   Transfers: 2
+
+Clock Domain: <A href="#@net:bmc_reset_ctrl_inst/un1_next_state24_0_0">bmc_reset_ctrl_inst/un1_next_state24_0_0</A>   Source: bmc_reset_ctrl_inst/SLICE_600.F1   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:clock_c">clock_c</A>   Source: clock.PAD
+      Covered under: FREQUENCY PORT "clock" 25.000000 MHz ;   Transfers: 4
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 24225 paths, 13 nets, and 4383 connections (94.34% coverage)
+

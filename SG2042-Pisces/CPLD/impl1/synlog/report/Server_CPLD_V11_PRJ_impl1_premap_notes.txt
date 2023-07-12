@@ -1,0 +1,26 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: FX493 |Applying initial value "000000" on instance rst_btn_dly[5:0].
+@N: FX493 |Applying initial value "1" on instance sda_in_clean_dly[0].
+@N: FX493 |Applying initial value "11" on instance scl_in_clean_dly[1:0].
+@N: FX493 |Applying initial value "111111" on instance scl_in_dly[5:0].
+@N: FX493 |Applying initial value "111111" on instance sda_in_dly[5:0].
+@N: FX493 |Applying initial value "1" on instance scl_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_out_reg.
+@N: FX493 |Applying initial value "000000000" on instance enable_reg[8:0].
+@N: FX493 |Applying initial value "111111" on instance scl_in_dly[5:0].
+@N: FX493 |Applying initial value "111111" on instance sda_in_dly[5:0].
+@N: FX493 |Applying initial value "11" on instance scl_in_clean_dly[1:0].
+@N: FX493 |Applying initial value "1" on instance scl_in_clean.
+@N: FX493 |Applying initial value "1" on instance sda_in_clean.
+@N: FX493 |Applying initial value "1" on instance scl_out.
+@N: FX493 |Applying initial value "1" on instance sda_out.
+@N: FX493 |Applying initial value "00000000" on instance power_control[7:0].
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\i2c_slave_for_register.v":147:0:147:5|Removing sequential instance word_addr_vld (in view: work.i2c_slave_reg_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\cpu_power_control.v":201:0:201:5|Removing sequential instance pwr_button (in view: work.cpu_power_control(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\01_project\07_sg2042_server\99_cpld\project\03_server_cpld_v11\pre_final\server_cpld_v11_prj\impl1\source\switch_reset_control.v":126:0:126:5|Removing sequential instance switch_prst (in view: work.switch_reset_control(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
+@N: FX1184 |Applying syn_allowed_resources blockrams=74 on top level netlist server_top 
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

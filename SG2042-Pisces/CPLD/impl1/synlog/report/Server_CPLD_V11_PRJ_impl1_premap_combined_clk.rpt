@@ -1,0 +1,31 @@
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 545 clock pin(s) of sequential element(s)
+6 gated/generated clock tree(s) driving 19 clock pin(s) of sequential element(s)
+0 instances converted, 19 sequential instances remain driven by gated/generated clocks
+
+============================ Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance 
+----------------------------------------------------------------------------------------
+@KP:ckid0_0       clock               port                   545        power_control[7]
+========================================================================================
+======================================================================================================= Gated/Generated Clocks ========================================================================================================
+Clock Tree ID     Driving Element                                                        Drive Element Type     Unconverted Fanout     Sample Instance                                                   Explanation                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       bmc_reset_ctrl_inst.un1_next_state24.OUT                               or                     3                      bmc_reset_ctrl_inst.next_state[2:0]                               Clock Optimization not enabled
+@KP:ckid0_2       usb_reset_ctrl_inst.un1_next_state42.OUT                               or                     3                      usb_reset_ctrl_inst.next_state[2:0]                               Clock Optimization not enabled
+@KP:ckid0_3       server_power_control.switch_reset_control.un1_next_state43.OUT         or                     3                      server_power_control.switch_reset_control.next_state[2:0]         Clock Optimization not enabled
+@KP:ckid0_4       server_power_control.cpu_pwr_control.un1_next_state44.OUT              or                     3                      server_power_control.cpu_pwr_control.next_state[2:0]              Clock Optimization not enabled
+@KP:ckid0_5       server_power_control.power_signal_detect_inst.un1_next_state69.OUT     or                     3                      server_power_control.power_signal_detect_inst.next_state[2:0]     Clock Optimization not enabled
+@KP:ckid0_6       server_power_control.un1_next_state115_1.OUT                           or                     4                      server_power_control.next_state[3:0]                              Clock Optimization not enabled
+=======================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
